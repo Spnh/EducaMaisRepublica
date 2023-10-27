@@ -1,0 +1,233 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras da linguagem</title>
+    <link rel="stylesheet" href="../styles/portuguesStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+</div>
+<body onload="passaParametro('portu&litera')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logoportu&litera.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1> Figuras da linguagem </h1>
+            <br><br>
+
+            <h3 class="dentromain">O que é</h3>
+
+            <section class="dentromain"> 
+                <p> Figuras de linguagem são ferramentas empregadas na comunicação oral ou escritas com o intuito de tornar a mensagem transmitida mais vívida e impactante. Dominar a identificação dessas diversas figuras de linguagem é fundamental, pois isso permite uma interpretação mais profunda e enriquecedora de diversos tipos de textos.</p> 
+                
+            <br>
+  
+            <h3 class="dentromain">Tipos</h3>
+
+            <section class="dentromain"> 
+            <p> Metáfora: É a presença ou ausência da conjunção comparativa que determina se o enunciado representa uma comparação ou uma metáfora Isso se aplica especialmente às metáforas impuras, em que os elementos da comparação estão claramente explicitados. Essas metáforas implicam uma relação de igualdade entre dois elementos, mesmo sem o uso da conjunção comparativa. Já as puras são mais difíceis de serem reconhecidas.</p> 
+                
+            <br><br>
+            <p> Hipérbole: A hipérbole envolve a ampliação intencional de uma ideia, frequentemente por meio do exagero.</p> 
+                
+            <br><br>
+            <p> Comparação: Chamada de comparação explícita, em contraste com a metáfora, essa figura de linguagem faz uso de conectivos de comparação.</p> 
+                
+            <br><br>
+            <p> Antítese: A antítese consiste em empregar termos que possuem significados opostos, criando um contraste na expressão.</p> 
+                
+            <br><br>
+            <p> Paradoxo: O paradoxo se caracteriza pelo uso de ideias que contêm sentidos opostos, indo além da simples utilização de termos contrastantes.</p> 
+                
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        <h5>(Enem)</h5>
+                        <br>
+                        <h4>Cidade grande</h4>
+                        <br>
+                       <h5> Que beleza, Montes Claros. </h5>
+                        <h5> Como cresceu Montes Claros.</h5>
+                         <h5>Quanta indústria em Montes Claros.</h5>
+                         <h5>Montes Claros cresceu tanto,</h5>
+                         <h5> ficou urbe tão notória, </h5>
+                         <h5>  prima-rica do Rio de Janeiro,</h5>
+                         <h5> que já tem cinco favelas </h5>
+                         <h5> por enquanto, e mais promete. </h5>
+                        <br>
+                       <h6>(Carlos Drummond de Andrade)</h6>
+                       <br>
+                        <h4>Entre os recursos expressivos empregados no texto, destaca-se a</h4>
+                        <br>
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) metalinguagem, que consiste em fazer a linguagem referir-se à própria linguagem.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) intertextualidade, na qual o texto retoma e reelabora outros textos. 
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) ironia, que consiste em se dizer o contrário do que se pensa, com intenção crítica. 
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) denotação, caracterizada pelo uso das palavras em seu sentido próprio e objetivo.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) prosopopeia, que consiste em personificar coisas inanimadas, atribuindo-lhes vida.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','c')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                        <h5>(ENEM/2019)</h5>
+                        <br>
+                       <h5> Há casais que jogam com os sonhos como se jogassem tênis. Ficam à espera do momento certo para a cortada. O jogo de tênis é assim: recebe-se o sonho do outro para destruí-lo, arrebentá-lo como bolha de sabão. O que se busca é ter razão e o que se ganha é o distanciamento. Aqui, quem ganha, sempre perde. </h5>
+                        <h5> Já no frescobol é diferente. O sonho do outro é um brinquedo que deve ser preservado, pois sabe-se que, se é sonho, é coisa delicada, do coração. Assim cresce o amor. Ninguém ganha para que os dois ganhem. E se deseja então que o outro viva sempre, eternamente, para que o jogo nunca tenha fim…</h5>
+                        <br>
+                       <h6>ALVES, R. Tênis X Frescobol. As melhores crônicas de Rubem Alves. Campinas: Papirus, 2012.</h6>
+                       <br>
+                        <h4>O texto de Rubem Alves faz uma analogia entre dois jogos que utilizam raquetes e as diferentes formas de as pessoas se relacionarem afetivamente, de modo que</h4>
+                        <br>
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) o frescobol e o tênis indicam, respectivamente, situações de competição e cooperação, o que ilustra os diferentes sonhos das pessoas no relacionamento.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) o frescobol indica um jogo em que a competição prevalece, o que simboliza um relacionamento em que uma pessoa busca destruir o sonho da outra.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) o frescobol indica um jogo em que a cooperação prevalece, o que simboliza o compartilhamento de sonhos entre as pessoas no relacionamento.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) o tênis indica um jogo em que a competição é predominante, o que representa um sonho comum no relacionamento entre pessoas.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) o tênis indica um jogo em que a cooperação predomina, o que representa o distanciamento na relação entre as pessoas.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'c' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="portugues-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+             
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+    <script src="../scripts/materias-geralApp.js"></script>  
+
+ 
+        
+    </script>
+</body>
+</html>

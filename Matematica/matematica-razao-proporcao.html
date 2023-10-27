@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razão e Proporção</title>
+    <link rel="stylesheet" href="../styles/matemaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+
+
+<body onload="passaParametro('matematica')">
+    <div id="cabecalho">
+        <header id="inicio">
+            <div class="areaLogo">
+                <img class="logo" src="../styles/img/logomatematica.png"> </img>
+
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+            <div class="areaBarra">
+                <form class="search-container">
+                    <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+
+                </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+
+    <main class="container" id="mainnormal">
+
+
+        <h1> Razão e Proporção </h1>
+        <br><br>
+        <p id="margem-certa"><strong>Razão</strong> estabelece uma comparação entre grandezas, gerando as
+            sim, um resultado entre dois números. Já a <strong>proporção</strong> é a igualdade entre duas razões. </p>
+        <br>
+        <p id="margem-certa"><u> OBS:</u> O produto dos meios é igual ao produto dos extremos,para a
+            resolução da Proporção é apenas realizar a multiplicação cruzada. </p>
+
+        <p id="margem-certa" style="text-align: center;"> Razão: <sup>A</sup>/<sub>B</sub></p>
+        <p id="margem-certa" style="text-align: center;"> Proporção: <sup>A</sup>/<sub>B</sub> =
+            <sup>C</sup>/<sub>D</sub>
+        </p>
+
+        <br>
+        <p id="margem-certa"> EX1: Qual a razão entre 200 e 10? </p>
+
+         <p id="margem-certa">R:  <span class="fracao">  <sup>200</sup><span>----</span> <sub>10</sub></span> = 20</p>
+        <br>
+        <p id="margem-certa"> EX2: Verifique se esse números a seguir são proporcionais: 2, 4, 8 e 16  </p>
+        <br>
+        <p id="margem-certa " style="text-align: center;">R:  <span class="fracao">  <sup>2</sup><span>----</span> <sub>4</sub></span> = <span class="fracao">  <sup>8</sup><span>----</span> <sub>16</sub></span> </p>
+        <br>
+        <p id="margem-certa" style="text-align: center;"> <span class="fracao">  <sup>1</sup><span>----</span> <sub>2</sub></span> = <span class="fracao">  <sup>1</sup><span>----</span> <sub>2</sub></span> </p>
+        <br>
+        <p id="margem-certa">EX2:  <span class="fracao"> Outra forma de resolver é aplicar a multiplicação cruzada: </p>
+        <p id="margem-certa" style="text-align: center;"> 2.16 = 4 .8 </p>
+        <p id="margem-certa" style="text-align: center;">32 = 32 </p>
+
+
+
+
+
+
+        <section class="dentromain">
+            <p> </p>
+
+            <br>
+            <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais"> <img src="../styles/img/click.png" alt="imagem"
+                            class="imagens"> </span></div>
+            </div>
+
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        (ENEM 2019) Para contratar três máquinas que farão o reparo de vias rurais de um município, a
+                        prefeitura elaborou um edital que, entre outras cláusulas, previa:
+                        cada empresa interessada só pode cadastrar uma única máquina para concorrer ao edital;
+                        o total de recursos destinados para contratar o conjunto das três máquinas é de R$ 31.000,00;
+                        o valor a ser pago a cada empresa será inversamente proporcional à idade de uso da máquina
+                        cadastrada pela empresa para o presente edital.
+                        As três empresas vencedoras do edital cadastraram máquinas com 2, 3 e 5 anos de idade de uso.
+                        Quanto receberá a empresa que cadastrou a máquina com maior idade de uso?
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) R$ 3.100,00
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) R$ 6.000,00
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) R$ 6.200,00
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) R$ 15.000,00
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e)R$ 15.500,00
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','a')">Verificar</button>
+                            <button type="button" class="button" onclick="refazer('res')">Refazer</button>
+
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">(ENEM 2016) Diante da hipótese do comprometimento da qualidade da água
+                        retirada do volume morto de alguns sistemas hídricos, os técnicos de um laboratório decidiram
+                        testar cinco tipos de filtros de água. Dentre esses, os quatro com melhor desempenho serão
+                        escolhidos para futura comercialização. Nos testes, foram medidas as massas de agentes
+                        contaminantes, em miligrama, que não são capturados por cada filtro em diferentes períodos, em
+                        dia, como segue:
+                        <br>
+
+                        • Filtro 1 (F1): 18 mg em 6 dias;
+                        <br>
+
+                        • Filtro 2 (F2): 15 mg em 3 dias;
+                        <br>
+
+                        • Filtro 3 (F3): 18 mg em 4 dias;
+                        <br>
+
+                        • Filtro 4 (F4): 6 mg em 3 dias;
+                        <br>
+
+                        • Filtro 5 (F5): 3 mg em 2 dias.
+                        <br>
+
+                        Ao final, descarta-se o filtro com maior razão entre a medida da massa de contaminantes não
+                        capturados e o número de dias, o que corresponde ao de pior desempenho.
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) F1
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b)F2
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) F3
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) F4
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) F5
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'b' )">Verificar</button>
+                            <button type="button" class="button" onclick="refazer('res2')">Refazer</button>
+
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                    <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem"
+                                class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+        </section>
+
+    </main>
+    <div class="btnVolta">
+        <a href="matematica-materia.html" class="volta"> Voltar </a>
+    </div>
+    <footer id="rodape">
+        <div class="areaRodape">
+        
+        </div>
+        <div class="areaRodape">
+            <div class="data"></div>
+        </div>
+
+
+    </footer>
+    <script src="../scripts/matemaApp.js"></script>
+
+</body>
+
+</html>

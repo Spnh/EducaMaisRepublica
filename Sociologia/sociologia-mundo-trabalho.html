@@ -1,0 +1,199 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materia Filo&Socio </title>
+    <link rel="stylesheet" href="../styles/sociologiaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+<body onload="passaParametro('filo&socio')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logofilo&socio.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1> Mundo do Trabalho </h1>
+            <br><br>
+
+            <section class="dentromain"> 
+                <p> Se refere ao ambiente e as atividades relacionadas a vida profissional das pesssoas. É o enredo em que os indivíduos contribuem para a economia através da realização de atividades remuneradas. O mundo do trabalho é um aspecto fundamental da vida adulta e tem um impacto na qualidade de vida e no desenvolvimento de um país. O filósofo Karl Marx é uma importante referência que fala sobre as relações de classes sociais e define algumas ideias sobre os dententores do capital no mundo do trabalho.
+                    <br><br/>
+                    Para entender o mundo do trabalho precisa entender alguns temas como as Revoluções Industrias e o Capitalismo desde de a sua criação. 
+                </p> 
+
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        (ENEM - 2021) É certo que também o animal produz. Constrói para si um ninho, casas, como as abelhas, os castores, as formigas etc. Mas produz unicamente o que necessita imediatamente para si ou sua prole; produz unicamente por força de uma necessidade física imediata, enquanto o homem produz inclusive livre da necessidade física e só produz realmente liberado dela; o animal produz somente a si mesmo, enquanto o homem reproduz para natureza inteira.
+                        <br>
+                        <p style="font-size: 10px; text-align: right;">
+                            QUINTANEIRO, T.; BARBOSA, M. L. O.; OLIVEIRA, M. G. Um toque de clássicos: Durkheim, Marx e Weber. Belo Horizonte: UFMG, 2002 (adaptado).
+                        </p>
+                        <br><br>
+                        Na perspectiva do texto, o trabalho humano se diferencia da produção de outros animais em razão da
+                    </div>
+                    <form id="quizForm" style="font-size: 15px;">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) presença de atividade criativa.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) realização de práticas imitativas.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) busca de sobrevivência individual.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) modificação de paisagens naturais.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) existência de organização coletiva.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','a')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                        Doze mil quilômetros separam Acra, a capital de Gana, do Vale do Silício, Califórnia, Estados Unidos, centro da revolução tecnológica do século XXI. Há, no entanto, outra distância maior do que a geográfica. Acra e o Vale do Silício estão no extremo de um ciclo de vida. Computadores, tablets e celulares nascem da cabeça de nerds sob o sol californiano e morrem e são descompostos no distrito de Agbogbloshie, periferia africana.
+                        <br>
+                        <p style="text-align: right; font-size: 10px;">
+                            LOPES, K. O lixão pontocom da África. Disponível em: www.cartacapital.com.br. Acesso em: 10 abr. 2015.
+                        </p>
+                        <br>
+                        <br>
+                            A situação descrita é um exemplo de um modelo de desenvolvimento tecnológico que revela um processo de
+                    </div>
+                    <form id="quizForm" style="font-size: 15px;">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) diminuição de empregos formais na área de reciclagem.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) redução do consumo consciente entre as nações envolvidas.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) negligenciamento da logística reversa por esse setor industrial.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) desmantelamento das propostas de tratamento dos resíduos sólidos.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) desestruturação dos serviços de assistência técnica em países emergentes.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'c' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="../index/Index.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+        <script src="../scripts/materias-geralApp.js"></script>  
+</body>
+</html>

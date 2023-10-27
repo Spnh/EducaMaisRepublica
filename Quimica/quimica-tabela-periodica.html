@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quimica - Tabela Periódica</title>
+    <link rel="stylesheet" href="../styles/quimicaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+<body onload="passaParametro('fisi&quimi')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logofisi&quimi.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+    </div>
+        <main class="container" id="mainnormal">
+
+
+            <h1>Tabela Periódica:</h1>
+            <br><br>
+
+            <section class="dentromain"> 
+                <p>A Tabela Periódica é um modelo que reúne todos os elementos químicos conhecidos, juntamente com suas características. Esses elementos são organizados de acordo 
+                com a ordem crescente de seu número atômico, que é o número de prótons em seus núcleos.</p><br>
+                <p>No total, a Tabela Periódica moderna compreende 118 elementos químicos, divididos em 92 elementos naturais e 26 elementos artificiais. Cada quadrado da tabela 
+                fornece informações sobre o nome do elemento, seu símbolo e seu número atômico.</p>
+            </section>
+            <br>
+
+            <h3 class="dentromain">Organização da Tabela Periódica</h3>
+
+            <section class="dentromain"> 
+                <p>A organização inclui sete períodos, que são as fileiras horizontais numeradas. Cada período representa elementos que têm o mesmo número de camadas eletrônicas ao 
+                redor do núcleo. Os períodos são distribuídos da seguinte forma:</p><br>
+                <ul style="margin-left: 5%;">
+                    <li>1º Período: Contém 2 elementos.</li>
+                    <li>2º Período: Contém 8 elementos.</li>
+                    <li>3º Período: Contém 8 elementos.</li>
+                    <li>4º Período: Contém 18 elementos.</li>
+                    <li>5º Período: Contém 18 elementos.</li>
+                    <li>6º Período: Contém 32 elementos.</li>
+                    <li>7º Período: Contém 32 elementos.</li>
+                </ul>
+                <br>
+
+                <p>Para evitar que algumas linhas horizontais se tornem muito longas, a série dos lantanídeos e a série dos actinídeos são frequentemente representadas separadamente 
+                dos demais elementos.</p><br>
+                <p>Os grupos, anteriormente conhecidos como famílias, são as colunas verticais da tabela. Elementos no mesmo grupo têm o mesmo número de elétrons na camada mais 
+                externa, chamada de camada de valência.</p><br>
+                <p>No total, existem 18 grupos na Tabela Periódica, e muitos elementos dentro de um mesmo grupo compartilham propriedades químicas semelhantes. Aqui estão os grupos:</p><br>
+
+                <ul style="margin-left: 5%;">
+                    <li>Grupo 1 (Família 1A): Metais Alcalinos (lítio, sódio, potássio, rubídio, césio e frâncio).</li>
+                    <li>Grupo 2 (Família 2A): Metais Alcalinoterrosos (berílio, magnésio, cálcio, estrôncio, bário e rádio).</li>
+                    <li>Grupo 13 (Família 3A): Família do Boro (boro, alumínio, gálio, índio, tálio e nihônio).</li>
+                    <li>Grupo 14 (Família 4A): Família do Carbono (carbono, silício, germânio, estanho, chumbo e fleróvio).</li>
+                    <li>Grupo 15 (Família 5A): Família do Nitrogênio (nitrogênio, fósforo, arsênio, antimônio, bismuto e moscóvio).</li>
+                    <li>Grupo 16 (Família 6A): Calcogênios (oxigênio, enxofre, selênio, telúrio, polônio, livermório).</li>
+                    <li>Grupo 17 (Família 7A): Halogênios (flúor, cloro, bromo, iodo, astato e tenessino).</li>
+                    <li>Grupo 18 (Família 8A): Gases Nobres (hélio, neônio, argônio, criptônio, xenônio, radônio e oganessônio).</li>
+                </ul>
+                <br>
+
+                <p>Os elementos de transição, também conhecidos como metais de transição, ocupam a região central da tabela: </p><br>
+                <ul style="margin-left: 5%;">
+                    <li>Grupo 11 (Família 1B): cobre, prata, ouro e roentgênio.</li>
+                    <li>Grupo 12 (Família 2B): zinco, cádmio, mercúrio e copernício.</li>
+                    <li>Grupo 3 (Família 3B): escândio, ítrio, sério de lantanídeos* e actinídeos**.</li>
+                    <li>Grupo 4 (Família 4B): titânio, zircônio, háfnio e rutherfórdio.</li>
+                    <li>Grupo 5 (Família 5B): vanádio, nióbio, tântalo e dúbnio.</li>
+                    <li>Grupo 6 (Família 6B): cromo, molibdênio, tungstênio e seabórgio.</li>
+                    <li>Grupo 7 (Família 7B): manganês, tecnécio, rênio e bóhrio.</li>
+                    <li>Grupo 8 (Família 8B): ferro, rutênio, ósmio e hássio.</li>
+                    <li>Grupo 9 (Família 8B):cobalto, ródio, irídio e meitnério.</li>
+                    <li>Grupo 10 (Família 8B): níquel, paládio, platina, darmstádio.</li>
+                </ul>
+                <br>
+                <p>*A série de lantanídeos é formada por lantânio, cério, praseodímio, neodímio, promécio, samário, európio, gadolínio, térbio, disprósio, hólmio, érbio, túlio, 
+                    itérbio e lutécio.</p><br>
+                <p>**A série de actinídeos contém os elementos actínio, tório, protactínio, urânio, netúnio, plutônio, amerício, cúrio, berquélio, califórnio, einstéinio, férmio, 
+                mendelévio, nobélio e laurêncio.</p><br>
+                <p>Uma nota importante é que o elemento hidrogênio é posicionado acima dos metais alcalinos devido à sua configuração eletrônica, embora não faça parte desse 
+                grupo.</p><br>
+                <p>O sistema de numeração de grupos pela União Internacional de Química Pura e Aplicada (IUPAC) atribui números de 1 a 18 aos grupos, embora as famílias também sejam 
+                frequentemente referidas por letras e números, conforme mencionado anteriormente. Um destaque é que o grupo 8B corresponde aos grupos 8, 9 e 10 na Tabela Periódica.</p>
+
+                <br><br>
+            <div style="left: -100px;">
+                <object name="objeto" type="text/html" data="tabela.html" height="800px" width="100%" margin="auto">
+                </object>
+            </div>    
+
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        <p>(Enem 2018) Na mitologia grega, Nóbia era a filha de Tântalo, dois personagens conhecidos pelo sofrimento. O elemento químico de número atômico (Z) igual a 
+                        41 tem propriedades químicas e físicas tão parecidas com as do elemento de número atômico 73 que chegaram a ser confundidos. Por isso, em homenagem a esses 
+                        dois personagens da mitologia grega, foi conferido a esses elementos os nomes de nióbio (Z = 41) e tântalo (Z = 73). Esses dois elementos químicos adquiriram 
+                        grande importância econômica na metalurgia, na produção de supercondutores e em outras aplicações na indústria de ponta, exatamente pelas propriedades 
+                        químicas e físicas comuns aos dois.</p><br><br>
+
+                        <p>KEAN, S. A colher que desaparece: e outras histórias reais de loucura, amor e morte a partir dos elementos químicos. Rio de Janeiro: Zahar, 2011 
+                        (adaptado).</p><br><br>
+
+                        <p>A importância econômica e tecnológica desses elementos, pela similaridade de suas propriedades químicas e físicas, deve-se a:</p><br>
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a)Terem elétrons no subnível f.     
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) Serem elementos de transição interna.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) Estarem localizados na família dos alcalinos terrosos e alcalinos, respectivamente.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) Pertencerem ao mesmo grupo na tabela periódica.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) Terem seus elétrons mais externos dos níveis 4 e 5, respectivamente.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','d')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+
+                    <p>(PUC - RIO GRANDE DO SUL- RS - 2009)</p><br>
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpkRub42kHujeJmYsnAVOAan6eaLD1Rd27nW1TIbPa9pnzEJyw" width="90%" height="90%"><br>
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) Os elementos B e G formam um composto iônico ao combinarem-se entre si.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) O elemento E é um metal alcalino.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) O elemento C tem elevada tendência a oxidar-se, e o elemento D, a reduzir-se.
+
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) Os elementos F, G e H são metais.
+
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) O elemento A tem tendência a reduzir-se, ficando com a mesma configuração eletrônica do elemento E.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'a' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="quimica-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+             
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+        <script src="../scripts/materias-geralApp.js"></script>  
+
+    
+
+        
+    </script>
+</body>
+</html>

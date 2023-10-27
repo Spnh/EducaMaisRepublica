@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eststística</title>
+    <link rel="stylesheet" href="../styles/matemaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner">
+        <div id="carregar">
+            <div id="carrega"></div>
+        </div>
+    </div>
+</div>
+
+
+<body onload="passaParametro('matematica')">
+    <div id="cabecalho">
+        <header id="inicio">
+            <div class="areaLogo">
+                <img class="logo" src="../styles/img/logomatematica.png"> </img>
+
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+            <div class="areaBarra">
+                <form class="search-container">
+                    <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+
+                </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+
+    <main class="container" id="mainnormal">
+
+
+        <h1> Estatística </h1>
+        <br><br>
+        <p id="margem-certa">-<u>Média</u>: Se dá pelo meio termo dos valores dos elementos, por exemplo: </p>
+        <br>
+        <p id="margem-certa" style="text-align: center;">As idades coletadas de alunos uma turma de faculdade a seguir:
+        </p><br>
+        <p id="margem-certa" style="text-align: center;"> (22,24,24,24,26)"</p>
+        <br>
+        <p id="margem-certa" style="text-align: center;">A média das idades se dá pe
+            la soma de todos os valores e respectivamente pela divisão do número de elementos: </p>
+        <br>
+        <p id="margem-certa" style="text-align: center;"> <span class="fracao"><sup>(22 + 24 + 24 + 24 +
+                    26)</sup><span>-------------------------</span> <sub>5</sub> </span> = 24</p><br>
+        <p id="margem-certa">-<u>Moda</u>: Se dá pelo valor que mais aparece: </p><br>
+
+
+        <p id="margem-certa" style="text-align: center;">A moda do exemplo anterior é 24, pois é a que mais aparece.
+        </p>
+        <p id="margem-certa" style="text-align: center;">
+            (22,<strong>24</strong>,<strong>24</strong>,<strong>24</strong>,26)</p><br>
+        <p id="margem-certa">-<u>Mediana</u>: Entende-se como o elemento central, caso o centro seja com dois valores,
+            deve-se somá-los e dividir por 2. No exemplo anterior a mediana seria o 24, pois ela se encontra no
+            <strong>centro</strong>. </p>
+
+
+        <section class="dentromain">
+            <p> </p>
+
+            <br><br>
+            <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais"> <img src="../styles/img/click.png" alt="imagem"
+                            class="imagens"> </span></div>
+            </div>
+
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        (ENEM 2019)  O quadro apresenta a relação dos jogadores que fizeram parte da Seleção Brasileira de voleibol masculino nas Olimpíadas de 2012, em Londres, e suas respectivas alturas, em metro.
+
+                        <br>
+                        <img src="https://s5.static.brasilescola.uol.com.br/exercicios/2021/10/relacoes-jogadores-voleibol-altura.jpg" alt="">
+                        <br>
+                        A mediana das alturas, em metro, desses jogadores é
+
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) 1,90. 
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) 1,91.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) 1,96.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) 1,97.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) 1,98.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res', 'c')">Verificar</button>
+                            <button type="button" class="button" onclick="refazer('res')">Refazer</button>
+
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">(ENEM 2019) Em uma fábrica de refrigerantes, é necessário que se faça
+                        periodicamente o controle no processo de engarrafamento para evitar que sejam envasadas garrafas
+                        fora da especificação do volume escrito no rótulo. Diariamente, durante 60 dias, foram anotadas
+                        as quantidades de garrafas fora dessas especificações. O resultado está apresentado no quadro.
+                        <br><br>
+                       <img src="https://s4.static.brasilescola.uol.com.br/exercicios/2021/10/quadro-quantidade-diaria-garrafas.jpg" alt="" style="width: 70%;">
+                       <br>
+                       A média diária de garrafas fora das especificações no período considerado é
+
+
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) 0,1.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) 0,2.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) 1,5.
+
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) 2,0.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) 3,0.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2', 'b')">Verificar</button>
+                            <button type="button" class="button" onclick="refazer('res2')">Refazer</button>
+
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                    <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem"
+                                class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+        </section>
+
+    </main>
+    <div class="btnVolta">
+        <a href="matematica-materia.html" class="volta"> Voltar </a>
+    </div>
+    <footer id="rodape">
+
+        <div class="areaRodape">
+          
+
+        </div>
+        <div class="areaRodape">
+            <div class="data"></div>
+        </div>
+
+
+    </footer>
+
+
+    <script src="../scripts/matemaApp.js"></script>
+    
+
+
+</body>
+
+</html>

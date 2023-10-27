@@ -1,0 +1,522 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Inorganicas </title>
+    <link rel="stylesheet" href="../styles/quimicaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+<body onload="passaParametro('fisi&quimi')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logofisi&quimi.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+    </div>
+        <main class="container" id="mainnormal">
+            <h1>Funções inorgânicas</h1>
+            <br><br>
+
+            <h3 class="dentromain">O que sao</h3>
+            <section class="dentromain"> 
+                <p> Funções inorgânicas são um conjunto de grupos de substâncias químicas que compartilham propriedades químicas semelhantes e desempenham funções específicas em reações químicas.</p>
+                    <p>Elas são uma maneira conveniente de classificar e entender a química dos compostos inorgânicos, que geralmente envolvem elementos diferentes dos compostos orgânicos, como metais, não metais e gases nobres. Vamos explorar as principais funções inorgânicas:</p>
+            <br>
+            <h3 class="dentromain">Ácidos</h3>
+            <section class="dentromain"> 
+                <p> Ácidos são substâncias que, em solução aquosa, liberam íons de hidrogênio (H+). Eles são conhecidos por sua capacidade de doar prótons, o que resulta em um pH ácido (menor que 7). </p>
+                <p>Exemplos incluem o ácido clorídrico (HCl) e o ácido sulfúrico (H2SO4). Eles são comuns em laboratórios e em muitos processos industriais.</p>
+                <br><br>
+                <h3 class="dentromain">Bases</h3>
+                <section class="dentromain"> 
+                <p>Bases são substâncias que, em solução aquosa, liberam íons hidroxila (OH-). Elas são conhecidas por sua capacidade de receber prótons, o que resulta em um pH alcalino (superior a 7).</p>
+                    <p> Exemplos de bases inorgânicas incluem o hidróxido de sódio (NaOH) e o hidróxido de cálcio (Ca(OH)2).</p>
+            
+                <br><br>    
+                <h3 class="dentromain">sais</h3>
+                <section class="dentromain"> 
+                <p>Sais são compostos iônicos formados pela reação entre um ácido e uma base. Eles consistem em cátions (íons carregados positivamente) e ânions (íons carregados negativamente).</p>
+                    <p>   Exemplos de sais incluem o cloreto de sódio (NaCl), o sulfato de cálcio (CaSO4) e o nitrato de potássio (KNO3).</p>
+
+                <br><br>
+             
+                <h3 class="dentromain">óxidos</h3>
+            <section class="dentromain">
+                <p>Óxidos são compostos que contêm oxigênio ligado a outro elemento. Eles podem ser ácidos (óxidos ácidos) ou básicos (óxidos básicos), dependendo de sua reatividade com água.  </p>
+                <p>Exemplos de óxidos incluem o dióxido de carbono (CO2) e o óxido de cálcio (CaO).</p>
+                <br><br>
+              
+            <br>
+            <h3 class="dentromain">considerações finais</h3>
+            <section class="dentromain">
+                <p>As funções inorgânicas são uma parte essencial da química inorgânica, que se concentra no estudo dos compostos que não contêm ligações carbono-hidrogênio (como os encontrados na química orgânica). </p>
+                <p>Essas funções inorgânicas desempenham um papel crítico em uma ampla variedade de aplicações, desde a produção de produtos químicos industriais até a compreensão de reações em sistemas naturais e biológicos. Elas constituem a base da química inorgânica, oferecendo uma estrutura para a classificação e compreensão dos compostos inorgânicos.</p>
+            </div>    
+
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        <h5>(Enem 2018)</h5>
+                        <br>
+                       <h5>Companhias que fabricam jeans usam cloro para o clareamento, seguido de lavagem. Algumas estão substituindo o cloro por substâncias ambientalmente mais seguras como peróxidos, que podem ser degradados por enzimas chamadas peroxidases.</h5>
+                       <h5>Pensando nisso,pesquisadores inseriram genes codificadores de peroxidases em leveduras cultivadas nas condições de clareamento e lavagem dos jeans e selecionaram as sobreviventes para produção dessas enzimas.</h5>
+                       <br>
+                       <h6>TORTORA, G. J.; FUNKE, B. R.; CASE, C. L. Microbiologia. Rio de Janeiro: Artmed, 2016 (adaptado).</h6>
+                        <br>
+                        <h4>Nesse caso, o uso dessas leveduras modificadas objetiva</h4>
+                        <br>
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) Reduzir a quantidade de resíduos tóxicos nos efluentes da lavagem.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) Eliminar a necessidade de tratamento da água consumida.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) Elevar a capacidade de clareamento dos jeans.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) Aumentar a resistência do jeans a peróxidos.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) Associar ação bactericida ao clareamento.
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','a')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                        <h5>(Enem 2018)</h5>
+                        <br>
+                       <h5>Sobre a diluição do ácido sulfúrico em água, o químico e escritor Primo Levi afirma que, “está escrito em todos os tratados, é preciso operar às avessas, quer dizer, verter o ácido na água e não o contrário, senão aquele líquido oleoso de aspecto tão inócuo está sujeito a iras furibundas: sabem-no até os meninos do ginásio”.</h5>
+                       <h5>(Furibundo: ad). furioso)</h5>
+                       <br>
+                       <h6>LEVI, P. A tabela periódica. Rio de Janeiro: Relume-Dumará, 1994 (adaptado).</h6>
+                        <br>
+                        <h4>O alerta dado por Levi justifica-se porque a</h4>
+                        <br>                  
+                      </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) Água provoca a neutralização do ácido.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) Mistura de água e ácido é explosiva.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c)  Diluição do ácido libera muito calor.
+
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) Mistura final de água e ácido separa-se em fases.
+
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) Água inibe a liberação dos vapores provenientes do ácido.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'c' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios3">
+                    <div class="pergunta">
+                        (Enem 2017) No ar que respiramos existem os chamados “gases Inertes”. Trazem curiosos nomes gregos, que significam “o Novo”, “o Oculto”, “o Inativo”. E de fato são de tal modo inertes, tão satisfeitos em sua condição, que não interferem em nenhuma reação química, não se combinam com nenhum outro elemento e justamente por esse motivo ficaram sem ser observados durante séculos: só em 1962 um químico, depois de longos e engenhosos esforços, conseguiu forçar “o Estrangeiro” (o xenônio) a combinar-se fugazmente com o flúor ávido e vivaz, e a façanha pareceu tão extraordinária que lhe foi conferido o Prêmio Nobel.
+<br><br>
+<p style="font-size: 15px; text-align: right;">LEVI, P. A tabela periódica. Rio de Janeiro: Relume-Dumará, 1994 (adaptado).
+</p>
+<br><br>
+Qual propriedade do flúor justifica sua escolha como reagente para o processo mencionado?
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res3" value="a" class="op">
+                                a) Densidade.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res3" value="b" class="op">
+                                b) Condutância.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res3" value="c" class="op">
+                                c) Eletronegatividade.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res3" value="d" class="op">
+                                d) Estabilidade nuclear.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res3" value="e" class="op">
+                                e) Temperatura de ebulição.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res3' ,'c' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res3')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios4">
+                    <div class="pergunta">
+                        (Enem 2018) Alguns materiais sólidos são compostos por átomos que interagem entre si formando ligações que podem ser covalentes, iônicas ou metálicas. A figura apresenta a energia potencial interatômica em um sólido cristalino. Analisando essa figura, observa-se que, na temperatura de zero kelvin, a distância de equilíbrio da ligação entre os átomos (R0) corresponde ao valor mínimo de energia potencial. Acima dessa temperatura, a energia térmica fornecida aos átomos aumenta sua energia cinética e faz com que eles oscilem em torno de uma posição de equilíbrio média (círculos cheios), que é diferente para cada temperatura. A distância de ligação pode variar sobre toda a extensão das linhas horizontais, identificadas com o valor da temperatura de T1 a T4 (temperaturas crescentes).
+<br><br>
+O deslocamento observado na distância média revela o fenômeno da
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res4" value="a" class="op">
+                                a) Ionização
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res4" value="b" class="op">
+                                b) Dilatação
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res4" value="c" class="op">
+                                c) Dissociação
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res4" value="d" class="op">
+                                d) Quebra de ligações covalentes
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res4" value="e" class="op">
+                                e) Formação de ligações metálicas
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res4' ,'b' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res4')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios5">
+                    <div class="pergunta">
+                        (Enem 2017) Partículas microscópicas existentes na atmosfera funcionam como núcleos de condensação de vapor de água que, sob condições adequadas de temperatura e pressão, propiciam a formação das nuvens e consequentemente das chuvas. No ar atmosférico, tais partículas são formadas pela reação de ácidos (HX) com a base NH3, de forma natural ou antropogênica, dando origem a sais de amônio (NH4X), de acordo com a equação genérica:
+<br><br>
+HX (g) + NH3 (g) → NH4X (s)
+<br>
+<p style="text-align: right; font-size: 15px;">FELIX, E. P.; CARDOSO, A. A. Fatores ambientais que afetam a precipitação úmida. Química Nova na Escola, n. 21, maio 2005 (adaptado).
+</p>
+A fixação de moléculas de vapor de água pelos núcleos de condensação ocorre por
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res5" value="a" class="op">
+                                a) Ligações iônicas.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res5" value="b" class="op">
+                                b) Interações dipolo-dipolo.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res5" value="c" class="op">
+                                c) Interações dipolo-dipolo induzido.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res5" value="d" class="op">
+                                d) Interações íon-dipolo.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res5" value="e" class="op">
+                                e) Ligações covalentes.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res5' ,'d' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res5')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios6">
+                    <div class="pergunta">
+                        (ENEM PPL 2019) O ácido ricinoleico, um ácido graxo funcionalizado, cuja nomenclatura oficial é ácido D-(−)-12-hidroxioctadec-cis-9-enoico, é obtido da hidrólise ácida do óleo de mamona. As aplicações do ácido ricinoleico na indústria são inúmeras, podendo ser empregado desde a fabricação de cosméticos até a síntese de alguns polímeros.
+                        <br><br>
+                        Para uma amostra de solução desse ácido, o uso de um polarímetro permite determinar o ângulo de:
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res6" value="a" class="op">
+                                a) refração. 
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res6" value="b" class="op">
+                                b) giro levógiro. 
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res6" value="c" class="op">
+                                c) difração.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res6" value="d" class="op">
+                                d) reflexão. 
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res6" value="e" class="op">
+                                e) giro destrógiro.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res6' ,'b' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res6')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios7">
+                    <div class="pergunta">
+                        (Enem 2018) Companhias que fabricam jeans usam cloro para o clareamento, seguido de lavagem. Algumas estão substituindo o cloro por substâncias ambientalmente mais seguras como peróxidos, que podem ser degradados por enzimas chamadas peroxidasses. Pensando nisso, pesquisadores inseriram genes codificadores de peroxidasses em leveduras cultivadas nas condições de clareamento e lavagem dos jeans e selecionaram as sobreviventes para produção dessas enzimas. 
+<br>
+<p style="font-size: 15px; text-align: right;">TORTORA, G. J.; FUNKE, B.R.; CASE, C.L. Microbiologia. Rio de Janeiro: Artmed, 2016 (adaptado).</p>
+<br><br>
+Nesse caso, o uso dessas leveduras modificadas objetiva.
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res7" value="a" class="op">
+                                a) reduzir a quantidade de resíduos tóxicos efluentes da lavagem.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res7" value="b" class="op">
+                                b) eliminar a necessidade de tratamento da água consumida.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res7" value="c" class="op">
+                                c) elevar a capacidade de clareamento dos jeans.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res7" value="d" class="op">
+                                d) aumentar a resistência do jeans a peróxidos. 
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res7" value="e" class="op">
+                                e) associar ação bactericida ao clareamento 
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res7' ,'a' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res7')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios8">
+                    <div class="pergunta">
+                        (Enem 2018) O manejo adequado do solo possibilita a manutenção de sua fertilidade à medida que as trocas de nutrientes entre matéria orgânica, água, solo e o ar são mantidas para garantir a produção.  Algumas espécies iônicas de alumínio são tóxicas, não só para a planta, mas para muitos organismos como as bactérias responsáveis pelas transformações no ciclo do nitrogênio. O alumínio danifica as membranas das células das raízes e restringe a expansão de suas paredes, com isso, a planta não cresce adequadamente. Para promover benefícios para a produção agrícola, é recomendada a remediação do solo utilizando calcário (CaCo3).
+<br><br>
+<p style="text-align: right; font-size: 15px;">RANDY, N, C; WEIL, R.R Elementos da natureza e propriedades dos solos. Porto Alegre: Bookman, 2013(adaptado).</p>   
+<br></br>
+Essa remediação promove no solo o(a)
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res8" value="a" class="op">
+                                a) diminuição do PH, deixando-o fértil.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res8" value="b" class="op">
+                                b) solubilização do alumínio, ocorrendo sua lixiviação pela chuva.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res8" value="c" class="op">
+                                c) interação do íon cálcio com o íon alumínio, produzindo uma liga metálica.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res8" value="d" class="op">
+                                d) reação do carbonato de cálcio com os íons alumínio, formando alumínio metálico.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res8" value="e" class="op">
+                                e) aumento da sua alcalinidade, tomando os íons alumínio menos disponíveis. 
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res8' ,'e' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res8')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="quimica-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+       
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+        <script src="../scripts/materias-geralApp.js"></script>  
+</body>
+</html>

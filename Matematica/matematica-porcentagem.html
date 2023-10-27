@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentagem</title>
+    <link rel="stylesheet" href="../styles/matemaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script>
+          
+            </script>
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+
+<body onload="passaParametro('matematica')">
+    <div id="cabecalho">
+        <header id="inicio">
+            <div class="areaLogo">
+                <img class="logo" src="../styles/img/logomatematica.png"> </img>
+
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+            <div class="areaBarra">
+                <form class="search-container">
+                    <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+
+                </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+
+    <main class="container" id="mainnormal">
+
+
+        <h1> Porcentagem </h1>
+        <br><br>
+        <p id="margem-certa">É uma forma de representação de uma razão entre um número e 100: </p>
+        <p style="text-align: center;">  x% = <span class="fracao"><sup>x</sup><span>------</span> <sub>100</sub> </span>   </p>
+        <br>
+        <p id="margem-certa">Ex: Quanto é 50% de 300? : </p>
+        <p id="margem-certa" style="text-align: center;">50 % de 300 </p>
+        <p id="margem-certa" style="text-align: center;">= <span class="fracao"><sup>50</sup><span>------</span> <sub>100</sub> </span> .300</p>
+        <p id="margem-certa" style="text-align: center;">= <span class="fracao"><sup>1</sup><span>------</span> <sub>2</sub> </span> .300 </p>
+        <p id="margem-certa" style="text-align: center;"> = <span class="fracao"><sup>300</sup><span>------</span> <sub>2</sub> </span> = 150  </p>
+
+      
+
+        <section class="dentromain">
+            <p> </p>
+
+            <br>
+            <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais"> <img src="../styles/img/click.png" alt="imagem"
+                            class="imagens"> </span></div>
+            </div>
+
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                       (ENEM 2021) Um professor tem uma despesa mensal de 10% do seu salário com transporte e 30% com alimentação. No próximo mês, os valores desses gastos sofrerão aumentos de 10% e 20%, respectivamente, mas o seu salário não terá reajuste. Com esses aumentos, suas despesas com transporte e alimentação aumentarão em R$ 252,00.
+
+<br>
+
+                        O salário mensal desse professor é de
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) R$ 840,00. 
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) R$ 1 680,00.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) R$ 2 100,00.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) R$ 3 600,00.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) R$ 5 200,00. 
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','d')">Verificar</button>
+                            <button type="button" class="button" onclick="refazer('res')">Refazer</button>
+
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">(ENEM 2011) Uma pessoa aplicou certa quantia em ações. No primeiro mês, ela perdeu 30% do
+                        total do investimento e, no segundo mês, recuperou 20% do que havia perdido. Depois desses dois
+                        meses, resolveu tirar o montante de R$ 3 800,00 gerado pela aplicação.
+                        <br>
+                        A quantia inicial que essa pessoa aplicou em ações corresponde ao valor de
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) R$ 4 222,22.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) R$ 4 523,80.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) R$ 5 000,00.
+
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) R$ 13 300,00.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) R$ 17 100,00.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2', 'c')">Verificar</button>
+                            <button type="button" class="button" onclick="refazer('res2')">Refazer</button>
+
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                    <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem"
+                                class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+        </section>
+
+    </main>
+    <div class="btnVolta">
+        <a href="matematica-materia.html" class="volta"> Voltar </a>
+    </div>
+    <footer id="rodape">
+
+        <div class="areaRodape">
+           
+
+        </div>
+        <div class="areaRodape">
+            <div class="data"></div>
+        </div>
+
+
+    </footer>
+
+    <script src="../scripts/matemaApp.js"></script>
+
+</body>
+
+</html>

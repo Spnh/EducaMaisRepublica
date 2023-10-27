@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probabilidade</title>
+    <link rel="stylesheet" href="../styles/matemaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+
+
+<body onload="passaParametro('matematica')">
+    <div id="cabecalho">
+        <header id="inicio">
+            <div class="areaLogo">
+                <img class="logo" src="../styles/img/logomatematica.png"> </img>
+
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+            <div class="areaBarra">
+                <form class="search-container">
+                    <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+
+                </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+
+    <main class="container" id="mainnormal">
+
+
+        <h1> Probabilidade </h1>
+        <br><br>
+        <p id="margem-certa">Estudo sobre experimentos em que seus resultados não são possíveis de prever, como o<u>
+                cara e coroa</u>.</p>
+        <br>
+        <p id="margem-certa"><u>- Ponto amostral:</u> Mediante a um experimento, qualquer resultado é denominado como
+            ponto amostral. </p> <br>
+        <p id="margem-certa"><u>- Espaço Amostral:</u> O conjunto que possui todos os pontos amostrais.</p> <br><br>
+
+        <p id="margem-certa" style="text-align: center;"><U>Evento</U> </p>
+        <BR>
+
+
+        <p id="margem-certa">É subconjunto de um espaço amostral, são formados por pontos
+            amostrais. Um exemplo de evento: no lançamento de dois dados, somente números ímpares devem ser sorteados.
+        </p>
+        <br>
+
+        <p id="margem-certa" style="text-align: center;"> O subconjunto que representa esse evento possui os seguintes
+            pontos amostrais:</p>
+        <p id="margem-certa" style="text-align: center;"> (1, 1) <br> (3, 3) <br>(5, 5)<br> </p>
+
+        <br>
+        <p id="margem-certa"> A <u>probabilidade</u> é um valor numérico representando a chance de um evento ocorrer. A
+            probabilidade de um evento acontecer é dada por:</p>
+        <p id="margem-certa" style="text-align: center;">
+            <span class="fracao"><sup>n(A) </sup><span>----</span> <sub>n(Ω)</sub></span>
+        </p>
+        <br>
+        <p id="margem-certa" style="text-align: center;"><strong>n(A) - > número de elementos de um evento</strong></p>
+        <p id="margem-certa" style="text-align: center;"><strong>n(Ω)-> espaço amostral</strong></p>
+
+
+
+
+
+
+
+        <br>
+
+
+        <section class="dentromain">
+            <p> </p>
+
+            <br>
+            <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais"> <img src="../styles/img/click.png" alt="imagem"
+                            class="imagens"> </span></div>
+            </div>
+
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">(ENEM 2015) Em uma central de atendimento, cem pessoas receberam senhas
+                        numeradas de 1 até 100. Uma das senhas é sorteada ao acaso.
+                        <br>
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) 1/100
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) 19/100
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) 20/100
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) 21/100
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) 80/100
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button"
+                                onclick="verificarResposta('res2' ,'c' )">Verificar</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                        (ENEM 2019) Em um determinado ano, os computadores da receita federal de um país identificaram
+                        como inconsistentes 20% das declarações de imposto de renda que lhe foram encaminhadas. Uma
+                        declaração é classificada como inconsistente quando apresenta algum tipo de erro ou conflito nas
+                        informações prestadas. Essas declarações consideradas inconsistentes foram analisadas pelos
+                        auditores, que constataram que 25% delas eram fraudulentas. Constatou-se ainda que, dentre as
+                        declarações que não apresentaram inconsistências, 6,25% eram fraudulentas.
+
+                        Qual é a probabilidade de, nesse ano, a declaração de um contribuinte ser considerada
+                        inconsistente, dado que ela era fraudulenta?
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) 0,0500
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) 0,1000
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) 0,1125
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) 0,3125
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) 0,5000
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button"
+                                onclick="verificarResposta('res','e')">Verificar</button>
+                                <button type="button" class="button" onclick="refazer('res2')">Refazer</button>
+
+
+                        </div>
+                    </form>
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                    <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem"
+                                class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+        </section>
+
+    </main>
+    <div class="btnVolta">
+        <a href="matematica-materia.html" class="volta"> Voltar </a>
+    </div>
+    <footer id="rodape">
+
+        <div class="areaRodape">
+        
+        </div>
+        <div class="areaRodape">
+            <div class="data"></div>
+        </div>
+    </footer>
+    <script src="../scripts/matemaApp.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometria Plana</title>
+    <link rel="stylesheet" href="../styles/matemaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+
+<body onload="passaParametro('matematica')">
+    <div id="cabecalho">
+        <header id="inicio">
+            <div class="areaLogo">
+                <img class="logo" src="../styles/img/logomatematica.png"> </img>
+
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+            <div class="areaBarra">
+                <form class="search-container">
+                    <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+
+                </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+
+    <main class="container" id="mainnormal">
+
+
+        <h1> Geometria Plana </h1>
+        <br>
+        <p id="margem-certa">A geometria plana refere-se aos objetos pertencentes ao plano, ou seja, aqueles que possuem
+            apenas largura e comprimento.</p><br>
+        <h3 style="text-align: center;">Fórmulas das principais figuras planas</h3>
+        <br>
+        <h2 style="text-align: center;">Triângulo</h2><br>
+        <div style="text-align: center;">
+            <img src="https://s2.static.brasilescola.uol.com.br/be/2020/07/triangulo.jpg" alt=""
+                style="border-radius: 30px">
+        </div>
+        <br>
+        <p id="margem-certa" style="text-align: center;">
+            A = <span class="fracao"><sup>b.h </sup><span>----</span> <sub>2</sub></span>
+        </p>
+        <p id="margem-certa" style="text-align: center;">50 % de 300 </p>
+        <p id="margem-certa" style="text-align: center;"><sup>50</sup>/<sub>100</sub> . 300 </p>
+        <p id="margem-certa" style="text-align: center;"><sup>1</sup>/<sub>2</sub> . 300 </p>
+        <p id="margem-certa" style="text-align: center;"><sup>300</sup>/<sub>2</sub> = 150 </p>
+        <br>
+
+        <h2 style="text-align: center;">Quadrado</h2><br>
+        <div style="text-align: center;">
+            <img src="https://s2.static.brasilescola.uol.com.br/be/2020/07/quadrado.jpg" alt=""
+                style="border-radius: 30px">
+        </div>
+        <br>
+        <p id="margem-certa" style="text-align: center;"></p>
+        <p id="margem-certa" style="text-align: center;">
+            A = l^2
+        </p>
+        <br>
+
+        <h2 style="text-align: center;">Circunferência</h2><br>
+        <div style="text-align: center;">
+            <img src="https://s1.static.brasilescola.uol.com.br/be/2020/07/area-do-circulo.jpg" alt=""
+                style="border-radius: 30px">
+        </div>
+        <br>
+
+        <p id="margem-certa" style="text-align: center;">
+            A = π.r
+        </p>
+
+
+
+
+
+        <section class="dentromain">
+            <p> </p>
+
+            <br>
+            <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais"> <img src="../styles/img/click.png" alt="imagem"
+                            class="imagens"> </span></div>
+            </div>
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        (ENEM 2011) Uma escola tem um terreno vazio no formato retangular cujo perímetro é de 40 m, onde
+                        se pretende realizar uma única construção que aproveite o máximo de área possível. Após a
+                        análise realizada por um engenheiro, este concluiu que, para atingir o máximo de área do terreno
+                        com uma única construção, a obra ideal seria:
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) um banheiro com 8 m2.
+
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) uma sala de aula com 16 m2.
+
+
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) um auditório com 36 m2.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) um pátio com 100 m2.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) uma quadra com 160 m2.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button"
+                                onclick="verificarResposta('res','d')">Verificar</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">(ENEM 2019)Em um condomínio, uma área pavimentada, que tem a forma de um círculo com
+                        diâmetro medindo 6 m, é cercada por grama. A administração do condomínio deseja ampliar essa
+                        área, mantendo seu formato circular e aumentando, em 8 m, o diâmetro dessa região, mantendo o
+                        revestimento da parte já existente. O condomínio dispõe, em estoque, de material suficiente para
+                        pavimentar mais 100 m² de área. O síndico do condomínio avaliará se esse material disponível
+                        será suficiente para pavimentar a região a ser ampliada. <br>
+
+                        A conclusão correta a que o síndico deverá chegar, considerando a nova área a ser pavimentada, é
+                        a de que o material disponível em estoque (Use π = 3):
+                       
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) será suficiente, pois a área da nova região a ser pavimentada mede 21 m².
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) será suficiente, pois a área da nova região a ser pavimentada mede 24 m².
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) será suficiente, pois a área da nova região a ser pavimentada mede 48 m².
+
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) não será suficiente, pois a área da nova região a ser pavimentada mede 108 m².
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) não será suficiente, pois a área da nova região a ser pavimentada mede 120 m².
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button"
+                                onclick="verificarResposta('res2', 'e')">Verificar</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                    <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem"
+                                class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+        </section>
+
+    </main>
+    <div class="btnVolta">
+        <a href="matematica-materia.html" class="volta"> Voltar </a>
+    </div>
+    <footer id="rodape">
+
+        <div class="areaRodape">
+          
+
+        </div>
+        <div class="areaRodape">
+            <div class="data"></div>
+        </div>
+
+
+    </footer>
+
+    <script src="../scripts/matemaApp.js"></script>
+
+   
+
+</body>
+
+</html>

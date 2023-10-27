@@ -1,0 +1,237 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quimica - Átomos </title>
+    <link rel="stylesheet" href="../styles/quimicaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+<body onload="passaParametro('fisi&quimi')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logofisi&quimi.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1> ÁTOMOS </h1><br>
+            <section class="dentromain"> 
+            <p>O átomo é uma das unidades fundamentais da matéria e é a menor parte de um elemento químico que mantém as propriedades desse elemento. A teoria atômica moderna, 
+            desenvolvida ao longo dos séculos, descreve o átomo como uma estrutura composta por um núcleo central e elétrons que orbitam ao redor dele.</p>
+            </section>
+
+            <h3 class="dentromain">Algumas Características Essenciais dos Átomos</h3>
+            
+
+            <section class="dentromain"> 
+                <h2>Núcleo Atômico</h2>
+                <p> O núcleo atómico é o corpo central do átomo, eletricamente positivo, que compreende quase toda a massa do mesmo. É constituído por prótons, que possuem carga 
+                elétrica positiva, e nêutrons que possuem ambas as cargas elétricas, o que a torna neutra.</p><br>
+                
+                <h2>Prótons</h2>
+                <p>Os prótons são partículas carregadas positivamente.</p><br>
+
+                <h2>Nêutrons</h2>
+                <p>Os nêutrons são partículas eletricamente neutras. A interação entre prótons e nêutrons mantém o núcleo coeso.</p><br>
+
+                <h2>Elétrons</h2>
+                <p>Os elétrons são partículas carregadas negativamente que orbitam o núcleo em camadas ou órbitas. Essas camadas são chamadas de níveis de energia ou camadas 
+                eletrônicas. Os elétrons estão localizados em regiões específicas ao redor do núcleo, denominadas orbitais. Cada orbital pode conter um número máximo de elétrons, 
+                e esses elétrons estão distribuídos em camadas de energia com base em regras específicas.</p><br>
+                <p><strong>Eletrosfera:</strong> Região externa do núcleo de um átomo na qual se localizam os elétrons.</p><br>
+
+                <h2>Número Atômico</h2>
+                <p>O número atômico de um elemento é determinado pelo número de prótons em seu núcleo. Isso também define o elemento químico em questão. Por exemplo, o hidrogênio 
+                tem um número atômico de 1, o que significa que tem um próton em seu núcleo. O número atômico é geralmente representado pela letra "Z".</p><br>
+
+                <h2>Massa Atômica</h2>
+                <p> A massa atômica é a média ponderada das massas dos isótopos de um elemento, levando em consideração sua abundância na natureza. Ela é geralmente expressa em 
+                unidades de massa atômica unificada (u) ou daltons (Da). A massa atômica é usada para determinar a quantidade de um elemento em uma amostra usando a escala de massa 
+                atômica.</p><br>
+                
+                <h2>Isótopos</h2>
+                <p>Isótopos são átomos do mesmo elemento que têm o mesmo número de prótons, mas um número diferente de nêutrons. Isso resulta em uma diferença na massa atômica. 
+                Isótopos podem ser estáveis ou radioativos e são comuns em muitos elementos</p><br>
+
+                <h2>Tamanho do Átomo</h2>
+                <p>O tamanho de um átomo é geralmente descrito em termos de seu raio atômico, que é a distância média entre o núcleo e a camada mais externa de elétrons. O raio 
+                atômico tende a aumentar de cima para baixo em uma coluna da tabela periódica e diminuir da esquerda para a direita.</p><br>
+
+                <h2>Comportamento Químico</h2>
+                <p>O comportamento químico de um átomo é determinado pela distribuição dos elétrons em suas camadas de energia. Os elétrons em camadas externas, conhecidos como 
+                elétrons de valência, são os mais importantes para as reações químicas. A maneira como esses elétrons interagem com os elétrons de valência de outros átomos é 
+                fundamental para a formação de ligações químicas e compostos.</p>
+
+            <br><br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                     <p>(UFU) O átomo é a menor partícula que identifica um elemento químico. Ele possui duas partes, a saber: uma delas é o núcleo, constituído por prótons e 
+                    nêutrons, e a outra é uma região externa – a eletrosfera –, por onde circulam os elétrons. Alguns experimentos permitiram a descoberta das partículas 
+                    constituintes do átomo. Em relação a essas características, indique a alternativa correta.</p><br>
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) Entre as partículas atômicas, os prótons e os nêutrons têm maior massa e ocupam maior volume no átomo.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) Entre as partículas atômicas, os elétrons são as de maiores massas.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) Prótons e elétrons possuem massas iguais e cargas elétricas de sinais opostos.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) Entre as partículas atômicas, os elétrons têm maior massa e ocupam maior volume no átomo.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) Entre as partículas atômicas, os prótons e os nêutrons têm mais massa, mas ocupam um volume muito pequeno em relação ao volume total do átomo.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','e')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                        <p>(UERJ) Em 1911, o cientista Ernest Rutherford realizou um experimento que consistiu em bombardear uma finíssima lâmina de ouro com partículas ‘, emitidas 
+                            por um elemento radioativo, e observou que:<br><br>
+
+                            - a grande maioria das partículas α atravessava a lâmina de ouro sem sofrer desvios ou sofrendo desvios muito pequenos;<br><br>
+                            
+                            - uma em cada dez mil partículas α era desviada para um ângulo maior do que 90°.<br><br>
+                            
+                            Com base nas observações acima, Rutherford pôde chegar à seguinte conclusão quanto à estrutura do átomo:</p><br>
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) O ouro é radioativo e um bom condutor de corrente elétrica.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) O núcleo do átomo é pequeno e contém a maior parte da massa.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) Os átomos são esferas maciças e indestrutíveis.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) O átomo é maciço e eletricamente neutro.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) A carga elétrica do elétron é negativa e puntiforme.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'b' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="quimica-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+            
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+    <script src="../scripts/materias-geralApp.js"></script>  
+
+
+</body>
+</html>

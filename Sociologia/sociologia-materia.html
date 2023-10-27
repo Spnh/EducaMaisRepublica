@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteudo Programático de Biologia</title>
+    <link rel="stylesheet" href="../styles/sociologia-materiaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+ <div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+</div> 
+<body>
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logofilo&socio.png" >
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+    </div>
+        <main>
+            <div class="areaTopico">
+               <div class="areaLegenda">
+
+                    <h1>Sociologia</h1>
+                    
+
+                    <fieldset class="legenda">
+                       <legend>Grau de importância</legend>
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade1')">
+                            <p class="txtLegenda" id="prioridade1">Obrigatório Ser Estudado (Possui página explicativa) </p>
+                             <img class="imgLegenda"src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                            <!-- <span class="prioridade1">
+                             s   
+                            </span> -->
+                        </span>
+                    
+                    </fieldset>
+                  
+               </div>
+               <h2 style="padding-left: 100px; color: #ee6cee; text-shadow: 2px 2px 3px rgb(36, 36, 36); font-size: 40px;">Conteúdos importantes para o Enem</h2>
+              <span class="ano">
+            
+                <br>
+                </span>
+                <div class="linha">
+                     
+                    <div class="topico pri1"  style="max-height: 200px;" onclick="abreTopico('sociologia-cidadania')">
+                       <span class="cabTop">
+                            <h3>Cidadania</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <br>
+                        <p>A cidadania está diretamente relacionada com o papel de uma pessoa na sociedade, o exercício de seus diretos e deveres. 
+                 
+                        </p>
+                    </div>
+                    <div class="topico pri1"  style="max-height: 200px;" onclick="abreTopico('sociologia-desigualdade-social')">
+                       <span class="cabTop">
+                            <h3>Desigualdade Social:</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <br>
+                        <p> >A desigualde social consiste na má distribuição de riquezas,  oportuninades, recurso e o acesso a benefícios em uma sociedade,
+                             causando grandes diferenças de qualidade de vida entre os indivíduos. 
+                        </p>
+                        <br>
+                        
+                    </div>
+                  
+
+                    <div class="topico pri1" style="max-height: 200px;"  onclick="abreTopico('sociologia-diversidade-cultural')" >
+                        <span class="cabTop">
+                            <h3>Diversidade Cultural:</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <p>
+                            Devido a globalização, a mistura de culturas e o vasto conhecimento sobre as diversas culturas do mundo se tornou mais comum.
+                        </p>
+                        <br>
+                     
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="topico pri1"  style="max-height: 200px;" onclick="abreTopico('sociologia-movimentos-sociais')" >
+                        <span class="cabTop">
+                            <h3>Movimentos Sociais:</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <p>São grupos de pessoas ou organizações que agem em conjunto para proporcionar mudanças políticas, socias, culturais ou econômicas na sociedade.
+                        </p>
+                        <br>                       
+                    </div>
+            
+
+               
+                <div class="topico pri1"  style="max-height: 200px;" onclick="abreTopico('sociologia-mundo-trabalho')">
+                    <span class="cabTop">
+                        <h3>Mundo do trabalho: </h3>
+                        <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                    </span>
+                    <p>Se refere ao ambiente e as atividades relacionadas a vida profissional das pesssoas.
+                    </p>
+                    <br>
+                    
+                </div>
+                <div class="topico pri1"  style="max-height: 120px;" onclick="abreTopico('sociologia-politica')">
+                    <span class="cabTop">
+                        <h3>Política:</h3>
+                        <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                    </span>
+                    <p>Na Grécia antiga a política tem o papel de trazer questões relativas a vida na cidade e o cidadão constantemente atua nessas decisões.
+                    </p>
+                </div>
+            </div>
+            
+ 
+
+              
+</div>
+          
+    <div class="grafico">
+    
+            <div style="width: 30%; margin: 0 auto;">
+                <canvas id="grafico" width="150" height="150"></canvas>
+            </div>
+            </div>
+        
+ </main>
+<div class="btnVolta">
+<a href="../Index.html" class="volta"> Voltar </a>
+    
+
+</div>
+        <footer id="rodape">
+           
+         <div class="areaRodape">
+                    <p style="padding-top: 10px;">Fonte: Ementário Integrado Informática</p>
+                        
+                    </div>
+            <div class="areaRodape"> 
+        
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+    <script src="../scripts/sociologia-materiaApp.js">
+        
+    </script>
+
+</body>
+</html>

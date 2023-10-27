@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteudo Programático de Química</title>
+    <link rel="stylesheet" href="../styles/quimica-materiaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+ <div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+</div> 
+<body>
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logofisi&quimi.png" >
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+    </div>
+        <main>
+            <div class="areaTopico">
+               <div class="areaLegenda">
+                    <h1>Química</h1>
+                    <fieldset class="legenda">
+                       <legend>Grau de importância</legend>
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade1')">
+                            <p class="txtLegenda" id="prioridade1">Obrigatório Ser Estudado (Possui Explicação)</p>
+                             <img class="imgLegenda"src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                            <!-- <span class="prioridade1">
+                             s   
+                            </span> -->
+                        </span>
+                    
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade2')" >
+                            <p class="txtLegenda" id="prioridade2">Obrigatório Ser Estudado (Não possui Explicação)</p>
+                             <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                            <!-- <span class="prioridade2">
+                             s   
+                            </span> -->
+                        </span>
+                    
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade3')" >
+                            <p class="txtLegenda" id="prioridade3">Estude Se Tiver tempo </p>
+                          <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                            <!-- <span class="prioridade3">
+                             s   
+                            </span> -->
+                        </span>
+                    </fieldset>
+                   
+               </div>
+
+               <h2 style="padding-left: 100px; color: rgb(11, 170, 209); text-shadow: 2px 2px 3px rgb(36, 36, 36); font-size: 40px;">Conteúdo Programático</h2>
+              <span class="ano">
+                <h2 class="sub">1° Ano</h2>
+                </span>
+                <div class="linha">
+                     
+                    <div class="topico pri1" onclick="abreTopico('quimica-atomos')" >
+                       <span class="cabTop">
+                            <h3>Átomos</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                        </span>
+                        <p>O átomo é uma das unidades fundamentais da matéria e é a menor parte de um elemento químico que mantém as propriedades desse elemento.
+                        </p>
+                    </div>
+                    <div class="topico pri1" onclick="abreTopico('quimica-tabela-periodica')" >
+                       <span class="cabTop">
+                            <h3>Tabela Períodica</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelha"> 
+                        </span>
+                        <p>A Tabela Periódica é um modelo que reúne todos os elementos químicos conhecidos, juntamente com suas características. Esses elementos são organizados de acordo com a ordem crescente de seu número atômico, que é o número de prótons em seus núcleos.
+                        </p>
+                    </div>
+                    <div class="topico pri2" >
+                        <span class="cabTop">
+                            <h3>Substâncias Químicas</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>Substâncias químicas.
+                            Ácidos no dia a dia. Representação química de ácidos. Bases mais conhecidas •
+                            Representação química de bases • Indicadores ácido-base • Neutralização ácido-base • Sais no dia a dia • Óxidos no dia a dia.
+                        </p>
+                    </div>
+                </div>
+               
+                <span class="ano">
+                    <h2 class="sub">2° Ano</h2>
+                </span>
+                <div class="linha">
+                    <div class="topico pri1" onclick="abreTopico('quimica-funcoes-inorganicas')">
+                        <span class="cabTop">
+                            <h3>Funções Inorganicas</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <p>Funções inorgânicas são um conjunto de grupos de substâncias químicas que compartilham propriedades químicas semelhantes e desempenham funções específicas em reações químicas.
+
+                        </p>
+                    </div>
+                    <div class="topico pri1" onclick="abreTopico('quimica-ligacoes-quimicas')">
+                        <span class="cabTop">
+                            <h3>Ligações Químicas</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelha"> 
+                        </span>
+                        <p>As ligações químicas são interações que ocorrem entre átomos para formar moléculas e compostos.
+
+
+                        </p>
+                    </div>
+                    <div class="topico pri3">
+                        <span class="cabTop">
+                            <h3>Termoquímica</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p>processos endotérmicos e exotérmicos, variação de entalpia, energia
+                            de ligação, combustíveis, estequiometria na termoquímica </p>
+                    </div>
+                </div>
+                
+                <span class="ano">
+                    <h2 class="sub">3° Ano</h2>
+                </span>
+             <div class="linha">
+                    <div class="topico pri1" onclick="abreTopico('quimica-isomeria')">
+                        <span class="cabTop">
+                            <h3>Isomeria</h3>
+                           <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                        </span>
+                        <p>A isomeria, fenômeno intrigante na química, revela-se como um intricado jogo de rearranjos atômicos. Quando dois compostos compartilham a mesma fórmula molecular, mas exibem distintas estruturas moleculares, estamos diante de isômeros.
+                        </p>
+                    </div>
+                    <div class="topico pri2" >
+                        <span class="cabTop">
+                            <h3>Química Organica</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="vermelho"> 
+                        </span>
+                        <p>classes e grupos funcionais, isomeria, noções de
+                            reações orgânicas. Exemplos e aplicações, com ênfase no curso.
+                            
+                        </p>
+                    </div>
+                    <div class="topico pri2">  
+                        <span class="cabTop">
+                            <h3>Cinetica Química</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>rapidez de uma reação, fatores que influenciam na rapidez de
+                            uma reação química, teoria das colisões, energia de ativação, catalisadores.</p>
+                    </div>
+                </div>
+                
+                </div>
+
+       
+</div>
+          
+<div class="grafico">
+    <h2>Resumo do que cai no enem</h2>
+     <div style="width: 30%; margin: 0 auto;">
+        <canvas id="grafico" width="150" height="150"></canvas>
+    </div>
+</div>
+        
+         </main>
+<div class="btnVolta">
+<a href="../Index.html" class="volta"> Voltar </a>
+    
+</div>
+            <footer id="rodape">
+                  <div class="areaRodape">
+                    <p style="padding-top: 10px;">Fonte: Ementário Integrado Informática</p>
+                        
+                    </div>
+            <div class="areaRodape"> 
+          
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+    <script src="../scripts/quimica-materiaApp.js">
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materia Filo&Socio </title>
+    <link rel="stylesheet" href="../styles/sociologiaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+<body onload="passaParametro('filo&socio')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logofilo&socio.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1> Desigualdade social </h1>
+            <br><br>
+
+            <section class="dentromain"> 
+                <p>A desigualde social consiste na má distribuição de riquezas,  oportuninades, recurso e o acesso a benefícios em uma sociedade, causando grandes diferenças de qualidade de vida entre os indivíduos. Esse processo de desigualdade é presente em todos os países do mundo, podendo ser mais grave em alguns. Faz parte das relações socias, que geram uma separação entre os indivíduos diferentes, devido a questões econômicas, de gênero, de cor, de crença ou de grupo social. Podendo ocasionar a falta de acesso a direitos básicos para que uma pessoa possa viver.
+                </p> 
+
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                       (ENEM - 2021) Nas últimas décadas, uma acentuada feminização no mundo do trabalho vem ocorrendo. Se a participação masculina pouco cresceu no período pós-1970, a intensificação da inserção das mulheres foi o traço marcante. Entretanto, essa presença feminina se dá mais no espaço dos empregos precários, onde a exploração, em grande medida, se encontra mais acentuada.
+                        <br>
+                        <p style="text-align: right; font-size: 10px;">
+                            NOGUEIRA, C. W. As trabalhadoras do telemarketing: uma nova divisão sexual do trabalho?
+                            <br>
+                            In ANTUNES, R, et al. Infoproletários degradação real do trabalho virtual.
+                            <br>
+                            São Paulo. Bomtempo, 2009.
+                        </p>
+                        <br><br>
+                        A transformação descrita no texto tem sido insuficiente para o estabelecimento de uma condição de igualdade de oportunidade em virtude da(s)
+                    </div>
+                    <form id="quizForm" style="font-size: 15px;">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) estagnação de direitos adquiridos e do anacronismo da legislação vigente. 
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) manutenção do status quo gerencial e dos padrões de socialização familiar.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) desestruturação da herança patriarcal e das mudanças do perfil ocupacional.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) disputas na composição sindical e da presença na esfera político-partidária.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) exigências de aperfeiçoamento profissional e de habilidades na competência diretiva.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','b')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                        (ENEM - 2018) Num país que conviveu com o trabalho escravo durante quatro séculos, o trabalho doméstico é ainda considerado um subemprego. E os indivíduos que atuam nessa área são, muitas vezes, vistos pelos patrões como um mal necessário: é preciso ter em casa alguém que limpe o banheiro, lave a roupa, tire o pó e arrume a gaveta. Existe uma inegável desvalorização das atividades domésticas em relação a outros tipos de trabalho.
+                        <br>
+                        <p style="font-size: 10px; text-align: right;">
+                            RANGEL, C. Domésticas: nascer, deixar, permanecer ou simplesmente estar. In: SOUZA, E. (Org.). Negritude, cinema e educação. Belo Horizonte: Mazza, 2011 (adaptado).
+                        </p>
+                        <br><br>
+                        Objeto de legislação recente, o enfrentamento do problema mencionado resultou na
+                    </div>
+                    <form id="quizForm" style="font-size: 15px;">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) criação de novos ofícios.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) redução da desigualdade de gênero.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) fragilização da representação sindical.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) erradicação da atividade informal.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) ampliação de direitos sociais.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'e' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="sociologia-materia.html" class="volta"> Voltar </a>
+            </div>
+ 
+            
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+       
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+        <script src="../scripts/materias-geralApp.js"></script>  
+</body>
+</html>

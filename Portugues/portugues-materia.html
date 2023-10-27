@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteudo Programático de Biologia</title>
+    <link rel="stylesheet" href="../styles/portugues-materiaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+ <div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+</div> 
+<body>
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logoportu&litera.png" >
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+    </div>
+        <main>
+            <div class="areaTopico">
+               <div class="areaLegenda">
+
+                    <h1>Português</h1>
+                    
+
+                    <fieldset class="legenda">
+                       <legend>Grau de importância</legend>
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade1')">
+                            <p class="txtLegenda" id="prioridade1">Obrigatório Ser Estudado (Possui Explicação) </p>
+                             <img class="imgLegenda"src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                            <!-- <span class="prioridade1">
+                             s   
+                            </span> -->
+                        </span>
+                    
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade2')" >
+                            <p class="txtLegenda" id="prioridade2">Obrigatório Ser Estudado (Não possui Explicação)  </p>
+                             <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                            <!-- <span class="prioridade2">
+                             s   
+                            </span> -->
+                        </span>
+                    
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade3')" >
+                            <p class="txtLegenda" id="prioridade3">Estude Se Tiver tempo
+                            </p>
+                          <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                            <!-- <span class="prioridade3">
+                             s   
+                            </span> -->
+                        </span>
+                    </fieldset>
+                  
+               </div>
+               <h2 style="padding-left: 100px; color: rgb(255, 171, 60); text-shadow: 2px 2px 3px rgb(36, 36, 36); font-size: 40px;">Conteúdo Programático</h2>
+              <span class="ano">
+            
+                <h2 class="sub">1° Ano</h2>
+                <br>
+                </span>
+                <div class="linha">
+                     
+                    <div class="topico pri2"  style="max-height: 200px;">
+                       <span class="cabTop">
+                            <h3>Introdução aos estudos sobre a linguagem:</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <br>
+                        <p>As diversas linguagens. Diferenciação 
+                            entre  linguagem  verbal  e  linguagem  não  verbal.  Signo  linguístico  e  conceito  de 
+                            língua.
+                        </p>
+                    </div>
+                    <div class="topico pri1"  style="max-height: 290px;"  onclick="abreTopico('portugues-interpretacao-textual')">
+                       <span class="cabTop">
+                            <h3>Leitura e produção de textos individuais e coletivos:</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <br>
+                        <p>Interpretar um texto envolve compreender não apenas seu significado explícito, mas também suas nuances e detalhes implícitos, requerendo conhecimento do contexto de produção, tipologia textual, gêneros textuais, funções de linguagem, estilos de época e
+                             figuras de linguagem, especialmente em textos literários, para identificar não apenas os sentidos, mas também os objetivos do texto.
+                        </p>
+                        <br>
+                        
+                    </div>
+                  
+
+                    <div class="topico pri1" style="max-height: 200px;"  onclick="abreTopico('portugues-funcoes-da-linguagem')" >
+                        <span class="cabTop">
+                            <h3>Linguagem e comunicação:</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                        </span>
+                        <p>As relações comunicativas. Elementos da 
+                            comunicação. Funções da linguagem. A tecnologia e as novas formas de 
+                            comunicação. 
+                            
+                        </p>
+                        <br>
+                     
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="topico pri1"  style="max-height: 290px;"  onclick="abreTopico('portugues-linguagem-culta-coloquial')">
+                        <span class="cabTop">
+                            <h3>Variação Linguística:</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <p>Variação histórica. Variação regional. Variação social. 
+                            Variação  de  registro  de  uso  ou  variação  
+                            situacional.  Conceito  de  norma  padrão,
+                            norma culta e adequação. O papel da gramática 
+                            normativa, a gramática e suas partes. 
+                            Linguística versus Gramática Normativa. 
+                            Preconceito Linguístico.
+                        </p>
+                        <br>                       
+                    </div>
+            
+
+               
+                <div class="topico pri1"  onclick="abreTopico('portugues-generos-textuais')" >
+                    <span class="cabTop">
+                        <h3>Texto - unidade de sentido:</h3>
+                        <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                    </span>
+                    <p>Gêneros textuais e tipologia textual. Funções sociais e 
+                        comunicativas  dos gêneros  textuais.  A  estrutura  textual  
+                        e  linguística dos  tipos textuais
+                    </p>
+                    <br>
+                    
+                </div>
+                <div class="topico pri3"  style="max-height: 200px;" >
+                    <span class="cabTop">
+                        <h3>Modalidades escrita e oral:</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                    </span>
+                    <p>Fala e oralidade. Relação entre fonema e letra. 
+                        Ortografia como convenção. Português instrumental e questões ortográficas (desvios 
+                        ortográficos mais comuns apresentados por alunos de Ensino Médio). 
+                    </p>
+                </div>
+            </div>
+            
+            <div class="linha">
+                <div class="topico pri1" onclick="abreTopico('portugues-figuras-da-linguagem')"style="max-height: 200px;" >
+                    <span class="cabTop">
+                        <h3>Semântica:</h3>
+                        <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                    </span>
+                    <p>Linguagem e seus sentidos. Sinônimos, antônimos, hipônimos e 
+                        hiperônimos.  Homônimos  e  parônimos.  Sentido  denotativo,  sentido  conotativo  e 
+                        polissemia. Figuras de linguagem.
+                    </p>
+                    <br>
+                   
+                </div>
+
+                <div class="topico pri1" onclick="abreTopico('portugues-intertextualidade')" style="max-height: 200px;">
+                    <span class="cabTop">
+                        <h3>Intertextualidade:</h3>
+                        <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                    </span>
+                    <p>Paródia, Paráfrase e plágio.
+                    </p>
+                    <br>
+               
+                </div>
+          
+
+            
+                <div class="topico pri2" style="text-align: center;" >
+                    <span class="cabTop">
+                        <h3>Leitura e interpretação de textos multimodais: anúncios publicitários.</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                    </span>
+                    <br>
+                    <img src="../styles/img/pubjornal.jpeg" alt="publicidade" style="width: 150px; height: 150px; border: 1px black double; border-radius: 10px;">
+                </div>
+            </div>
+            <div class="linha">
+                <div class="topico pri2" style="height: 200px;">
+                    <span class="cabTop">
+                        <h3>Estrutura e formação de palavras:</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                    </span>
+                    <p>Estrutura e formação de palavras. Processos de 
+                        derivação, composição e outros. 
+                    </p>
+                </div>
+                <div class="topico pri2"  >
+                    <span class="cabTop">
+                        <h3>Classes de palavras aplicadas ao texto: </h3>
+                        <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                    </span>
+                    <p>Substantivo. Artigos. Adjetivo. O papel dos 
+                        adjetivos  na  descrição.  Pronomes.  O  papel  dos  pronomes  como  recursos  coesivos. 
+                        Numerais.  Verbos.  Aplicação  e  correlação  de  tempos  e  modos  verbais.  O  Uso  dos 
+                        verbos no pretérito nos textos narrativos. Verbos no imperativo nos textos injuntivos. 
+                        Advérbios. Marcadores de tempo e expressões adverbiais nos textos narrativos.
+                    </p>
+                </div>
+                <div class="topico pri2" >
+                    <span class="cabTop">
+                        <h3>Pontuação:</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                    </span>
+                    <p>sinais de pontuação e seus usos básicos.
+                    </p>
+                </div>
+            </div>
+                <span class="ano">    
+                    <h2 class="sub">2° Ano</h2>
+                    <br>
+                </span>
+                <div class="linha">
+                    <div class="topico pri2" style="height: 200px;" >
+                        <span class="cabTop">
+                            <h3>Gêneros  jornalísticos-midiáticos: </h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p> Diferenças  entre  notícia,  reportagem,  artigo  e 
+                            entrevista.  Parcialidade  e  imparcialidade  em  textos  jornalísticos.  Fotojornalismo 
+                            (efeitos de sentido em imagens nos textos jornalísticos).
+                        </p>
+                    </div>
+                  
+                    <div class="topico pri1" >
+                        <span class="cabTop">
+                            <h3>Frase.  Oração  e  período:</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <p>
+                            Estrutura  sintática  nas  manchetes  de  jornal.  Período 
+                            simples. Termos essenciais da oração. Tipos de sujeito. Sujeito simples, composto e 
+                            desinencial  (implícito  ou  oculto).  Sujeito  indeterminado  e  a  intenção  do  discurso. 
+                            Oração  sem  sujeito  (ou  inexistente).  Tipos  de  Predicado  e  predicação  verbal.  Vozes do verbo.
+                        </p>
+                    </div>
+               
+            
+                    
+                    <div class="topico pri1"  style="height: 120px;">
+                       <span class="cabTop">
+                            <h3>Charge, cartum, tirinhas e memes: </h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <p> sátira, crítica social e ironia.
+                        </p>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="topico pri1" style="height: 120px;">
+                       <span class="cabTop">
+                            <h3>Termos relacionados ao verbo:</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                        </span>
+                        <p>Objeto direto. Objeto indireto. Valor semântico das 
+                            preposições. Adjunto adverbial. Agente da passiva.</p>
+                    </div>
+                    <div class="topico pri1" > 
+                        <span class="cabTop">
+                            <h3>Termos relacionados ao nome:</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <p>Adjunto adnominal. Complemento nominal. 
+                            Predicativo do sujeito. Predicativo do Objeto. Aposto. Vocativo.
+                        </p>
+                    </div>
+
+                    <div class="topico pri3"> 
+                        <span class="cabTop">
+                            <h3>Outros gêneros jornalísticos: Editorial e Carta ao leitor: </h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <br>
+                        <p>Persuasão e 
+                            argumentação. Fake News e a importância das fontes. 
+                        </p>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="topico pri2"  style="height: 120px;" > 
+                        <span class="cabTop">
+                            <h3>Colocação pronominal: </h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="vermelho"> 
+                        </span>
+                        <p>Colocação dos pronomes pessoais oblíquos átonos. 
+                        </p>
+                    </div>
+
+                    <div class="topico pri2" > 
+                        <span class="cabTop">
+                            <h3>Sintaxe de regência: </h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="vermelho"> 
+                        </span>
+                        <p> Verbos e nomes.
+                        </p>
+                    </div>
+
+                    <div class="topico pri2" > 
+                        <span class="cabTop">
+                            <h3>Crase: </h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p> Regras gerais. Casos especiais.
+                        </p>
+                    </div>
+                </div>
+                <span class="ano">
+                    <h2 class="sub">3° Ano</h2>
+                    <br>
+                 </span>
+            <div class="linha">
+                    <div class="topico pri3"style="height: 120px;">
+                        <span class="cabTop">
+                            <h3>Leitura e produção de textos individuais e coletivos</h3>
+                           <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p>
+                        </p>
+                    </div>
+                    <div class="topico pri3" >
+                        <span class="cabTop">
+                            <h3>Leitura e interpretação de textos literários.</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p>
+                        </p>
+                    </div>
+                    <div class="topico pri2" >  
+                        <span class="cabTop">
+                            <h3>Vozes da narrativa</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>Discursos direto, indireto e indireto livre. </p>
+                    </div>
+                </div>  
+                <div class="linha">
+                    <div class="topico pri2" style="height: 120px;">  
+                        <span class="cabTop">
+                            <h3>Concordância verbal: </h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>Regra geral. Casos particulares. </p>
+                    </div>
+
+                    <div class="topico pri2" onclick="abreTopico('biologia-materias-tambem-caem')">  
+                        <span class="cabTop">
+                            <h3>Concordância nominal: </h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>Regra geral. Casos particulares. Concordância ideológica.</p>
+                    </div>
+
+                    <div class="topico pri2" >  
+                        <span class="cabTop">
+                            <h3>Leitura  e  interpretação  de  crônicas: </h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>Caracterização  e  diferenciação  de  crônicas. 
+                            Linguagem literária e linguagem jornalística. </p>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="topico pri2" style="height: 120px;">  
+                        <span class="cabTop">
+                            <h3>Frase, oração e período. Sinais de pontuação. </h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p></p>
+                    </div>
+
+                    <div class="topico pri3" >  
+                        <span class="cabTop">
+                            <h3>Período  composto: </h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p>Períodos  compostos  por  coordenação  e  por  subordinação  com ênfase nos recursos coesivos e na pontuação.
+                        </p>
+                    </div>
+
+                    
+                    <div class="topico pri3">  
+                        <span class="cabTop">
+                            <h3>Período composto por coordenação:</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p>Orações coordenadas assindéticas e sindéticas 
+                            (dentro da perspectiva semântica das conjunções coordenativas).</p>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="topico pri3" style="height: 120px;">  
+                        <span class="cabTop">
+                            <h3>Período  composto  por  subordinação:</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p>Orações  subordinadas  substantivas.  Função 
+                            de coesão dos conectores subordinativos.</p>
+                    </div>
+                    <div class="topico pri2">  
+                        <span class="cabTop">
+                            <h3 style="text-align: justify; font-size: 13px;" >Leitura  e  interpretação  de  textos  multimodais  (gráficos,  infográficos,  gêneros  digitais)</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p></p>
+                    </div>
+                    
+                    <div class="topico pri3" >  
+                        <span class="cabTop">
+                            <h3>Período composto por subordinação adjetiva:</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p>Classificação das orações 
+                            subordinadas  adjetivas.  Função  de  coesão  dos  pronomes  relativos.  Função  sintática 
+                            dos pronomes relativos.</p>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="topico pri3" style="height: 120px;">  
+                        <span class="cabTop">
+                            <h3 style="text-align: justify; font-size: 11.9px;" >Período composto por orações subordinadas adverbiais e os valores semânticos 
+                                das conjunções.</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                            
+                        </span>
+                        <br>
+                            <br>
+                        <p></p>
+                    </div>
+                </div>
+
+
+                <span class="ano">
+                    <h2 class="sub">Outras Matérias que aparecem no ENEM</h2>
+                </span>
+             <div class="linha" >
+                    <div class="topico pri1" onclick="abreTopico('portugues-funcoes-da-linguagem')" style="height: 120px;">
+                        <span class="cabTop">
+                            <h3>Funções da Linguagem </h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <p></p>
+                    </div>
+                   
+                    
+                </div>
+
+
+
+
+
+
+
+</div>
+          
+    <div class="grafico">
+    
+            <div style="width: 30%; margin: 0 auto;">
+                <canvas id="grafico" width="150" height="150"></canvas>
+            </div>
+            </div>
+        
+ </main>
+<div class="btnVolta">
+<a href="../Index.html" class="volta"> Voltar </a>
+    
+
+</div>
+        <footer id="rodape">
+           
+        <div class="areaRodape">
+                    <p style="padding-top: 10px;">Fonte: Ementário Integrado Informática</p>
+                        
+                    </div>
+            <div class="areaRodape"> 
+            
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+    <script src="../scripts/portugues-materiaApp.js">
+        
+    </script>
+
+</body>
+</html>

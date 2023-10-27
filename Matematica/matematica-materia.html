@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteudo Programático de Matemática</title>
+    <link rel="stylesheet" href="../styles/matematica-materiaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+ <div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+</div> 
+<body>
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logomatematica.png" >
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+    </div>
+        <main>
+            <div class="areaTopico">
+               <div class="areaLegenda">
+                    <h1>Matemática</h1>
+                    <fieldset class="legenda">
+                       <legend>Grau de importância</legend>
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade1')">
+                            <p class="txtLegenda" id="prioridade1">Obrigatório Ser Estudado (Possui Explicação)</p>
+                             <img class="imgLegenda"src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                            <!-- <span class="prioridade1">
+                             s   
+                            </span> -->
+                        </span>
+                    
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade2')" >
+                            <p class="txtLegenda" id="prioridade2">Obrigatório Ser Estudado (Não possui Explicação)</p>
+                             <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                            <!-- <span class="prioridade2">
+                             s   
+                            </span> -->
+                        </span>
+                    
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade3')" >
+                            <p class="txtLegenda" id="prioridade3">Estude Se Tiver tempo </p>
+                          <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                            <!-- <span class="prioridade3">
+                             s   
+                            </span> -->
+                        </span>
+                    </fieldset>
+                   
+               </div>
+               <h2 style="padding-left: 100px; color: rgb(60, 183, 255); text-shadow: 2px 2px 3px rgb(36, 36, 36); font-size: 40px;">Conteúdo Programático</h2>
+              <span class="ano">
+                <h2 class="sub">1° Ano</h2>
+                </span>
+                <div class="linha">
+                     
+                    <div class="topico pri1" onclick="abreTopico('matematica-razao-proporcao')" >
+                       <span class="cabTop">
+                            <h3>Razão e Proporção</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                        </span>
+                        <p>Razãoestabelece uma comparação entre grandezas, gerando as
+                            sim, um resultado entre dois números. Já a proporção é a igualdade entre duas razões.</p>
+                    </div>
+                    <div class="topico pri1" onclick="abreTopico('matematica-regra-de-tres')" >
+                       <span class="cabTop">
+                            <h3>Regra de Três Simples</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                        </span>
+                        <p>É o uso da lógica da proporção utilizado para encontrar valores
+                        desconhecidos a partir de grandezas inversamente ou diretamente proporcionais.
+                        </p>
+                    </div>
+                    <div class="topico pri2">
+                        <span class="cabTop">
+                            <h3>Frações e Números Decimais</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p> Fração é a representação de parcelas de um valor inteiro. Números decimais são aqueles que não possuem uma parte inteira</p>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="topico pri1" onclick="abreTopico('matematica-porcentagem')" >
+                        <span class="cabTop">
+                             <h3>Porcentagem</h3>
+                             <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                         </span>
+                         <p>É uma forma de representação de uma razão entre um número e 100.</p>
+                     </div>
+                <div class="topico pri3"  >
+                    <span class="cabTop">
+                         <h3>Sistema de numeração</h3>
+                         <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                     <p>Conjunto de números são representados por numerais de uma forma coerente.</p>
+                 </div>
+                 <div class="topico pri3" >
+                    <span class="cabTop">
+                         <h3>Conjuntos</h3>
+                         <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                     <p>Propriedades e Operações. Lógica Proporcional e Diagrama de Venn.</p>
+                 </div>
+                </div>
+                 <div class="linha">
+                    <div class="topico pri2">
+                        <span class="cabTop">
+                            <h3>Noções de Função</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>Relação matemática estabelecida entre duas represemtações variáveis.</p>
+                    </div>
+                    <div class="topico pri3">
+                        <span class="cabTop">
+                         <h3>Progressão Aritmética e Progressão Geométrica</h3>
+                         <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                     <p>Sequência de valores que tem uma diferença constante entre números consecutivos.</p>
+                 </div>
+                    <div class="topico pri2">
+                        <span class="cabTop">
+                            <h3>Tipos de Função</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>1º Grau, Quadrática, Exponencial e Logarítmica.</p>
+                    </div>
+                    
+            </div>
+               
+                <span class="ano">
+                    <h2 class="sub">2° Ano</h2>
+                </span>
+                <div class="linha">
+                    <div class="topico pri3">
+                        <span class="cabTop">
+                         <h3>Matrizes e determinantes</h3>
+                         <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                     <p>Conjunto de elementos organizados em linhas e colunas.</p>
+                 </div>
+                 <div class="topico pri3">
+                    <span class="cabTop">
+                     <h3>Sistemas lineares</h3>
+                     <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                    </span>
+                 <p>Conjuntos de equações que devem ser resolvidos sequencialmente.</p>
+             </div>
+             <div class="topico pri3">
+                <span class="cabTop">
+                 <h3>Matemática Financeira</h3>
+                 <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                </span>
+             <p>Cálculos focando na melhor organização e ao maior controle do dinheiro.</p>
+         </div>
+                </div>
+                 <div class="linha">
+                    
+                    <div class="topico pri1" onclick="abreTopico('matematica-estatistica')" >
+                        <span class="cabTop">
+                             <h3>Estatística</h3>
+                             <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                         </span>
+                         <p>Área da matemática que tem o objetivo de levantar dados de determinados fenômenos ou populações.</p>
+                     </div>
+
+                     <div class="topico pri2">
+                        <span class="cabTop">
+                            <h3>Análise Combinatória</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>Técnicas que possibilitam resolver problemas relacionados a contagem.</p>
+                    </div>
+
+                    <div class="topico pri1" onclick="abreTopico('matematica-probabilidade')" >
+                        <span class="cabTop">
+                             <h3>Probabilidade</h3>
+                             <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                         </span>
+                         <p>Estudo sobre experimentos em que seus resultados não são possíveis de prever.</p>
+                     </div>
+                </div>
+                <span class="ano">
+                    <h2 class="sub">3° Ano</h2>
+                </span>
+             <div class="linha">
+                <div class="topico pri2">
+                    <span class="cabTop">
+                        <h3>Proporcionalidade e Semelhança</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                    </span>
+                    <p>Grandezas em que a variação de uma provoca a variação da outra dentro da mesma razão.</p>
+                </div>
+
+                <div class="topico pri2">
+                    <span class="cabTop">
+                        <h3>Noções de trigonometria</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                    </span>
+                    <p>Relações entre os lados e os ângulos de um triângulo.</p>
+                </div>
+
+                <div class="topico pri1" onclick="abreTopico('matematica-geometria-plana-espacial')" >
+                    <span class="cabTop">
+                         <h3>Áreas e Volume</h3>
+                         <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                     </span>
+                     <p>Cálculo das áreas de figuras geométricas.</p>
+                 </div>
+             </div>
+                 <div class="linha">
+                    <div class="topico pri3">
+                        <span class="cabTop">
+                         <h3>Poliedros</h3>
+                         <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                     <p>Sólido geométrico que possui faces formadas por polígonos.</p>
+                 </div>
+                 <div class="topico pri1" onclick="abreTopico('matematica-geometria-plana-espacial')" style="display: none;" >
+                    <span class="cabTop">
+                         <h3>Corpos Redondos</h3>
+                         <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                     </span>
+                     <p></p>
+                 </div>
+          
+
+                 </div>
+
+
+                </div>
+              
+
+       
+</div>
+          
+<div class="grafico">
+    <h2>Resumo do que cai no enem</h2>
+     <div style="width: 30%; margin: 0 auto;">
+        <canvas id="grafico" width="150" height="150"></canvas>
+    </div>
+</div>
+        
+         </main>
+<div class="btnVolta">
+<a href="../Index.html" class="volta"> Voltar </a>
+    
+</div>
+        <footer id="rodape">
+              <div class="areaRodape">
+                    <p style="padding-top: 10px;">Fonte: Ementário Integrado Informática</p>
+                        
+                    </div>
+            <div class="areaRodape"> 
+               
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+    <script src="../scripts/matematica-materiaApp.js">
+        
+    </script>
+
+</body>
+</html>

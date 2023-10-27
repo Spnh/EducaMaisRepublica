@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regra de Três</title>
+    <link rel="stylesheet" href="../styles/matemaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner">
+        <div id="carregar">
+            <div id="carrega"></div>
+        </div>
+    </div>
+</div>
+
+<body onload="passaParametro('matematica')">
+    <div id="cabecalho">
+        <header id="inicio">
+            <div class="areaLogo">
+                <img class="logo" src="../styles/img/logomatematica.png"> </img>
+
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+            <div class="areaBarra">
+                <form class="search-container">
+                    <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+
+                </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+
+    <main class="container" id="mainnormal">
+
+
+        <h1> Regra de Três </h1>
+        <br><br>
+        <p id="margem-certa">É o uso da lógica da <a href="matematica-razao-proporcao.html"
+                style="color: black;"><strong>proporção</strong></a>, utilizado para encontrar valores
+            desconhecidos a partir de grandezas inversamente ou diretamente proporcionais. </p>
+        <br> <br>
+        <p id="margem-certa"><u> Diretamente proporcionais:</u> à medida que uma das grandezas aumenta, a
+            outra também aumenta (na mesma proporção). </p>
+        <p id="margem-certa"> <u> Inversamente proporcionais:</u> à medida que uma dessas grandezas aumenta, a outra
+            grandeza diminui (na mesma proporção). </p>
+        <br>
+        <p id="margem-certa"> Observe abaixo um exemplo : </p>
+        <table>
+            <tr>
+                <th>TRABALHADORES</th>
+                <th>HORAS</th>
+            </tr>
+            <tr>
+                <td> 20</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>x</td>
+            </tr>
+        </table>
+        <p id="margem-certa"> O problema deseja achar o valor de x, para resolver, é necessário usar o conceito da
+            multiplicação cruzada: resultando em:</p>
+        <p style="text-align: center;">20X = 65</p>
+        <p style="text-align: center;">x=3,25</p>
+        <p id="margem-certa"><strong> OBS:</strong> O exemplo acima era diretamente proporcional, caso fosse
+            inversamente proporcional, teriamos que inverter os valores, colocando o x no lugar do 5 </p>
+        <p id="margem-certa"><strong> OBS:</strong> Para a <strong> regra de três composta</strong>, é apenas aplicar a
+            multiplicação cruzada com as duas primerias colunas e depois com a seguinte</p>
+
+
+
+
+
+
+
+
+
+        <section class="dentromain">
+            <p> </p>
+
+            <br>
+            <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais"> <img src="../styles/img/click.png" alt="imagem"
+                            class="imagens"> </span></div>
+            </div>
+
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        (ENEM 2013) Uma indústria tem um reservatório de água com capacidade para 900 m³. Quando há
+                        necessidade de limpeza
+                        do reservatório, toda a água precisa ser escoada. O escoamento da água é feito por seis ralos, e
+                        dura 6 horas quando
+                        o reservatório está cheio. Esta indústria construirá um novo reservatório, com capacidade de 500
+                        m³, cujo escoamento d
+                        a água deverá ser realizado em 4 horas, quando o reservatório estiver cheio. Os ralos utilizados
+                        no novo reservatório
+                        deverão ser idênticos aos do já existente.
+
+                        A quantidade de ralos do novo reservatório deverá ser igual a
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) 2
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b)4
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) 5
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) 8
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) 9
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button"
+                                onclick="verificarResposta('res', 'c')">Verificar</button>
+                            <button type="button" class="button" onclick="refazer('res')">Refazer</button>
+
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">(ENEM 2012) Uma mãe recorreu à bula para verificar a dosagem de um remédio que
+                        precisava dar a
+                        seu filho. Na bula, recomendava-se a seguinte dosagem: 5 gotas para cada 2 kg de massa corporal
+                        a cada 8 horas.
+
+                        Se a mãe ministrou corretamente 30 gotas do remédio a seu filho a cada 8 horas, então a massa
+                        corporal dele é de:
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) 12
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) 16
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) 24
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) 36
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) 75
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button"
+                                onclick="verificarResposta('res2','a')">Verificar</button>
+                            <button type="button" class="button" onclick="refazer('res2')">Refazer</button>
+
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                    <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem"
+                                class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+        </section>
+
+    </main>
+    <div class="btnVolta">
+        <a href="matematica-materia.html" class="volta"> Voltar </a>
+    </div>
+    <footer id="rodape">
+
+        <div class="areaRodape">
+         
+
+        </div>
+        <div class="areaRodape">
+            <div class="data"></div>
+        </div>
+
+
+    </footer>
+
+    <script src="../scripts/matemaApp.js"></script>
+
+
+</body>
+
+</html>
