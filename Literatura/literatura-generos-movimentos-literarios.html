@@ -1,0 +1,243 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materia Portu&Litera</title>
+    <link rel="stylesheet" href="../styles/portuguesStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+</div>
+<body onload="passaParametro('portu&litera')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logoportu&litera.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1> Literatura </h1>
+            <br><br>
+
+            <h3 class="dentromain">Gêneros e Movimentos Literários</h3>
+
+            <section class="dentromain"> 
+                <p>
+                    - É necessário compreender os principais traços de cada movimento literário, assim como os gêneros literários, e sua relação com o contexto histórico é crucial. Por exemplo, o Romantismo valoriza a emoção, a individualidade e a natureza, enquanto o Realismo busca a representação fiel da realidade.
+                    Romantismo, Realismo, Naturalismo e Modernismo são exemplos de movimentos literários, já poemas, contos e trechos de romances são exemplos de gêneros literários.<br><br/>
+                    - Também é necessário saber interpretar poemas, contos e trechos de romance, além de análisar personagens, enredos, simbolismo, estilo literário, o período histórico e as motivações por trás da criação do movimento/gênero literário.
+
+                </p>                
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta" style="font-size: 15px;">
+                        (ENEM - 2022) TEXTO I
+                        <br><br/>
+                        <div style="display: flex; justify-content: center;">
+                            <img src="https://qcon-assets-production.s3.amazonaws.com/images/provas/89587/kj.jpg">
+                        </div>
+                        <br>
+                        TEXTO II
+                        <br><br/>
+                        Embora não fosse um grupo ou um movimento organizado, o Minimalismo foi um dos muitos rótulos (incluindo estruturas primárias, objetos unitários, arte AB e Cool Art) aplicados pelos críticos para descrever estruturas aparentemente simples que alguns artistas estavam criando. Quando a arte minimalista começou a surgir, muitos críticos e um público opinativo julgaram-na fria, anônima e imperdoável. Os materiais industriais pré-fabricados frequentemente usados não pareciam "arte". 
+                        <br>
+                        <p style="text-align: right; font-size: 10px;"> DEMPSEY, A. Estilos, escola e movimentos. São Paulo: Cosac & Naify. 2003 (Adaptado) <a href="www.dominiopublico.gov.br">www.dominiopublico.gov.br</a></p>
+                        <br><br/>
+                        De acordo com os textos I e II, compreende-se que a obra minimalista é uma
+                        
+                        
+                    </div>
+                    <form id="quizForm" style="font-size: 15px;">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) Valorização do cotidiano por meio da geometria.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) Utilização da complexidade dos elementos formais. 
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) Combinação de formas sintéticas no espaço utilzado. 
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) Exploração da técnica da escultura cubista.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) Representação da simplicidade pelo artista. 
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','c')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta" style="font-size: 15px;">
+                        (ENEM - 2022) O pavão vermelho
+                        <br><br/>
+                        Ora, a alegria, este pavão vermelho,
+                        <br>
+                        está morando em meu quintal agora.
+                        <br>
+                        Vem pousar como um sol em meu joelho
+                        <br>
+                        quando é estridente em meu quintal a aurora.
+                
+                
+                        <br><br/>
+                        Clarim de lacre, este pavão vermelho
+                        <br>
+                        sobrepuja os pavões que estão lá fora.
+                        <br>
+                        É uma festa de púrpura. E o assemelho
+                        <br>
+                        a uma chama do lábaro da aurora.
+                
+                
+                        <br><br/>
+                        É o próprio doge a se mirar no espelho.
+                        <br>
+                        E a cor vermelha chega a ser sonora
+                        <br>
+                        neste pavão pomposo e de chavelho.
+                
+                
+                        <br><br/>
+                        Pavões lilases possuí outrora.
+                        <br>
+                        Depois que amei este pavão vermelho,
+                        <br>
+                        os meus outros pavões foram-se embora.
+                        <br>
+                        <p style="text-align: right; font-size: 10px;">COSTA, S. Poesia completa: Sosígenes Costa. Salvador: Conselho Estadual de Cultura, 2001.</p>
+                        <br>
+                        <br>
+                        Na construção do soneto, as cores representam um recurso poético que configura uma imagem com a qual o eu lírico: 
+                    </div>
+                    <form id="quizForm" style="font-size: 15px;">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) Expressa uma visão de mundo mística e espiritualizada.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) Revela a intenção de isolar-se em seu espaço.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) Experimenta a fusão de percepções sensoriais.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) Simboliza a beleza e o esplendor da natureza.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) Metaforiza a conquista de sua plena realização.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'e' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="literatura-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+          
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+        <script src="../scripts/materias-geralApp.js"></script>  
+</body>
+</html>

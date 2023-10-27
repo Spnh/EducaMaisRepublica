@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filosofia Medieval</title>
+    <link rel="stylesheet" href="../styles/filosofiaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner">
+        <div id="carregar">
+            <div id="carrega"></div>
+        </div>
+    </div>
+</div>
+
+<body onload="passaParametro('filo&socio')">
+    <div id="cabecalho">
+        <header id="inicio">
+            <div class="areaLogo">
+                <img class="logo" src="../styles/img/logofilo&socio.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+            <div class="areaBarra">
+                <form class="search-container">
+                    <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+
+                </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+
+    <main class="container" id="mainnormal">
+
+
+        <h1> Filosofia Medieval </h1>
+        <br>
+        <p> A filosofia medieval tentou adaptar a religião com a filosofia, fazendo relações entre a ideia cristã com a
+            razão.</p><br>
+
+        <h3 class="dentromain">Agostinho de Hipona</h3>
+        <p>- Foi um filósofo durante o período medieval que dedicou a sua vida ao cristianismo, sendo um dos principais
+            formadores da teologia cristã. </p>
+        <p>- Fortemente influeniado por Platão, ele buscou sempre usar a razão em sua filosofia, para ele a fé recebe
+            clareza da razão. </p>
+        <p>- Agostinho de Hipona foi o principal condutor da filsofia <u>patrística</u>.</p>
+        <br>
+       <h3 class="dentromain">Tomás de Aquino</h3>
+        <p>- Ficou conhecido por resgatar as ideias aristotélicas em conjunto com a fé cristã. </p>
+        <p>- Ele buscou explicar Deus com o uso da razão, que ficou conhecido como "Cinco Provas da Existência de Deus",
+            que são argumentos racioanais para justificar exixstência de Deus. </p>
+            <p>- Tomás de Aquino foi o principal condutor da filsofia <u>patrística</u>.</p>
+
+
+
+        <section class="dentromain">
+            <p> </p>
+
+            <br>
+            <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais"> <img src="../styles/img/click.png" alt="imagem"
+                            class="imagens"> </span></div>
+            </div>
+
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        (ENEM 2018)Desde que tenhamos compreendido o significado da palavra “Deus”, sabemos, de
+                        imediato, que Deus
+                        existe. Com efeito, essa palavra designa uma coisa de tal ordem que não podemos conceber nada
+                        que lhe seja maior. Ora, o que existe na realidade e no pensamento é maior do que o que existe
+                        apenas no pensamento. Donde se segue que o objeto designado pela palavra “Deus”, que existe no
+                        pensamento, desde que se entenda essa palavra, também existe na realidade. Por conseguinte, a
+                        existência de Deus é evidente.
+                        TOMÁS DE AQUINO. Suma teológica. Rio de Janeiro: Loyola, 2002.
+                        <br>
+                        O texto apresenta uma elaboração teórica de Tomás de Aquino caracterizada por
+
+
+
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) reiterar a ortodoxia religiosa contra os heréticos.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) sustentar racionalmente doutrina alicerçada na fé.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) explicar as virtudes teologais pela demonstração.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) flexibilizar a interpretação oficial dos textos sagrados.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) justificar pragmaticamente crença livre de dogmas.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button"
+                                onclick="verificarResposta('res','b')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                        (ENEM 2019) De fato, não é porque o homem pode usar a vontade livre para pecar que se deve supor
+                        que Deus a concedeu para isso. Há, portanto, uma razão pela qual Deus deu ao homem esta
+                        característica, pois sem ela não poderia viver e agir corretamente. Pode-se compreender, então,
+                        que ela foi concedida ao homem para esse fim, considerando-se que se um homem a usa para pecar,
+                        recairão sobre ele as punições divinas. Ora, isso seria injusto se a vontade livre tivesse sido
+                        dada ao homem não apenas para agir corretamente, mas também para pecar. Na verdade, por que
+                        deveria ser punido aquele que usasse sua vontade para o fim para o qual ela lhe foi dada?
+                        <br>
+                        Nesse texto, o filósofo cristão Agostinho de Hipona sustenta que a punição divina tem como fundamento o(a)
+
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) desvio da postura celibatária.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) insuficiência da autonomia moral.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) afastamento das ações de desapego.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) distanciamento das práticas de sacrifício.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) violação dos preceitos do Velho Testamento.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button"
+                                onclick="verificarResposta('res2' ,'b' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                    <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem"
+                                class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+        </section>
+
+    </main>
+    <div class="btnVolta">
+        <a href="filosofia-materia.html" class="volta"> Voltar </a>
+    </div>
+    <footer id="rodape">
+
+        <div class="areaRodape">
+        
+
+        </div>
+        <div class="areaRodape">
+            <div class="data"></div>
+        </div>
+
+
+    </footer>
+    <script src="../scripts/materias-geralApp.js"></script>  
+</body>
+
+</html>

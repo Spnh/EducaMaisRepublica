@@ -1,0 +1,214 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materia Ingles&Espan </title>
+    <link rel="stylesheet" href="../styles/espanholStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+<body onload="passaParametro('ingles&espan')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logoingles&espan.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1> Conjunções </h1>
+            <br><br>
+
+            <h3 class="dentromain">Coordinantes</h3>
+
+            <section class="dentromain"> 
+                <p>Desempenham a função de conectar orações de igual relevância, com o propósito de estabelecer o significado da frase, de maneira que sua disposição possa ser modificada sem que a oração maior à qual pertencem perca seu sentido. 
+                    <br><br/>
+                    Ex: "Fui a la tienda y compré algunas frutas."
+                    <br><br/>
+                    <strong>As coordinantes se dividem em:</strong>
+                    <br><br/>
+                    Copulativas: são as que unem significados de duas orações.
+                    <br><br/>
+                    Disyuntiva: são as que mostram duas ideias opostas, que se eliminam.
+                    <br><br/>
+                    Adversativas: são as que permitem ou indicam uma correção entre elementos, a segunda oração corrige alguma ideia da primeira oração.
+                    <br><br/>
+                    Explicativas: são as que unem as orações em que a segunda explica a primeira oração.
+                    <br><br/>
+                    Distributivas: são as que indicam alternância entre as orações, e se usam em pares.
+                    </p> 
+
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                        (ENEM - 2021)<strong style="text-align: center;"> Amuleto </strong>
+                        <br><br>
+                        Lo único cierto es que llegué a México en 1965 y me planté en casa de León Felipe y en casa de Pedro Garfias y les dije aqui estoy para lo que gusten mandar. Y les debí de caer simpática, porque antipática no soy, aunque a veces soy pesada, pero antipática nunca. Y lo primero que hice fue coger una escoba y ponerme a barrer el suelo de sus casas y luego a limpiar las ventanas y cada vez que podia les pedia dinero y les hacía compra. Y ellos me decían con ese tono espanol tan peculiar, esa musiquilla distinta que no los abandono nunca, como si encircularan las zetas y las ces y como si dejaran a las eses más huérfanas y libidinosas que nunca, Auxilio, me decían, deja ya de trasegar por el piso, Auxilio, deja esos papeies tranquilos, mujer, que el polvo siempre se ha avenido con la literatura.
+                        <br>
+                        <p style="font-size: 10px; text-align: right;">
+                            BOLANO, R. A. Tres novelas. Barcelona: Círculo de Lectores, 2003.
+                        </p>
+                        <br><br>
+                        No fragmento do romance, a uruguaia Auxilio narra a experiência que viveu no México ao trabalhar voluntariamente para dois escritores espanhóis. Com base na relação com os escritores, ela reflete sobre a(s)
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) dificuldades de comunicação entre patrão e empregada. 
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) sujeira dos livros de literatura.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) distintas maneiras de acolher do mexicano.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) orientações sobre a limpeza das casas dos espanhóis.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) variação linguística do espanhol.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','e')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        (ENEM - 2019)Dicen que Tita era tan sensible que desde que estaba en el vientre de mi bisabuela lloraba y lloraba cuando ésta picaba cebolla; su llanto era tan fuerte que Nacha, la cocinera de la casa, que era medio sorda, lo escuchaba sin esforzarse. Un día los sollozos fueron tan fuertes que provocaron que el parto se adelantara. Y sin que mi bisabuela pudiera decir ni pío, Tita arribó a este mundo prematuramente, sobre la mesa de la cocina, entre los olores de una sopa de fideos que estaba cocinando, los del tomillo, el laurel, el cilantro, el de la leche hervida, el de los ajos y, por supuesto, el de la cebolla. Como se imaginarán, la consabida nalgada no fue necesaria, pues Tita nació llorando de antemano, tal vez porque ella sabía que su oráculo determinaba que en esta vida le estaba negado el matrimonio. Contaba Nacha que Tita fue literalmente empujada a este mundo por un torrente impresionante de lágrimas que se desbordaron sobre la mesa y el piso de la cocina.
+                        <br>
+                        <p style="font-size: 10px; text-align: right;">
+                            ESQUIVEL, L. Como agua para chocolate. Buenos Aires: Debolsillo, 2005.
+                        </p>
+                        <br><br>
+                        No fragmento do romance mexicano, publicado em 1989, prevalece a
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) injunção com base no diálogo entre os personagens.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) descrição com base no retrato objetivo da realidade.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) narração com base em elementos fantásticos.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) exposição com base na definição do papel da mulher na sociedade.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) argumentação a partir da discussão acerca de dilemas existenciais.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'c' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="espanhol-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+              
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        <script src="../scripts/materias-geralApp.js"></script>  
+</body>
+</html>

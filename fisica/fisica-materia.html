@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteudo Programático de Física</title>
+    <link rel="stylesheet" href="../styles/fisica-materiaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+ <div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+</div> 
+<body>
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logofisi&quimi.png" >
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+    </div>
+        <main>
+            <div class="areaTopico">
+               <div class="areaLegenda">
+                    <h1>Física</h1>
+                    <fieldset class="legenda">
+                       <legend>Grau de importância</legend>
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade1')">
+                            <p class="txtLegenda" id="prioridade1">Obrigatório Ser Estudado (Possui Explicação)</p>
+                             <img class="imgLegenda"src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                            <!-- <span class="prioridade1">
+                             s   
+                            </span> -->
+                        </span>
+                    
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade2')" >
+                            <p class="txtLegenda" id="prioridade2">Obrigatório Ser Estudado (Não possui Explicação)</p>
+                             <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                            <!-- <span class="prioridade2">
+                             s   
+                            </span> -->
+                        </span>
+                    
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade3')" >
+                            <p class="txtLegenda" id="prioridade3">Estude Se Tiver tempo  </p>
+                          <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                            <!-- <span class="prioridade3">
+                             s   
+                            </span> -->
+                        </span>
+                    </fieldset>
+                   
+               </div>
+
+               <h2 style="padding-left: 100px; color: rgb(11, 170, 209); text-shadow: 2px 2px 3px rgb(36, 36, 36); font-size: 40px;">Conteúdo Programático</h2>
+              <span class="ano">
+                <h2 class="sub">1° Ano</h2>
+                </span>
+                <div class="linha">
+                     
+                    <div class="topico pri1" onclick="abreTopico('fisica-movimentos')" >
+                       <span class="cabTop">
+                            <h3>Movimentos</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                        </span>
+                        <p>Este tópico é fundamental na física e aborda o estudo do movimento em detalhes.
+                        </p>
+                    </div>
+                    <div class="topico pri2" >
+                       <span class="cabTop">
+                            <h3>Introdução a Conceitos Físicos</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>Os Objetos de Estudo da Física e suas Aplicações no
+Cotidiano; Subdivisões da Física; Relações da Física com outras Ciências; Física e
+Tecnologia; Impactos Sociais da Física;
+                        </p>
+                    </div>
+                    <div class="topico pri3" >
+                        <span class="cabTop">
+                            <h3>Grandezas físicas escalares e vetoriais</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p>                        </p>
+                    </div>
+                </div>
+               
+                <span class="ano">
+                    <h2 class="sub">2° Ano</h2>
+                </span>
+                <div class="linha">
+                    <div class="topico pri1" onclick="abreTopico('fisica-newton')">
+                        <span class="cabTop">
+                            <h3>Leis de Newton</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelha"> 
+                        </span>
+                        <p>saac Newton (1643-1727) foi um físico, astrônomo e matemático inglês que foi reconhecido como um dos cientistas mais influentes de toda a história devido à, principalmente, seus trabalhos sobre a fundação da lei da gravitação universal, feita a partir das três leis do movimento
+                        </p>
+                    </div>
+                    <div class="topico pri2">
+                        <span class="cabTop">
+                            <h3>Calor, Ambiente, Fontes e Usos de Energia</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>: Fontes e sistemas de calor;
+Propriedades térmicas de materiais; Grandezas térmicas;
+                        </p>
+                    </div>
+                    <div class="topico pri3">
+                        <span class="cabTop">
+                            <h3>Som, Imagem e Informação</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p>Grandezas físicas relacionadas com ondulatória;
+Propagação de uma onda; Fontes sonoras, causas e efeitos; Grandezas físicas
+relacionadas com o som; Propagação da luz; </p>
+                    </div>
+                </div>
+                
+                <span class="ano">
+                    <h2 class="sub">3° Ano</h2>
+                </span>
+             <div class="linha">
+                    <div class="topico pri1" onClick="abreTopico('fisica-calor')">
+                        <span class="cabTop">
+                            <h3>Calor</h3>
+                           <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                        </span>
+                        <p>A formação das nações é um processo complexo que envolve uma combinação de fatores históricos, culturais, políticos e geográficos. Na maioria dos casos, as nações se desenvolvem a partir da união de grupos étnicos, culturais ou territoriais que compartilham laços comuns e interesses mútuos.
+                        </p>
+                    </div>
+                    <div class="topico pri2">
+                        <span class="cabTop">
+                            <h3>Lei de Coulomb.
+</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="vermelho"> 
+                        </span>
+                        <p>Carga elétrica e processos de eletrização.
+                        </p>
+                    </div>
+                    <div class="topico pri2" onclick="abreTopico('materias')">  
+                        <span class="cabTop">
+                            <h3>Potência e energia elétrica</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p></p>
+                    </div>
+                </div>
+                
+                </div>
+
+       
+</div>
+          
+<div class="grafico">
+    <h2>Resumo do que cai no enem</h2>
+     <div style="width: 30%; margin: 0 auto;">
+        <canvas id="grafico" width="150" height="150"></canvas>
+    </div>
+</div>
+        
+         </main>
+<div class="btnVolta">
+<a href="../Index.html" class="volta"> Voltar </a>
+    
+</div>
+
+        <footer id="rodape">
+              <div class="areaRodape">
+                    <p style="padding-top: 10px;">Fonte: Ementário Integrado Informática</p>
+                        
+                    </div>
+            <div class="areaRodape"> 
+               
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+    <script src="../scripts/fisica-materiaApp.js">
+        
+    </script>
+
+</body>
+</html>

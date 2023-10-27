@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteudo Programático de Filosofia</title>
+    <link rel="stylesheet" href="../styles/filosofia-materiaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<div id="load">
+    <div class="inner">
+        <div id="carregar">
+            <div id="carrega"></div>
+        </div>
+    </div>
+</div>
+
+<body >
+    <div id="cabecalho">
+        <header id="inicio">
+            <div class="areaLogo">
+                <img class="logo" src="../styles/img/logofilo&socio.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+            <div class="areaBarra">
+                <form class="search-container">
+                    <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+
+                </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+
+        </header>
+    </div>
+    <main>
+        <br><br><br>
+        <div class="areaTopico">
+            <div class="areaLegenda">
+                <h1>Filosofia</h1>
+                <fieldset class="legenda">
+                    <legend>Grau de importância</legend>
+                    <span class="linhaLegenda" onclick="filtraPrioridade('prioridade1')">
+                        <p class="txtLegenda" id="prioridade1">Obrigatório Ser Estudado (possui explicação)
+                        </p>
+                        <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho">
+                        <!-- <span class="prioridade1">
+                             s   
+                            </span> -->
+                    </span>
+
+                    <span class="linhaLegenda" onclick="filtraPrioridade('prioridade2')">
+                        <p class="txtLegenda" id="prioridade2">Obrigatório Ser Estudado (não possui explicação)
+                        </p>
+                        <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul">
+                        <!-- <span class="prioridade2">
+                             s   
+                            </span> -->
+                    </span>
+
+                    <span class="linhaLegenda" onclick="filtraPrioridade('prioridade3')">
+                        <p class="txtLegenda" id="prioridade3">Estude se tiver tempo</p>
+                        <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde">
+                        <!-- <span class="prioridade3">
+                             s   
+                            </span> -->
+                    </span>
+                </fieldset>
+
+            </div>
+            <h2 style="padding-left: 100px; color: hsl(288, 82%, 67%); text-shadow: 2px 2px 3px rgb(36, 36, 36); font-size: 40px;">Conteúdo Programático</h2>
+            <span class="ano">
+                <h2 class="sub">1° Ano</h2>
+            </span>
+            <div class="linha">
+
+                <div class="topico pri2">
+                    <span class="cabTop">
+                        <h3>Introdução ao pensamento filosófico</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul">
+                    </span>
+                    <p>Busca reflexiva por respostas fundamentais sobre a existência.</p>
+                </div>
+                <div class="topico pri3">
+                    <span class="cabTop">
+                        <h3>O conceito de Filosofia e a atitude filosófica</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde">
+                    </span>
+                    <p>Entendimento profundo e crítico do conhecimento, a partir de uma atitude de questionamento
+                        constante.</p>
+                </div>
+                <div class="topico pri2">
+                    <span class="cabTop">
+                        <h3>A narrativa mítica e discurso filosófico</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde">
+                    </span>
+                    <p>Ideias através de histórias simbólicas, enquanto o filosófico envolve a racionalidade.</p>
+                </div>
+            </div>
+            <div class="linha">
+
+                <div class="topico pri2">
+                    <span class="cabTop">
+                        <h3>O contexto histórico: </h3>
+                        <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul">
+                    </span>
+                    <p>Períodos e Áreas da filosofia</p>
+                </div>
+                <div class="topico pri1" onclick="abreTopico('filosofia-grecia')">
+                    <span class="cabTop">
+                        <h3>A cosmologia pré-socrática</h3>
+                        <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul">
+                    </span>
+                    <p>O momento da ascensão da filosofia e do pensamento racional.</p>
+                </div>
+                <div class="topico pri1" onclick="abreTopico('filosofia-grecia')">
+                    <span class="cabTop">
+                        <h3>A filosofia clássica e a sofística</h3>
+                        <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul">
+                    </span>
+                    <p>A clássica busca a verdade e a s
+                        abedoria pela razão, já a sofística enfatiza a persuasão e retórica em vez da busca pela
+                        verdade.</p>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="topico pri2">
+                    <span class="cabTop">
+                        <h3>Princípios da Argumentação</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde">
+                    </span>
+                    <p>A argumentação filosófica incluem lógica, coerência e fundamentação.</p>
+                </div>
+                <div class="topico pri2">
+                    <span class="cabTop">
+                        <h3>Reflexões sobre as dimensões da ação humana</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde">
+                    </span>
+                    <p>Exploram a complexidade humana, suas intenções, escolhas e consequências das ações do homem.</p>
+                </div>
+                <div class="topico pri2">
+                    <span class="cabTop">
+                        <h3> Problemas gerais de Metafísica:</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul">
+                    </span>
+                    <p>A silogística aristotélica</p>
+                </div>
+            </div>
+            <span class="ano">
+                <h2 class="sub">2° Ano</h2>
+            </span>
+            <div class="linha">
+                <div class="topico pri2">
+                    <span class="cabTop">
+                        <h3>Teoria do conhecimento: </h3>
+                        <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde">
+                    </span>
+                    <p>Fontes do conhecimento. Dogmatismo, ceticismo e
+                        criticismo. Lógica (indução, dedução abdução).
+                    </p>
+                </div>
+                <div class="topico pri2">
+                    <span class="cabTop">
+                        <h3>A revolução científica da modernidade:</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde">
+                    </span>
+                    <p> Lógica da pesquisa científica experimental.
+                        Definição de método, leis e teorias científicas.
+                    </p>
+                </div>
+                <div class="topico pri2">
+                    <span class="cabTop">
+                        <h3>Ciência e técnica:</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde">
+                    </span>
+                    <p>Caracterização histórica de ciência e de técnica. Ciência,
+                        tecnologia e valores: a crítica da ciência e da técnica na sociedade. O binômio physis
+                        e téchne. A historiografia desta relação na ciência contemporânea.
+                    </p>
+                </div>
+            </div>
+            <span class="ano">
+                <h2 class="sub">3° Ano</h2>
+            </span>
+            <div class="linha" style="display :align-items;">
+                <div class="topico pri2">
+                    <span class="cabTop">
+                        <h3>Ética:</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul">
+                    </span>
+                    <p>Conceituação de ética e moral. A questão da ação e dos valores. A questão da
+                        liberdade e da felicidade. Teorias éticas. O alcance da preocupação ética: quem age e
+                        quem sofre a ação ética, o comportamento no mundo digital.
+                    </p>
+                </div>
+                <div class="topico pri2">
+                    <span class="cabTop">
+                        <h3>Política:</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul">
+                    </span>
+                    <p> Situar a política como atitude filosófica a partir do pensamento grego.
+                        Direitos humanos. Estado, poder e sociedade. As teorias políticas: liberalistas e
+                        críticas ao liberalismo.
+                    </p>
+                </div>
+            </div>
+            <span class="ano">
+                <h2 class="sub">Outras Matérias que aparecem no ENEM</h2>
+            </span>
+            <div class="linha">
+
+
+                <div class="topico pri1" onclick="abreTopico('filosofia-empirismo')">
+                    <span class="cabTop">
+                        <h3>Empirismo</h3>
+                        <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul">
+                    </span>
+                    <p>O empirismo é uma tradição filosófica que enfatiza a importância do conhecimento humano</p>
+                </div>
+                <div class="topico pri1" onclick="abreTopico('filosofia-medieval')">
+                    <span class="cabTop">
+                        <h3>Filosofia Medieval</h3>
+                        <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho">
+                    </span>
+                    <p>A teia alimentar representa as interações complexas entre os seres vivos em um ecossistema,
+                        mostrando que um organismo pode ocupar diferentes níveis tróficos. A cadeia alimentar é uma
+                        representação linear das transferências de energia de um organismo para outro em um ecossistema.
+                    </p>
+                </div>
+                <div class="topico pri1" onclick="abreTopico('filosofia-racionalismo')">
+                    <span class="cabTop">
+                        <h3>Racionalismo</h3>
+                        <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho">
+                    </span>
+                    <p>AO racionalismo é uma corrente filosófica que, em oposição ao empirismo, surgiu com os Eleatas e
+                        teve um
+                        papel central no platonismo, com a Teoria das Ideias de Platão, que distinguia o mundo
+                        inteligível do
+                        mundo sensível.
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="grafico">
+            <h2>Resumo do que cai no enem</h2>
+            <div style="width: 30%; margin: 0 auto;">
+                <canvas id="grafico" width="150" height="150"></canvas>
+            </div>
+        </div>
+
+    </main>
+    <div class="btnVolta">
+        <a href="../Index.html" class="volta"> Voltar </a>
+
+    </div>
+    <footer id="rodape">
+          <div class="areaRodape">
+                    <p style="padding-top: 10px;">Fonte: Ementário Integrado Informática</p>
+                        
+                    </div>
+        <div class="areaRodape">
+
+
+        </div>
+        <div class="areaRodape">
+            <div class="data"></div>
+        </div>
+
+
+    </footer>
+
+    <script src="../scripts/filosofia-materiaApp.js">
+
+    </script>
+
+</body>
+
+</html>

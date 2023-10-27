@@ -1,0 +1,196 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compreensão textual</title>
+    <link rel="stylesheet" href="../styles/inglesStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+<body onload="passaParametro('ingles&espan')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logoingles&espan.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1>Inglês</h1>
+            <br><br>
+
+            <h3 class="dentromain">Compreensão de Texto</h3>
+
+            <section class="dentromain"> 
+                <p> - Questões que avaliam a capacidade dos candidatos de entender e interpretar textos em inglês, que podem incluir trechos de romances, ensaios, notícias ou artigos acadêmicos. </p> 
+
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                        (Enem PPL 2014)
+                        <div style="display: flex; justify-content: center;">
+                            <img src="https://s2.static.brasilescola.uol.com.br/exercicios/2021/10/campanha-if-you-cant-read-it-why-eat-it.jpg" style="width: 450px;">
+                        </div>
+                        Implementar políticas adequadas de alimentação e nutrição é uma meta prioritária em vários países do mundo. A partir da campanha If you can’t read it, why eat it?, os leitores são alertados para o perigo de:
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) Acessarem informações equivocadas sobre a formulação química de alimentos empacotados.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) Consumirem alimentos industrializados sem o interesse em conhecer a sua composição.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) Desenvolverem problemas de saúde pela falta de conhecimento a respeito do teor dos alimentos.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) Incentivarem crianças a ingerirem grande quantidade de alimentos processados e com conservantes.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) Ignorarem o aumento constante da obesidade causada pela má alimentação na fase de desenvolvimento da criança.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','b')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        (Enem PPL 2013) 
+                        <br>
+                        <div style="display: flex; justify-content: center;">
+                            <img src="https://s2.static.brasilescola.uol.com.br/exercicios/2021/10/1-tirinha-ingles-semelhanca-pais-filhos.png" style="width: 450px;">
+                        </div>
+                        <br>
+                        Tirinhas são construídas a partir de contextos sociais e podem promover reflexões diversas. Essa tirinha provoca no leitor uma reflexão acerca da:
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) Ausência dos pais.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) Divisão de espaço com os pais.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) Submissão aos pais.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) Perda da atenção dos pais.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) Semelhança com os pais.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'e' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="ingles-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+                
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+        
+        <script src="../scripts/materias-geralApp.js"></script>  
+</body>
+</html>

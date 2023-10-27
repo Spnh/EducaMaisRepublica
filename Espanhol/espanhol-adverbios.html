@@ -1,0 +1,230 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materia Ingles&Espan </title>
+    <link rel="stylesheet" href="../styles/espanholStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+<body onload="passaParametro('ingles&espan')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logoingles&espan.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1> Advérbios </h1>
+            <br><br>
+
+            <section class="dentromain"> 
+                <p>Os advérbios são palavras invariáveis que tem o objetivo de modificar o sentido de adjetivos, de verbos ou de alguns advérbios.
+                    <br><br/>
+                    Eles podem indicar circunstâncias como: dúvida, afirmação, lugar, intensidade, ordem, modo, negação e tempo.
+                    <br><br/>
+                    Ex: "Él corre muy rápido." 
+                    <br><br/>
+                    O advérbio “muy” está mostrando o quão rápido ele está correndo, indicando a maneira ou modo que ele corre.
+                    </p> 
+
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                        (ENEM - 2022) MATERNIDADES EN TIEMPOS DE PANDEMIA 
+                        <br><br>
+                        <div style="display: flex; justify-content: center;">
+                            <img src="https://qcon-assets-production.s3.amazonaws.com/images/provas/89588/espn_5.png">
+                        </div>
+                        <p style="font-size: 10px; text-align: right;">
+                            MURIG, Disponível em: https://murigcolectivafeminista wordpress.com. Acesso em: 28 out, 2021 (adaptado).
+                        </p>
+                        <br><br>
+                        No texto, as palavras "crianza" e "tribu" são usadas para 
+                    </div>
+                    <form id="quizForm" style="font-size: 15px;">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) evidenciar a importância de uma rede de apoio para as mães na criação de seus filhos.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) denunciar a disparidade entre o trabalho das mães de diferentes classes sociais
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) ressaltar o fechammento de escolas e creches durante o período pandêmico.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) retificar a romantização da dedicação das mães na educação das crianças.
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) enfatizar a proteção aos filhos em razão do isolamento social das familias.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','a')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                    <p style="text-align: center;">
+                        (ENEM - 2021)
+                        <Strong>
+                            Agosto
+                            <br>
+                            9
+                            <br><br>
+                            Día de Los Pueblos Indígenas
+                        </Strong>
+                    </p>
+                    <br><br>
+                    Rigoberta Menchú nació en Guatemala, cuatro siglos y medio después de la conquista de Pedro de Alvarado y cinco años después de la conquista de Dwight Eisenhower.
+                    <br>
+                    En 1982, cuando el ejército arrasó las montañas mayas, casi toda la familia de Rigoberta fue exterminada, y fue borrada del mapa la aldea donde su ombligo había sido enterrado para que echara raíz.
+                    <br>
+                    Diez años después, ella recibió el Premio Nobel de la Paz. Y declaró: 
+                    <br>
+                    — Recibo este premio como un homenaje al pueblo maya, aunque llegue con quinientos años de demora.
+                    <br>
+                    Los mayas son gente de paciencia. Han sobrevivido a cinco siglos de carnicerías. 
+                    <br>
+                    Ellos saben que el tiempo, como la araña, teje despacio.
+                    <br>
+                    <p style="font-size: 10px; text-align: right;">
+                        GALEANO, E. Los hijos de los días. Buenos Aires: Siglo Veintiuno, 2012.
+                    </p>
+                    <br><br>
+                    A trajetória pessoal de Rigoberta Menchú se confunde com a da própria civilização maia. No texto, ressalta-se como característica desse povo o(a) 
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) trabalho minucioso e incansável para manter sua cultura viva ao longo da história.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) tradição de enterrar o umbigo dos recém-nascidos para vinculá-los à terra.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) conformismo ao lidar com os eventos traumáticos pelos quais passou.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) resistência aos processos de dominação aos quais foi submetido.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) busca por reconhecimento após uma história de dificuldades.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'d' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="espanhol-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+             
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+    <script src="../scripts/materias-geralApp.js"></script>  
+
+
+    </script>
+</body>
+</html>

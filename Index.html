@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="styles/indexStyle.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+
+
+<div id="load">
+  <div class="inner">
+    <div id="carregar">
+      <div id="carrega"></div>
+    </div>
+  </div>
+</div>
+
+<body onload="passaParametro('')">
+  <div class="menu" id="menur">
+    <ul>
+      <li class="list active" id="active">
+          <a href="Literatura/literatura-materia.html">
+              <span class="icone"><ion-icon name="book-outline"></ion-icon></span>
+              <span class="like" > Literatura</span>
+          </a>
+      </li>
+      <li class="list">
+          <a href="geografia/geografia-materia.html">
+              <span class="icone"><ion-icon name="earth-outline"></ion-icon></span>
+              <span class="like" > Geografia</span>
+          </a>
+      </li>
+      <li class="list">
+          <a href="Matematica/matematica-materia.html">
+              <span class="icone"><ion-icon name="infinite-outline"></ion-icon></span>
+              <span class="like" > Matemática</span>
+          </a>
+      </li>
+      <li class="list">
+          <a href="fisica/fisica-materia.html">
+              <span class="icone"><ion-icon name="logo-electron"></ion-icon></span>
+              <span class="like" > Física</span>
+          </a>
+      </li>
+      <li class="list">
+        <a href="biologia/biologia-materia.html">
+            <span class="icone"><ion-icon name="fitness-outline"></ion-icon></span>
+            <span class="like" > Biologia</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="Quimica/quimica-materia.html">
+            <span class="icone"><ion-icon name="flask-outline"></ion-icon></span>
+            <span class="like" > Quimica</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="ingles/ingles-materia.html">
+            <span class="icone"><ion-icon name="language-outline"></ion-icon></span>
+            <span class="like" > Inglês</span>
+        </a>
+    </li>
+      <li class="list">
+        <a href="Espanhol/espanhol-materia.html">
+            <span class="icone"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+            <span class="like" > Espanhol</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="Portugues/portugues-materia.html">
+            <span class="icone"><ion-icon name="chatbox-ellipses-outline"></ion-icon></span>
+            <span class="like" > Português</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="Filosofia/filosofia-materia.html">
+            <span class="icone"><ion-icon name="help-outline"></ion-icon></span>
+            <span class="like" > Filosofia</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="Sociologia/sociologia-materia.html">
+            <span class="icone"><ion-icon name="accessibility-outline"></ion-icon></span>
+            <span class="like" > Sociologia</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="historia/historia-materia.html">
+            <span class="icone"><ion-icon name="boat-outline"></ion-icon></span>
+            <span class="like" > História</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script>
+
+      const list = document.querySelectorAll('.list');
+      
+      function activeLink(){
+      
+      list.forEach((item) =>
+      
+      item.classList.remove('active')); this.classList.add('active');
+      }
+      
+      list.forEach((item) =>
+      
+      item.addEventListener('mouseover', activeLink));
+      
+      
+  </script>
+
+  <div class="tudo">
+  <div id="cabecalho">
+    <header id="inicio">
+      <div class="areaLogo">
+        <img class="logo" src="styles/img/logo.png"> </img>
+
+      </div>
+
+      <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+      <div class="areaBarra">
+        <form class="search-container">
+          <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+
+        </form>
+      </div>
+      <div class="areaBtn">
+        <div class="bt">
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="fas fa-moon"> </i>
+            <i class="fas fa-sun"> </i>
+            <div class="ball"></div>
+          </label>
+        </div>
+      </div>
+
+    </header>
+  </div>
+
+  </br>
+  </br>
+
+
+  <!-- Cada item li da navegação tem classes diferentes: Vestibular (drop1), Ensino técnico (drop2)  http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png... -->
+
+
+  <br><br><br><br><br><br>
+  <div class="titulo"><h1>Bem vindo ao <br><span class="educa">Educa Mais </span><span class="rep" id="titulo2">República</span> </h1></div>
+    <div class="container">
+        <div class="row">
+          <div class="card green" id="redacaoEnem" >
+            <h2 >Redação Enem</h2>
+            <p>Aprenda a fazer Redação estilo Enem</p>
+            <br>
+            <img class="image" width="85px" height="90px"src="styles/img/clickindex.png" alt="money" />
+            <br>
+          </div>
+
+          <div class="card blue" id="escola-eterCard">
+            <h2>E.T.E República</h2>
+            <p>Algumas curiosidades sobre a Escola</p>
+            <br>
+            <div id="escola-eter" style="display: none;">
+              <p>- A E.T.E República é uma escola de nível técnico que oferta os cursos de Informática, Programação de Jogos Digitais, Rede de Computadores, Enfermagem, Mecânica, Eletrônica e Telecomunicações.
+                </p>
+                <p>- Foi inaugurada em 1996, reaproveitando o prédio que antigamente pertencia FUNABE</p>
+            </div>
+            <img class="image" width="85px" height="90px"src="styles/img/clickindex.png" alt="money" />
+            <br>
+          </div>
+
+          <div class="card red" id="enem-informativoCard">
+            <h2>Prova do Enem</h2>
+            <p>Entenda como será o exame de 2023</p>
+            <br>
+            <div id="enem-informativo" style="display: none;">
+                <p>A prova do ENEM atualmente conta com 180 questões de multiplica escolha com 5 opções e mais o texto dissertativo-argumentativo (redação). </p>
+                <p>Dia 1 (05/11)</p>
+                <p>- Linguagens, Códigos e suas Tecnologias, Ciências Humanas e Redação.</p>
+                <p>Dia 2 (12/11)</p>
+                <p>- Matemática e suas tecnologias e Ciências da natureza.</p>
+            </div>
+            <img class="image" width="85px" height="90px"src="styles/img/clickindex.png" alt="money" />
+            <br>
+          </div> 
+        </div> 
+          <div class="row">
+
+          <div class="card orange"  id="carreiraCard">
+            <h2>Carreira: Informática</h2>
+            <p>Entenda melhor sobre essa área</p>
+            <br>
+            <div id="carreira" style="display: none;">
+              <p>A carreira na área de informática é a que está mais em alta nos últimos tempos e uma das que oferecem os melhores salários. Os cursos superiores para a construção de um profissional de TI são: Tecnologia em Análise e Desenvolvimento de Sistemas, Ciência da Computação e Engenharia da Computação.
+                Mas a vantagem é que para a maioria dos cargos não é necessário um curso superior específico.</p>
+            </div>
+            <img class="image" width="85px" height="90px"src="styles/img/clickindex.png" alt="money" />
+            <br>
+          </div>
+          <div class="card black" id="faculdadesCard">
+            <h2>Faculdades no RJ</h2>
+          
+            <p>Conheça as faculades presentes na cidade do Rio de janeiro </p>
+            <br>
+            <div id="faculdades" style="display: none;">
+              <p>Atualmente o Rio de Janeiro conta com algumas faculades públicas, são elas: 
+              </p>
+              <p>- Universidade do Estado do Rio de Janeiro (UERJ)</p>
+              <p>- Instituto Federal do Rio de Janeiro (IFRJ)</p>
+              <p>- Centro Federal de Educação Tecnológica Celso Suckow da Fonseca (CEFET-RJ)</p>
+              <p>- Universidade Federal do Estado do Rio de Janeiro (UNIRIO)</p>
+              <p>- Escola Nacional de Ciências Estatísticas (ENCE)</p>
+              <p>- Faculdade de Educação Tecnológica do Estado do Rio de Janeiro (FAETERJ RIO)</p>
+
+
+            </div>
+            <img class="image" width="85px" height="90px"src="styles/img/clickindex.png" alt="money" />
+            <br>
+          </div>
+          <div class="card violet"  id="educaCard" onclick="abreModal()">
+            <h2>Conheça o Educa</h2>
+            <p>Fale com o nosso assistente</p>
+            <br>
+            <div id="carreira" style="display: none;">
+              <p>A carreira na área de informática é a que está mais em alta nos últimos tempos e uma das que oferecem os melhores salários. Os cursos superiores para a construção de um profissional de TI são: Tecnologia em Análise e Desenvolvimento de Sistemas, Ciência da Computação e Engenharia da Computação.
+                Mas a vantagem é que para a maioria dos cargos não é necessário um curso superior específico.</p>
+            </div>
+            <img class="image" width="85px" height="90px"src="styles/img/clickindex.png" alt="money" />
+            <br>
+          </div>
+      </div>
+      <div class="row">
+          <div class="card gray"  id="sobreCard">
+            <h2>Sobre</h2>
+              <p>Conheça mais sobre os criadores do Educa Mais República</p>
+              <div class="areaQr" style="display: none;">
+                <img src="styles/img/qrCodeSobre.png" style="width: 100%;">
+              </div>
+            <br>
+            <img class="image" width="85px" height="90px"src="styles/img/clickindex.png" alt="money" />
+            <br>
+          </div>
+      </div>
+        <div id="secaoMateria">
+         <h2 class="subTitulo">Matérias</h2>
+          <div class="areaMaterias">
+            <div class="linha">
+                <div class="materia cienciaExata" onclick="abrePagina('mat')">Matemática</div>
+                <div class="materia linguagem" onclick="abrePagina('por')"> Português</div>
+               <div class="materia cienciaHumana" onclick="abrePagina('geo')">Geografia</div>
+            </div>
+             <div class="linha">
+                <div class="materia cienciaNatural" onclick="abrePagina('qui')">Química</div>
+                <div class="materia linguagem" onclick="abrePagina('lit')">Literatura</div>
+                <div class="materia cienciaHumana"onclick="abrePagina('his')">História</div>
+             </div>
+             <div class="linha">
+                <div class="materia cienciaNatural"onclick="abrePagina('fis')">Física</div>
+                <div class="materia linguagem" onclick="abrePagina('ing')">Inglês</div>
+                <div class="materia cienciaHumana" onclick="abrePagina('soc')">Sociologia</div>
+             </div>
+             <div class="linha">
+                <div class="materia cienciaNatural" onclick="abrePagina('bio')">Biologia</div>
+                <div class="materia linguagem" onclick="abrePagina('esp')">Espanhol</div>
+                <div class="materia cienciaHumana" onclick="abrePagina('fil')">Filosofia</div>
+             </div>
+            <div class="linha">
+              <div class="areaLegenda">
+                        <fieldset class="legenda">
+                           <legend >Divisão De Materia</legend>
+                            <span class="linhaLegenda" >
+                                <p class="txtLegenda cienciaExata" onclick="destacaMateria('CE')">Ciências Exatas</p>
+                               
+                            </span>
+                            <span class="linhaLegenda">
+                                <p class="txtLegenda cienciaNatural" onclick="destacaMateria('CN')">Ciências Da Natureza</p>
+                            </span>
+
+                            <span class="linhaLegenda">
+                                <p class="txtLegenda linguagem" onclick="destacaMateria('LI')">Linguagens</p>
+                            </span>
+                        
+                            <span class="linhaLegenda">
+                                <p class="txtLegenda cienciaHumana" onclick="destacaMateria('CH')">Ciências Humanas</p>
+                            </span>
+                        
+                          
+                        </fieldset>
+                       
+                   </div>
+            </div>
+      </div>
+  </div>
+  </div>
+  <div class="modal">
+    <div class="eduquinha">
+      <div class="linhaEduc">
+         <div class="txtLinha">
+          <p>Converse Com o Educa, Nosso Assistente Virtual </p>
+           
+         </div>
+       
+         <div class="fechamodal" onclick="fechaModal()">X</div>
+      </div>
+        <div class="areaEduquinha">
+          <div id="janela-chat">
+        <!-- Aqui, as mensagens do chat serão exibidas -->
+        </div>
+        <div class="areaImgEduquinha">
+          <img class="imgEduquinha" src="styles/img/Eduquinha.png">
+        </div>
+        </div>
+        <div class="btnEduquinha">
+          <input  type="text" id="user-text" placeholder="Digite sua pergunta...">
+          <input type="button" id="limpar" onclick="limpar()" value="Limpar">
+          </div>
+    </div>
+   </div>
+  </div>
+
+
+   <script src="scripts/eduquinhaApp.js"></script>
+  <script src="scripts/indexApp.js"></script>
+</body>
+
+</html>

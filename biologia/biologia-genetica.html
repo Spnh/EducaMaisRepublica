@@ -1,0 +1,229 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materia Biologia - Genética</title>
+    <link rel="stylesheet" href="../styles/biologiaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+<body onload="passaParametro('biologia')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logo.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1>Genética</h1>
+         
+            <br><br>
+            <section class="dentromain"> 
+                <p> A Genética Mendeliana é uma parte fundamental da genética que se baseia nas descobertas do monge austríaco Gregor Mendel no século XIX. Ela se concentra nos padrões de herança de características em organismos, incluindo humanos.
+            </p> 
+            </section>
+
+            <h3 class="dentromain">Leis Mendelianas</h3>
+
+            <section class="dentromain"> 
+                <p> <span class="subTopico">1ª Lei de Mendel (Lei da Segregação):</span> Mendel observou que os genes ocorrem em pares e que, durante a formação dos gametas (células reprodutivas), os alelos (formas alternativas de um gene) se separam. Cada gameta carrega apenas um alelo de cada par. Isso explica por que as características podem reaparecer em gerações posteriores, mesmo quando estão ausentes em gerações intermediárias.
+
+                </p>
+                    <br>
+                <p><span class="subTopico">2ª Lei de Mendel (Lei da Distribuição):</span>  Mendel também observou que a segregação de um par de genes é independente da segregação de outros pares de genes. Isso significa que a herança de uma característica não afeta a herança de outra. Essa lei é fundamental para entender como as características são transmitidas independentemente.</p> 
+                </section>
+                <h3 class="dentromain">Heredograma</h3>
+
+            <section class="dentromain"> 
+                <p>  Um heredograma é uma representação gráfica de padrões de herança genética em uma família. Ele mostra como uma característica específica é transmitida de geração em geração, permitindo a análise de padrões de herança e a identificação de genótipos de indivíduos.
+</p> 
+                                    </section>
+                <h3 class="dentromain">Ausência de Dominância (Co-Dominância e Dominância Incompleta)</h3>
+
+            <section class="dentromain"> 
+                <p>  Em alguns casos, os alelos não exibem um padrão de dominância claro, como na co-dominância (ambos os alelos se expressam) e na dominância incompleta (os alelos se misturam para produzir um fenótipo intermediário). Isso é importante para entender como a expressão genética pode variar.
+
+                </p> 
+            </section>
+                <h3 class="dentromain">Alelos</h3>
+
+            <section class="dentromain"> 
+                <p> Os alelos são as diferentes versões de um gene que podem determinar características específicas. Por exemplo, um gene para cor de olhos pode ter alelos para olhos castanhos, azuis e verdes. A combinação de alelos em um indivíduo é chamada de genótipo.
+              </p> 
+                </section>
+                 <h3 class="dentromain">Herança Ligada ao Sexo</h3>
+
+            <section class="dentromain"> 
+                <p>   Alguns genes estão localizados nos cromossomos sexuais X e Y. Isso pode resultar em padrões de herança diferentes para homens e mulheres. Por exemplo, doenças genéticas ligadas ao sexo, como a hemofilia, são mais comuns em homens devido à herança recessiva ligada ao cromossomo X. A Genética Mendeliana fornece as bases para entender como os traços são herdados de geração em geração e como as características genéticas são transmitidas. Esses princípios são fundamentais para a biologia e têm aplicações importantes na medicina, na seleção de características em agricultura e em outras áreas da ciência.
+                   </p> 
+                </section>
+                
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                       (Enem 2021) A deficiência de lipase ácida lisossômica é uma doença hereditária associada a um gene do cromossomo 10. Os pais dos pacientes podem não saber que são portadores dos genes da doença até o nascimento do primeiro filho afetado. Quando ambos os progenitores são portadores, existe uma chance, em quatro, de que seu bebê possa nascer com essa doença.
+                                            </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) Recessivo.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b)  Dominante.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) Codominante.
+
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) Poligênico.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                            e) Polialélico.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','a')">Verificar</button>
+                            <br>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        (Enem 2019) Com base nos experimentos de plantas de Mendel, foram estabelecidos três princípios básicos, que são conhecidos como leis da uniformidade, segregação e distribuição independente. A lei da distribuição independente refere-se ao fato de que os membros de pares diferentes de genes segregam-se independentemente, uns dos outros, para a prole.
+                        Hoje, sabe-se que isso nem sempre é verdade. Por quê?
+
+
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) Distribuição depende do caráter de dominância ou recessividade do gene.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) Os organismos nem sempre herdam cada um dos genes de cada um dos genitores.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) As alterações cromossômicas podem levar a falhas na segregação durante a meiose.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) Os genes localizados fisicamente próximos no mesmo cromossomo tendem a ser herdados juntos.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) O cromossomo que contém dois determinados genes pode não sofrer a disjunção na primeira fase da meiose.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'d' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="biologia-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+               
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+
+    <script src="../scripts/materias-geralApp.js"></script>  
+
+
+</body>
+</html>

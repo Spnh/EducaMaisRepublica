@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteudo Programático de Geografia</title>
+    <link rel="stylesheet" href="../styles/geografia-materiaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+ <div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+</div> 
+<body >
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logogeografia.png" >
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+    </div>
+        <main>
+            <div class="areaTopico">
+               <div class="areaLegenda">
+                    <h1>Geografia</h1>
+                    <fieldset class="legenda">
+                       <legend>Grau de importância</legend>
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade1')">
+                            <p class="txtLegenda" id="prioridade1">Obrigatório Ser Estudado</p>
+                             <img class="imgLegenda"src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                            <!-- <span class="prioridade1">
+                             s   
+                            </span> -->
+                        </span>
+                    
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade2')" >
+                            <p class="txtLegenda" id="prioridade2">Estude Se Der Tempo</p>
+                             <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                            <!-- <span class="prioridade2">
+                             s   
+                            </span> -->
+                        </span>
+                    
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade3')" >
+                            <p class="txtLegenda" id="prioridade3">Apenas Grade Curricular </p>
+                          <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                            <!-- <span class="prioridade3">
+                             s   
+                            </span> -->
+                        </span>
+                    </fieldset>
+                   
+               </div>
+               <h2 style="padding-left: 100px; color:  rgb(170, 118, 5); text-shadow: 2px 2px 3px rgb(36, 36, 36); font-size: 40px;">Conteúdo Programático</h2>
+              <span class="ano">
+                <h2 class="sub">1° Ano</h2>
+                </span>
+                <div class="linha">
+                     
+                    <div class="topico pri1" onclick="abreTopico('geografia-fisica')" >
+                       <span class="cabTop">
+                            <h3>Geografia Física</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                        </span>
+                        <p>É o campo de estudo que se concentra nas características naturais da Terra, investigando elementos como solo, vegetação, clima e outros componentes físicos do planeta.
+                        </p>
+                    </div>
+                    <div class="topico pri1" onclick="abreTopico('geografia-meioambiente-impactos-sustentabilidade')" >
+                       <span class="cabTop">
+                            <h3>Meio Ambiente</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelha"> 
+                        </span>
+                        <p>O meio ambiente abrange todos os elementos biológicos, químicos e físicos que sustentam a vida na Terra. Essa definição é amplamente reconhecida pela ONU e pela legislação ambiental brasileira.
+                        </p>
+                    </div>
+                    <div class="topico pri3" >
+                        <span class="cabTop">
+                            <h3>Paisagem</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p>Os biomas no território brasileiro: os domínios morfoclimáticos.
+                        </p>
+                    </div>
+                </div>
+               
+                <span class="ano">
+                    <h2 class="sub">2° Ano</h2>
+                </span>
+                <div class="linha">
+                    <div class="topico pri1" onclick="abreTopico('geografia-urbanizacao')">
+                        <span class="cabTop">
+                            <h3>Urbanição</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelha"> 
+                        </span>
+                        <p>Urbanização é o crescimento populacional nas cidades superando o aumento nas áreas rurais, impulsionado principalmente pela migração em busca de oportunidades de emprego na indústria, construção e comércio urbanos.
+                        </p>
+                    </div>
+                    <div class="topico pri2">
+                        <span class="cabTop">
+                            <h3>Industrialização</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>EA industrialização é um processo de transformação econômica e social que envolve a transição de uma economia baseada principalmente na agricultura e na manufatura manual para uma economia que depende da produção em larga escala em fábricas e indústrias.
+                        </p>
+                    </div>
+                    <div class="topico pri3">
+                        <span class="cabTop">
+                            <h3>Espaço Agrario Brasileiro</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p>O espaço agrário brasileiro é caracterizado por sua vasta extensão territorial e sua diversidade geográfica e climática, que o torna um dos principais celeiros agrícolas do mundo. </p>
+                    </div>
+                </div>
+                
+                <span class="ano">
+                    <h2 class="sub">3° Ano</h2>
+                </span>
+             <div class="linha">
+                    <div class="topico pri2">
+                        <span class="cabTop">
+                            <h3>Formação Das Nações</h3>
+                           <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>A formação das nações é um processo complexo que envolve uma combinação de fatores históricos, culturais, políticos e geográficos. Na maioria dos casos, as nações se desenvolvem a partir da união de grupos étnicos, culturais ou territoriais que compartilham laços comuns e interesses mútuos.
+                        </p>
+                    </div>
+                    <div class="topico pri1" onclick="abreTopico('geografia-geopolitica')">
+                        <span class="cabTop">
+                            <h3>Geopolitica</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <p>A geopolítica é uma disciplina que se concentra na análise das relações políticas, econômicas e territoriais entre os Estados e atores internacionais. Ela busca entender como fatores geográficos, como localização, recursos naturais e fronteiras, influenciam as dinâmicas globais.
+                        </p>
+                    </div>
+                    <div class="topico pri2">  
+                        <span class="cabTop">
+                            <h3>Globalização</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>A globalização é um fenômeno complexo que descreve a crescente interconexão e interdependência de países, economias e culturas em todo o mundo. Esse processo é impulsionado por avanços tecnológicos, como a internet e as comunicações globais, juntamente com a liberalização do comércio e o livre fluxo de capitais.</p>
+                    </div>
+                </div>
+                
+                </div>
+
+       
+</div>
+          
+<div class="grafico">
+    <h2>Resumo do que cai no enem</h2>
+     <div style="width: 30%; margin: 0 auto;">
+        <canvas id="grafico" width="150" height="150"></canvas>
+    </div>
+</div>
+        
+         </main>
+<div class="btnVolta">
+<a href="../Index.html" class="volta"> Voltar </a>
+    
+</div>
+        <footer id="rodape">
+              <div class="areaRodape">
+                    <p style="padding-top: 10px;">Fonte: Ementário Integrado Informática</p>
+                        
+                    </div>
+            <div class="areaRodape"> 
+                
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+    <script src="../scripts/geografia-materiaApp.js">
+        
+    </script>
+
+</body>
+</html>

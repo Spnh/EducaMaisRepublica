@@ -1,0 +1,221 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newtons </title>
+    <link rel="stylesheet" href="../styles/fisicaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+<body onload="passaParametro('fisi&quimi')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logofisi&quimi.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1> Mecânica Newtoniana </h1>
+            <br><br>
+
+            <h3 class="dentromain">Leis de Newton</h3>
+
+            <section class="dentromain"> 
+                <p> Isaac Newton (1643-1727) foi um físico, astrônomo e matemático inglês que foi reconhecido como um dos cientistas mais influentes de toda a história devido à, principalmente, seus trabalhos sobre a fundação da lei da gravitação universal, feita a partir das três leis do movimento;
+                 </p><br><br>
+                <h2> 1ª Lei de Newton: Príncipio da Inércia </h2>
+                <p>
+                 <br>
+                Nesta lei, Newton diz que o objeto em repouso tende a permanecer em repouso, e um objeto em movimento tende a permanecer em movimento com a mesma velocidade e na mesma direção, a menos que uma força externa atue sobre ele.
+                Essa lei descreve o conceito de inércia, que é a resistência de um objeto a mudar seu estado de movimento através da frase: “Todo corpo permanece em seu estado de repouso, ou de movimento uniforme em linha reta, a menos que seja obrigado a mudar seu estado por forças impressas nele”. 
+                </p>
+                <br><br>
+                <h2>2ª Lei de Newton: Força e Aceleração </h2> <br>
+                <p>
+                Isaac diz que a força aplicada a um objeto é igual à taxa de mudança da quantidade de movimento (momento linear) do objeto, expresso pela fórmula: <br><br></p>
+                  <h2>F = m.a</h2>
+                  <br><br>
+                <p>Onde:
+                <br><br>
+                F = Força do objeto em Newtons (N);<br>
+                m = massa do objeto em quilogramas (kg);<br>
+                a = aceleração do objeto em metros por segundo (m/s);
+                <br><br>
+                Esta lei é fundamental para entender como as forças afetam o movimento, uma vez que, ela estabelece a relação entre força, massa e aceleração de um objeto.
+                 <br><br>
+                </p>
+                <h2>3ª Lei de Newton: Príncipio da Ação e Reação</h2><br>
+                 <p>Neste príncipio, Newton diz que para cada ação, há uma reação de igual magnitude e em direção oposta. Em outras palavras, se um objeto exerce uma força sobre outro objeto, o segundo objeto exerce uma força igual e oposta sobre o primeiro. Esta lei descreve o princípio da conservação do momento linear e demonstra que as interações entre objetos sempre envolvem pares de forças de ação e reação.
+</p>
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                    (UERJ - 2013)
+                     Um bloco de madeira encontra-se em equilíbrio sobre um plano inclinado de 45º em relação ao solo. A intensidade da força que o bloco exerce perpendicularmente ao plano inclinado é igual a 2,0 N.
+                     <br><br>
+                    Entre o bloco e o plano inclinado, a intensidade da força de atrito, em newtons, é igual a:
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) 4,0.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) 1,0.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) 1,4.
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) 0,5.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) 2,0.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','e')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                        (Enem - 2016) Uma invenção que significou um grande avanço tecnológico na Antiguidade, a polia composta ou a associação de polias, é atribuída a Arquimedes (287 a.C. a 212 a.C.). O aparato consiste em associar uma série de polias móveis a uma polia fixa. A figura exemplifica um arranjo possível para esse aparato. É relatado que Arquimedes teria demonstrado para o rei Hierão um outro arranjo desse aparato, movendo sozinho, sobre a areia da praia, um navio repleto de passageiros e cargas, algo que seria impossível sem a participação de muitos homens. Suponha que a massa do navio era de 3 000 kg, que o coeficiente de atrito estático entre o navio e a areia era de 0,8 e que Arquimedes tenha puxado o navio com uma força F com seta para a direita sobrescrito , paralela à direção do movimento e de módulo igual a 400 N. Considere os fios e as polias ideais, a aceleração da gravidade igual a 10 m/s2 e que a superfície da praia é perfeitamente horizontal.
+                        <br><br>
+                        <div>
+                            <img src="https://static.todamateria.com.br/upload/le/is/leisnewtonenem2016.jpg?auto_optimize=low"style="width: 450px;">
+                         <br><br>
+                    </div>
+                        O número mínimo de polias móveis usadas, nessa situação, por Arquimedes foi:
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) 3
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) 6
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) 7
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) 8
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) 10
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'b' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="fisica-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+            
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+
+    <script src="../scripts/materias-geralApp.js">
+        
+    </script>
+</body>
+</html>

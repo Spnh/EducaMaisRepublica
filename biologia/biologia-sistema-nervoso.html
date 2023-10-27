@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materia Biologia - Sistema Nervoso</title>
+    <link rel="stylesheet" href="../styles/biologiaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+<body onload="passaParametro('biologia')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logo.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1>Sistema Nervoso</h1>
+         
+            <br><br>
+            <section class="dentromain"> 
+                <p> O sistema nervoso desempenha um
+                papel crítico no funcionamento do corpo
+                humano e na resposta a estímulos do
+                ambiente. Vamos explorar os
+                componentes, a anatomia e a fisiologia,
+                bem como as doenças e drogas
+                relacionadas a este sistema.
+            </p> 
+            </section>
+
+            <h3 class="dentromain">Tecido Nervoso e Condução de
+Impulso Nervoso</h3>
+
+            <section class="dentromain"> 
+                <p> O sistema nervoso é
+                    composto por neurônios, células
+                    especializadas em transmitir sinais
+                    elétricos. Eles têm dendritos para
+                    receber sinais, axônios para transmiti-los
+                    e terminais nervosos para se comunicar
+                    com outras células.
+
+
+                </p>
+                 
+                </section>
+                <h3 class="dentromain">Anatomia do Sistema Nervoso
+Humano</h3>
+
+            <section class="dentromain"> 
+                <p>  O sistema nervoso é dividido
+                    em sistema nervoso central (cérebro e
+                    medula espinhal) e sistema nervoso
+                    periférico (nervos que se estendem pelo
+                    corpo). Aprender a anatomia dessas
+                    partes é fundamental para entender
+                    como o sistema nervoso funciona.
+</p> 
+                                    </section>
+                <h3 class="dentromain">Organização e Funcionamento</h3>
+
+            <section class="dentromain"> 
+                <p>  O
+                    sistema nervoso é responsável pela
+                    percepção de estímulos, processamento
+                    de informações e coordenação de
+                    respostas. Isso inclui funções cognitivas,
+                    como pensamento, aprendizado,
+                    memória, bem como funções motoras e
+                    sensoriais.
+
+                </p> 
+            </section>
+                <h3 class="dentromain">Doenças e Drogas</h3>
+
+            <section class="dentromain"> 
+                <p> Este tópico
+                    aborda doenças neurológicas, como
+                    Alzheimer, Parkinson, epilepsia,
+                    esclerose múltipla e drogas que afetam
+                    o sistema nervoso, incluindo substâncias
+                    psicoativas e seus efeitos.
+              </p> 
+                </section>
+                 <h3 class="dentromain">Sistema Nervoso no Enem</h3>
+
+            <section class="dentromain"> 
+                <p>  O
+                    Enem frequentemente aborda questões
+                    relacionadas à anatomia, funções e
+                    distúrbios do sistema nervoso. É
+                    importante estar preparado para
+                    responder perguntas sobre temas como
+                    reflexos, neurotransmissores, funções
+                    das partes do cérebro, entre outros.
+                    Compreender o sistema nervoso é
+                    crucial, não apenas para a biologia, mas
+                    também para a compreensão de
+                    questões de saúde mental, distúrbios
+                    neurológicos e a interação entre o corpo
+                    e o cérebro. É uma área de grande
+                    importância tanto no Enem
+                    quanto em estudos avançados em
+                    biologia e medicina.
+   </p> 
+                </section>
+                
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                       (Enem 2021)
+                         Um dos exames clínicos mais tradicionais para medir a capacidade reflexa dos indivíduos é o exame do reflexo patelar. Esse exame consiste na estimulação da patela, um pequeno osso localizado na parte anterior da articulação do joelho, com um pequeno martelo. A resposta reflexa ao estímulo é caracterizada pelo levantamento da perna em que o estímulo foi aplicado.
+Qual região específica do sistema nervoso coordena essa resposta?
+                                            </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) Ponte.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b)  Medula.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) Cerebelo.
+
+
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) Hipotálamo.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                            e) Neuro-hipófise.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','b')">Verificar</button>
+                            <br>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        (Enem 2009)
+                        Pode-se citar como o principal responsável pela manutenção da temperatura corporal humana o sistema
+
+
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) Digestório, pois produz enzimas que atuam na quebra de alimentos calóricos.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) Imunológico, pois suas células agem no sangue, diminuindo a condução do calor.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) Nervoso, pois promove a sudorese, que permite perda de calor por meio da evaporação da água.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) Reprodutor, pois secreta hormônios que alteram a temperatura, principalmente durante a menopausa.. 
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) Endócrino, pois fabrica anticorpos que, por sua vez, atuam na variação do diâmetro dos vasos periféricos.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'c' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="biologia-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+          
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+
+    <script src="../scripts/materias-geralApp.js"></script>  
+ 
+</body>
+</html>

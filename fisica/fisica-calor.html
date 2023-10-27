@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calor </title>
+    <link rel="stylesheet" href="../styles/fisicaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+<body onload="passaParametro('fisi&quimi')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logofisi&quimi.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1> Calorimetria </h1>
+            <br>
+
+
+            <section class="dentromain"> 
+                <p> A calorimetria é um tópico da termodinâmica, que estuda a medição e quantificação das trocas de calor em sistemas. As fórmulas principais da calorimetria são;
+                 </p><br>
+                <h3>Equação Fundamental:</h3><br>
+                <section class="dentromain">
+                    <p> Essa equação define a quantidade de calor (Q) que um corpo de massa (m) e calor específico (c) absorve ou libera para variar sua temperatura em certo valor (ΔT), ou seja, é a quantidade de calor recebido ou cedido. Expresso pela fórmula:
+                <br><br>
+                <h2>Q = m . c . ΔT</h2>
+                 <br></p>
+                <p>Onde:
+                <br><br>
+                Q = Quantidade de calor em calorias ou joules (cal ou J);<br>
+                m = Massa do objeto em gramas (g);<br>
+                c = Calor específico (em J/g°C ou cal/g°C);<br>
+                ΔT = Variação da temperatura em graus Celsius (°C)
+                </p>
+                <br>
+               <h3>Calor Latente:</h3><br>
+                <p>O calor latente se refere à quantidade de calor que é absorvida ou liberada por uma substância durante uma mudança de fase, como a fusão (transformação do estado sólido para o líquido) ou a vaporização (transformação do estado líquido para o gasoso). Trata-se de uma propriedade específica para cada substância e não independente da massa.
+                    
+                    <br><br>
+                    O calor latente de uma substância é expresso pela fórmula:
+                    <br><br>
+                </p>
+                  <h2>L = Q / m</h2>
+                  <br>
+                <p>Onde:
+                <br><br>
+                L = Calor latente em joules/caloria por grama (J/g ou cal/g);<br>
+                Q = Quantidade total de calor envolvida na mudança de fase em cal ou J);<br>
+                m =  massa da substância que passa pela mudança de fase em gramas (g).
+                </p>
+                <br>
+               <h3>Capacidade térmica:</h3><br>
+                <p>A capacidade térmica é a quantidade de calor necessária para elevar a temperatura de uma unidade de massa do material em uma unidade de temperatura (1 grau Celsius ou 1 Kelvin). Ela é dada por:</p>
+            <br>
+             <h2> C = Q / ΔT</h2> 
+             <p>ou</p>
+             <h2> C = m.c </h2>
+             <br>
+             <p>Onde:
+                <br><br>
+                C = Capacidade térmica em cal por Celsius ou joulie por Kelvin (cal/°C ou J/K);<br>
+                Q = Quantidade de calor (cal ou J);<br>
+                ΔT =  variação de temperatura em °C ou °F.<br>
+                m = massa (g ou Kg);<br>
+                c = Calor específico (cal/g°C ou J/Kg.K).
+
+                <br><br>
+                <h3>Calor específico</h3><br>
+                <p>O calor específico define a variação térmica de um corpo ou substância. Ou seja, a relação entre a quantidade de calor que esse corpo ou substância tinha antes de começar a receber ou perder calor e quanto essa quantidade variou.  Ela é dada por:</p>
+            <br>
+             <h2> C = Q / m.Δt</h2>
+             <br>
+             <p>Onde:
+                <br><br>
+                L = Calor latente em joules/caloria por grama (J/g ou cal/g);<br>
+                Q = Quantidade total de calor envolvida na mudança de fase em cal ou J);<br>
+                m =  massa da substância que passa pela mudança de fase em gramas (g).
+                <br><br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                    (Unifor-CE)
+                    Um cubo de gelo de massa 100 g, inicialmente à temperatura de - 20 °C, é aquecido até se transformar em água a 40 °C (dados: calor específico do gelo 0,50 cal/g °C; calor específico da água 1,0 cal/g °C; calor de fusão do gelo 80 cal/g). As quantidades de calor sensível e de calor latente trocados nessa transformação, em calorias, foram, respectivamente:
+                         <br><br>
+                     </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) 8.000 e 5.000
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) 5.000 e 8.000
+
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) 5.000 e 5.000
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) 4.000 e 8.000
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) 1.000 e 4.000 
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','b')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                        (Enem-2018) Para a prática de esportes olímpicos, é adequada a piscina olímpica. As dimensões dela, segundo Federação Internacional de Natação, devem ser de 50 m para o comprimento; 25 m, para a largura, e 2,0 m, para a profundidade. A temperatura média ideal da água deve ser igual a 25 ºC.
+                         <br><br>
+                        A quantidade de energia necessária, em joules, a ser fornecida para deixar a água da piscina na temperatura ideal – sendo essa a única troca de energia a se considerar –, observando que inicialmente a água, que preenche todo o volume da piscina, estava a 20 ºC, é igual a
+                        <br><br>                        
+                        Dados:
+                        <br>
+                        água = 1,0 cal/gºC (calor específico sensível da água)
+                        <br>
+                        1,0 g/cm3 (massa específica da água)
+                        <br>
+                        1,0 cal = 4,0 J
+                        <br><br>
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a)2,0 10^10 J
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) 6,0 10^10 J
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) 3,0 10^10 J
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d)4,0 10^10 J
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) 5,0 10^10 J
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'e' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="fisica-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+               
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+         
+        <script src="../scripts/materias-geralApp.js">
+        
+        </script>
+        
+  
+</body>
+</html>

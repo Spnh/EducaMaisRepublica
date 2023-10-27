@@ -1,0 +1,238 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materia Portu&Litera</title>
+    <link rel="stylesheet" href="../styles/portuguesStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+</div>
+<body onload="passaParametro('portu&litera')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logoportu&litera.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1> Literatura </h1>
+            <br><br>
+
+            <h3 class="dentromain">Literatura Portuguesa</h3>
+
+            <section class="dentromain"> 
+                <p>- Luís de Camões e "Os Lusíadas": Além de conhecer a obra em si, é importante compreender seu contexto histórico e a influência da literatura épica na cultura portuguesa.<br><br/>
+
+                    - Fernando Pessoa e seus heterônimos: Entender a complexa obra de Fernando Pessoa, que escreveu com diversos heterônimos, é fundamental para apreciar a riqueza da poesia modernista portuguesa.<br><br/>
+                 
+                    - Eça de Queirós e "O Primo Basílio": "O Primo Basílio" é uma obra que retrata a hipocrisia da sociedade burguesa, e seu conhecimento é valioso para discutir o realismo em Portugal.</p>                
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta" style="font-size: 15px;">
+                        (ENEM) LXXVIII
+                        <br>
+                        Leda serenidade deleitosa,
+                        Que representa em terra um paraíso;
+                        Entre rubis e perlas doce riso;
+                        Debaixo de ouro e neve cor-de-rosa;
+                        <br><br/>
+                        Presença moderada e graciosa,
+                        Onde ensinando estão despejo e siso
+                        Que se pode por arte e por aviso,
+                        Como por natureza, ser fermosa;
+                        <br><br/>
+                        Fala de quem a morte e a vida pende,
+                        Rara, suave; enfim, Senhora, vossa;
+                        Repouso nela alegre e comedido:
+                        <br><br/>
+                        Estas as armas são com que me rende
+                        E me cativa Amor; mas não que possa
+                        Despojar-me da glória de rendido. 
+                        <br><br/>
+                        <p style="text-align: right; font-size: 10px;">
+                            CAMÕES, L. Obra completa. Rio de Janeiro: Nova Aguilar, 2008.
+                        </p>
+                        <br><br/>
+                        <div style="display: flex; justify-content: center;">
+                            <img src="http://s2-educacao.glbimg.com/it9b0DIzaBifbnLMr-FyUZKB_0o=/0x10:677x385/620x343/s.glbimg.com/po/ek/f/original/2013/10/02/enem-2012-prova-azul-literatura-116.png" style="width: 450px;">
+                        </div>
+                        <p style="text-align: right; font-size: 10px;">
+                            SANZIO, R. (1483-1520) A mulher com o unicórnio. Roma, Galleria Borghese.  Disponível em: <a href=" www.arquipelagos.pt"> www.arquipelagos.pt</a>
+                        </p>
+                    </div>
+                    <form id="quizForm" style="font-size: 15px;">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) Apresentarem um retrato ideal de mulher marcado pela sobriedade e o equilíbrio, evidenciados pela postura, expressão e vestimenta da moça e os adjetivos usados no poema.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) Valorizarem o excesso de enfeites na apresentação pessoal e na variação de atitudes da mulher, evidenciadas pelos adjetivos do poema.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) Apresentarem um retrato realista, evidenciado pelo unicórnio presente na pintura e pelos adjetivos usados no poema.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) Desprezarem o conceito medieval da idealização da mulher como base da produção artística, evidenciado pelos adjetivos usados no poema.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) Apresentarem um retrato ideal de mulher marcado pela emotividade e o conflito interior, evidenciados pela expressão da moça e pelos adjetivos do poema.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','a')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta" style="font-size: 15px;">
+                        (ENEM - 2004)
+                        <br><br/>
+                        <div style="display: flex; justify-content: center;">
+                            <img src="https://content.querobolsa.com.br/assets/e6cf42ec-8816-49fe-a524-0a4bb24ad016" style="width: 450px;">
+                        </div>
+                        <br><br/>
+                        A tirinha “Hagar” estabelece um interessante contraponto com o poema “Eu sou do tamanho do que vejo”, de Alberto Caeiro:
+                        <br><br/>
+                        Da minha aldeia vejo quanto da terra se pode ver no Universo...
+                        <br>
+                        Por isso minha aldeia é grande como outra qualquer
+                        <br>
+                        Porque sou do tamanho do que vejo
+                        <br>
+                        E não do tamanho da minha altura...
+                        <br>
+                        <p style="text-align: right; font-size: 15px;">
+                            (Alberto Caeiro)
+                        </p>
+                        <br><br/>
+                        A tira “Hagar” e o poema de Alberto Caeiro (um dos heterônimos de Fernando Pessoa) expressam, com linguagens diferentes, uma mesma ideia: a de que a compreensão que temos do mundo é condicionada, essencialmente:
+                    </div>
+                    <form id="quizForm" style="font-size: 15px;">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) Pela capacidade visual do observador.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) Pelo alcance de cada cultura.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) Pelo senso de humor de cada um.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) Pela idade do observador.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) Pela altura do ponto de observação.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'b' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="literatura-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+           
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+        <script src="../scripts/materias-geralApp.js"></script>  
+</body>
+</html>

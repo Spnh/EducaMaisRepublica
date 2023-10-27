@@ -1,0 +1,251 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materia Biologia - Citologia</title>
+    <link rel="stylesheet" href="../styles/biologiaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+ <div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div> 
+<body onload="passaParametro('biologia')" >
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1> Citologia</h1>
+            <h1> (Estudo das Células) </h1>
+            <br><br>
+            <section class="dentromain"> 
+                <p> A citologia é uma área fundamental da
+                    biologia que se concentra no estudo das
+                    células, as unidades básicas da vida.
+</p> 
+            </section>
+
+            <h3 class="dentromain">Composição Química da Célula</h3>
+
+            <section class="dentromain"> 
+                <p> As células são compostas por várias moléculas orgânicas e inorgânicas,
+                    incluindo proteínas, lipídios,
+                    carboidratos, ácidos nucleicos e íons. A compreensão da composição química é
+                    essencial para entender como as células
+                    funcionam.</p> 
+                </section>
+                <h3 class="dentromain">Organização Celular da Vida</h3>
+
+            <section class="dentromain"> 
+                <p>  As
+                    células podem ser classificadas em dois
+                    tipos principais: procarióticas (sem
+                    núcleo definido) e eucarióticas (com
+                    núcleo definido). Nas células
+                    eucarióticas, o núcleo contém o material
+                    genético (DNA), que controla as funções
+                    celulares.</p> 
+                </section>
+                <h3 class="dentromain">Metabolismo Celular</h3>
+
+            <section class="dentromain"> 
+                <p>  O metabolismo celular envolve todas as
+                    reações químicas que ocorrem dentro de
+                    uma célula para manter a vida. Isso
+                    inclui a produção de energia, síntese de
+                    proteínas, divisão celular e outros
+                    processos vitais.</p> 
+                </section>
+                <h3 class="dentromain">Divisão Celular</h3>
+
+            <section class="dentromain"> 
+                <p>  A divisão celular é
+                    fundamental para o crescimento e a
+                    reprodução. Ela ocorre de duas
+                    maneiras: mitose, que resulta em células
+                    filhas geneticamente idênticas, e
+                    meiose, que produz células reprodutivas
+                    com metade do material genético.
+                    Entender a citologia é crucial, pois as
+                    células são os blocos de construção da
+                    vida. A capacidade de reconhecer e
+                    compreender a estrutura e a função das
+                    células é essencial para questões
+                    relacionadas à biologia celular, genética
+                    e saúde no Enem. Além disso, a
+                    citologia é fundamental para a
+                    compreensão de doenças, biotecnologia
+                    e evolução.</p> 
+                </section>
+
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                        (Enem 2021) Organismos autótrofos e heterótrofos realizam processos complementares que associam os ciclos do carbono e do oxigênio. O carbono fixado pela energia luminosa ou a partir de compostos inorgânicos é eventualmente degradado pelos organismos, resultando em fontes de carbono como metano ou gás carbônico. Ainda, outros compostos orgânicos são catabolizados pelos seres, com menor rendimento energético, produzindo compostos secundários (subprodutos) que podem funcionar como combustíveis ambientais.
+
+                        O processo metabólico associado à expressão combustíveis ambientais é a:
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) Fotossíntese.
+
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) Fermentação.
+
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) Quimiossíntese.
+
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) Respiração aeróbica.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) Fosforilação oxidativa.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','b')">Verificar</button>
+                            <br>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        (Enem 2019) Uma cozinheira colocou sal a mais no feijão que estava cozinhando. Para solucionar o problema, ela acrescentou batatas cruas e sem tempero dentro da panela. Quando terminou de cozinhá-lo, as batatas estavam salgadas, porque absorveram parte do caldo com excesso de sal. Finalmente, ela adicionou água para completar o caldo do feijão. O sal foi absorvido pelas batatas por:
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) Osmose, por envolver apenas o transporte do solvente.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) Fagocitose, porque o sal transportado é uma substância sólida.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) Exocitose, uma vez que o sal foi transportado da água para a batata.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) Pinocitose, porque o sal estava diluído na água quando foi transportado.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) Difusão, porque o transporte ocorreu a favor do gradiente de concentração.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'e' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="biologia-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+               
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+    <script src="../scripts/materias-geralApp.js">
+        
+    </script>
+        
+    </script>
+</body>
+</html>

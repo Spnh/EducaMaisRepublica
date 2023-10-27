@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteudo Programático de Biologia</title>
+    <link rel="stylesheet" href="../styles/biologia-materiaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+ <div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+</div> 
+<body>
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logobiologia.png" >
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+    </div>
+        <main>
+            <div class="areaTopico">
+               <div class="areaLegenda">
+
+                    <h1>Biologia</h1>
+                    <fieldset class="legenda">
+                       <legend>Grau de importância</legend>
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade1')">
+                            <p class="txtLegenda" id="prioridade1">Obrigatório Ser Estudado (possui explicação detalhada)</p>
+                             <img class="imgLegenda"src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                            <!-- <span class="prioridade1">
+                             s   
+                            </span> -->
+                        </span>
+                    
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade2')" >
+                            <p class="txtLegenda" id="prioridade2">Estude Se Der Tempo  (possui explicação detalhada)</p>
+                             <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                            <!-- <span class="prioridade2">
+                             s   
+                            </span> -->
+                        </span>
+                    
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade3')" >
+                            <p class="txtLegenda" id="prioridade3">Apenas Grade Curricular </p>
+                          <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                            <!-- <span class="prioridade3">
+                             s   
+                            </span> -->
+                        </span>
+                    </fieldset>
+                   
+               </div>
+               <h2 style="padding-left: 100px; color: rgb(0, 161, 8); text-shadow: 2px 2px 3px rgb(36, 36, 36); font-size: 40px;">Conteúdo Programático</h2>
+              <span class="ano">
+                <h2 class="sub">1° Ano</h2>
+                </span>
+                <div class="linha">
+                     
+                    <div class="topico pri1" onclick="abreTopico('biologia-citologia')" >
+                       <span class="cabTop">
+                            <h3>Citologia</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                        </span>
+                        <p>A citologia é uma área fundamental da
+                    biologia que se concentra no estudo das
+                    células, as unidades básicas da vida.
+                        </p>
+                    </div>
+                    <div class="topico pri2" onclick="abreTopico('biologia-materias-tambem-caem')" >
+                       <span class="cabTop">
+                            <h3>Características dos Seres Vivos</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>As características dos seres vivos incluem organização, crescimento, reprodução, resposta a estímulos, metabolismo, homeostase e adaptação. Essas características são essenciais para a definição da vida.
+                        </p>
+                    </div>
+                    <div class="topico pri1" onclick="abreTopico('biologia-ecologia')" >
+                        <span class="cabTop">
+                            <h3>Ecologia</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                        </span>
+                        <p>A ecologia é um campo crucial da biologia que estuda as interações entre os organismos e seu ambiente.
+                        </p>
+                    </div>
+                </div>
+               
+                <span class="ano">
+                    <h2 class="sub">2° Ano</h2>
+                </span>
+                <div class="linha">
+                    <div class="topico pri1" onclick="abreTopico('biologia-reproducao')">
+                        <span class="cabTop">
+                            <h3>Reprodução</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <p>A reprodução é um dos aspectos mais fundamentais da biologia, pois está diretamente ligada à continuidade das espécies e à diversidade da vida.
+                        </p>
+                    </div>
+                    <div class="topico pri1" onclick="abreTopico('biologia-metabolismo-nutricao')">
+                        <span class="cabTop">
+                            <h3>Metabolismo e Nutrição</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <p>Este tópico é essencial para entender
+                    como os seres vivos obtêm energia,
+                    processam nutrientes e mantêm suas
+                    funções vitais.
+                        </p>
+                    </div>
+                    <div class="topico pri2" onclick="abreTopico('biologia-materias-tambem-caem')">
+                        <span class="cabTop">
+                            <h3>Respiração</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>O sistema respiratório é responsável pela absorção de oxigênio e pela eliminação de dióxido de carbono. Os principais órgãos incluem os pulmões, traqueia e brônquios.</p>
+                    </div>
+                </div>
+                 <div class="linha">
+                    
+                    <div class="topico pri2"  onclick="abreTopico('biologia-materias-tambem-caem')">
+                       <span class="cabTop">
+                            <h3>Circulação</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>O sistema circulatório, composto pelo coração e vasos sanguíneos, transporta sangue e nutrientes para todas as partes do corpo. Ele desempenha um papel crucial na distribuição de oxigênio e nutrientes.
+                        </p>
+                    </div>
+                    <div class="topico pri2"  onclick="abreTopico('biologia-materias-tambem-caem')">
+                       <span class="cabTop">
+                            <h3>Excreção</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>O sistema excretor, incluindo os rins e a bexiga, remove resíduos do corpo, regulando o equilíbrio de água e eletrólitos. Isso ajuda a manter a homeostase.</p>
+                    </div>
+                    <div class="topico pri1" onclick="abreTopico('biologia-sistema-nervoso')" > 
+                        <span class="cabTop">
+                            <h3>Sistema Nervoso</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <p>O sistema nervoso desempenha um
+                papel crítico no funcionamento do corpo
+                humano e na resposta a estímulos do
+                ambiente.
+                        </p>
+                    </div>
+                </div>
+                <span class="ano">
+                    <h2 class="sub">3° Ano</h2>
+                </span>
+             <div class="linha">
+                    <div class="topico pri1" onclick="abreTopico('biologia-genetica')" >
+                        <span class="cabTop">
+                            <h3>Genética</h3>
+                           <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <p>A Genética Mendeliana é uma parte fundamental da genética que se baseia nas descobertas do monge austríaco Gregor Mendel no século XIX. Ela se concentra nos padrões de herança de características em organismos, incluindo humanos.
+                        </p>
+                    </div>
+                    <div class="topico pri3" >
+                        <span class="cabTop">
+                            <h3>Atualidades em genética</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p>O neodarwinismo é uma extensão das ideias de Darwin, incorporando a genética. Ele postula que a evolução ocorre devido à seleção natural atuando sobre variações genéticas.
+                        </p>
+                    </div>
+                    <div class="topico pri2" onclick="abreTopico('biologia-materias-tambem-caem')">  
+                        <span class="cabTop">
+                            <h3>Ideias Evolucionistas</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>Darwin propôs a teoria da seleção natural, onde as espécies evoluem ao longo do tempo através da sobrevivência dos mais aptos. Lamarck defendeu a teoria da herança de características adquiridas, que foi posteriormente refutada. </p>
+                    </div>
+                </div>
+                <span class="ano">
+                    <h2>Outras Matérias que aparecem no ENEM</h2>
+                </span>
+             <div class="linha" style="justify-content: space-evenly;">
+                    <div class="topico pri2" onclick="abreTopico('biologia-materias-tambem-caem')" >
+                        <span class="cabTop">
+                            <h3>Ciclos Bioquímicos </h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>Os ciclos bioquímicos são processos que reciclam elementos na natureza, como o ciclo da água, ciclo do carbono e ciclo do nitrogênio. Eles são fundamentais para a manutenção dos ecossistemas.</p>
+                    </div>
+                    <div class="topico pri2" onclick="abreTopico('biologia-materias-tambem-caem')">
+                        <span class="cabTop">
+                            <h3>Teia e Cadeia Alimentar</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>A teia alimentar representa as interações complexas entre os seres vivos em um ecossistema, mostrando que um organismo pode ocupar diferentes níveis tróficos. A cadeia alimentar é uma representação linear das transferências de energia de um organismo para outro em um ecossistema.</p>
+                    </div>
+                    
+                </div>
+
+       
+</div>
+          
+<div class="grafico">
+    <h2>Resumo do que cai no enem</h2>
+     <div style="width: 30%; margin: 0 auto;">
+        <canvas id="grafico" width="150" height="150"></canvas>
+    </div>
+</div>
+        
+         </main>
+<div class="btnVolta">
+<a href="../Index.html" class="volta"> Voltar </a>
+    
+</div>
+                 <footer id="rodape">
+                    <div class="areaRodape">
+                    <p style="padding-top: 10px;">Fonte: Ementário Integrado Informática</p>
+                        
+                    </div>
+            <div class="areaRodape"> 
+            
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+    <script src="../scripts/biologia-materiaApp.js">
+        
+    </script>
+
+</body>
+</html>

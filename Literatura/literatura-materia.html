@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteudo Programático de Biologia</title>
+    <link rel="stylesheet" href="../styles/literatura-materiaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+ <div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+</div> 
+<body onload="passaParametro('port&litera')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logoportu&litera.png" >
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+    </div>
+        <main>
+            <div class="areaTopico">
+               <div class="areaLegenda">
+
+                    <h1>Literatura</h1>
+                    
+
+                    <fieldset class="legenda">
+                       <legend>Grau de importância</legend>
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade1')">
+                            <p class="txtLegenda" id="prioridade1">Obrigatório Ser Estudado (Possui Explicação) </p>
+                             <img class="imgLegenda"src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                            <!-- <span class="prioridade1">
+                             s   
+                            </span> -->
+                        </span>
+                    
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade2')" >
+                            <p class="txtLegenda" id="prioridade2">Obrigatório Ser Estudado (Não possui Explicação)  </p>
+                             <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                            <!-- <span class="prioridade2">
+                             s   
+                            </span> -->
+                        </span>
+                    
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade3')" >
+                            <p class="txtLegenda" id="prioridade3">Estude Se Tiver tempo
+                            </p>
+                          <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                            <!-- <span class="prioridade3">
+                             s   
+                            </span> -->
+                        </span>
+                    </fieldset>
+                  
+               </div>
+               <h2 style="padding-left: 100px; color: rgb(255, 171, 60); text-shadow: 2px 2px 3px rgb(36, 36, 36); font-size: 40px;">Conteúdo Programático</h2>
+              <span class="ano">
+            
+                <h2 class="sub">1° Ano</h2>
+                <br>
+                </span>
+                <div class="linha">
+                     
+                    <div class="topico pri2"  style="max-height: 120px;">
+                       <span class="cabTop">
+                            <h3>O que é Literatura.</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <br>
+                        <p>
+                        </p>
+                    </div>
+                    <div class="topico pri3"  style="max-height: 120px;" >
+                       <span class="cabTop">
+                            <h3 style="font-size: 14px;">A natureza da linguagem literária, em comparação com outras modalidades textuais.</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <br>
+                        <p>
+                        </p>
+                        <br>
+                        
+                    </div>
+                  
+
+                    <div class="topico pri3" style="max-height: 120px;"   >
+                        <span class="cabTop">
+                            <h3>A literatura em diversos suportes, como o livro e outras mídias.</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p>
+                            
+                        </p>
+                        <br>
+                     
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="topico pri2"  style="max-height: 120px;" >
+                        <span class="cabTop">
+                            <h3>Literatura e questões sociais:</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>A arte pensando a sociedade.
+                        </p>
+                        <br>                       
+                    </div>
+            
+
+               
+                <div class="topico pri2"  style="max-height: 120px;" >
+                    <span class="cabTop">
+                        <h3>Texto literário e texto não literário: </h3>
+                        <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                    </span>
+                    <p>Conotação e denotação. Figuras de linguagem.
+                    </p>
+                    <br>
+                    
+                </div>
+                <div class="topico pri1"  style="max-height: 120px;" onclick="abreTopico('literatura-generos-movimentos-literarios')">
+                    <span class="cabTop">
+                        <h3>Teoria  Literária:</h3>
+                        <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                    </span>
+                    <p>Conceito,  funções  e  gêneros  literários  na  perspectiva  aristotélica 
+                        (o épico, o lírico e o dramático).
+                    </p>
+                </div>
+            </div>
+            
+            <div class="linha">
+                <div class="topico pri2" style="max-height: 120px;" >
+                    <span class="cabTop">
+                        <h3>O gênero narrativo e os elementos estruturais da narrativa.</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                    </span>
+                    <p>
+                    </p>
+                    <br>
+                   
+                </div>
+
+                <div class="topico pri2" style="max-height: 120px;">
+                    <span class="cabTop">
+                        <h3 style="text-align: justify; font-size: 12px;">
+                            A intertextualidade entre obras contemporâneas e textos do início de nossa formação 
+                            e consolidação literária. </h3>
+                        <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                    </span>
+                    <p>
+                    </p>
+                    <br>
+               
+                </div>
+          
+
+            
+                <div class="topico pri3" style="text-align: center;" >
+                    <span class="cabTop">
+                        <h3>Lendas e mitos nas literaturas:</h3>
+                        <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                    </span>
+                  <p>Africana, Europeia e Indígena.</p>
+                    
+                </div>
+            </div>
+            <div class="linha">
+                <div class="topico pri1" style="height: 120px;" onclick="abreTopico('literatura-brasileira')">
+                    <span class="cabTop">
+                        <h3>Os primórdios da literatura brasileira:</h3>
+                        <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                    </span>
+                    <p>Quinhentismo. 
+                    </p>
+                </div>
+                <div class="topico pri1"  style="max-height: 120px;" onclick="abreTopico('literatura-brasileira')">
+                    <span class="cabTop">
+                        <h3>A  Literatura  Brasileira  do  Barroco  ao  Arcadismo: </h3>
+                        <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                    </span>
+                    <p>As  diferenças  estéticas  e  o 
+                        surgimento da questão do nativismo durante o Arcadismo (Inconfidência Mineira). 
+                    </p>
+                </div>
+                <div class="topico pri1" style="max-height: 120px;" onclick="abreTopico('literatura-brasileira')" >
+                    <span class="cabTop">
+                        <h3>O Romantismo no Brasil: </h3>
+                        <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                    </span>
+                    <p>Afirmação e problematização da identidade nacional. 
+                    </p>
+                </div>
+            </div>
+            <!-- 2 ANO-->
+                <span class="ano">    
+                    <h2 class="sub">2° Ano</h2>
+                    <br>
+                </span>
+                <div class="linha">
+                    <div class="topico pri1" style="max-height: 120px;"  onclick="abreTopico('literatura-brasileira')">
+                        <span class="cabTop">
+                            <h3>Realismo e Naturalismo no Brasil: </h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <p> Representações, discussões e crítica social. 
+                        </p>
+                    </div>
+                  
+                    <div class="topico pri2" style="max-height: 120px;" >
+                        <span class="cabTop">
+                            <h3>Parnasianismo: </h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>
+                            O culto à forma poética.
+                        </p>
+                    </div>
+               
+            
+                    
+                    <div class="topico pri2"  style="max-height: 120px;">
+                       <span class="cabTop">
+                            <h3>Simbolismo e vanguardas europeias: </h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p> Poéticas e transgressão.
+                        </p>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="topico pri1" style="max-height: 120px;" onclick="abreTopico('literatura-brasileira')">
+                       <span class="cabTop">
+                            <h3>Pré-modernismo no Brasil:</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                        </span>
+                        <p>O nacionalismo crítico e a reflexão identitária. 
+                    </div>
+                    <div class="topico pri1" style="max-height: 120px;" onclick="abreTopico('literatura-brasileira')"> 
+                        <span class="cabTop">
+                            <h3>Modernismo brasileiro:</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <p>O Brasil repensado.
+                        </p>
+                    </div>
+
+                    <div class="topico pri2" style="max-height: 120px;"> 
+                        <span class="cabTop">
+                            <h3>A Semana de 22:</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <br>
+                        <p>Vanguardas e manifestos na primeira fase do Modernismo no 
+                            Brasil.
+                        </p>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="topico pri2"  style="max-height: 120px;" > 
+                        <span class="cabTop">
+                            <h3>A Literatura de 30 e a ascensão do romance: </h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>O Brasil em perspectiva (O Modernismo brasileiro e a Literatura Africana de Língua Portuguesa.).
+                        </p>
+                    </div>
+
+                    <div class="topico pri2" style="max-height: 120px;" > 
+                        <span class="cabTop">
+                            <h3>A geração pós 45: </h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p> O regional e o universal.
+                        </p>
+                    </div>
+
+                    <div class="topico pri3" style="max-height: 120px;"> 
+                        <span class="cabTop">
+                            <h3>Aspectos da Literatura contemporânea no Brasil: gênero, classe e etnia. </h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p> 
+                        </p>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="topico pri3" style="max-height: 120px;"> 
+                        <span class="cabTop">
+                            <h3>A Literatura de Língua Portuguesa nos Países de Língua Oficial Portuguesa 
+                                (PALOPs). </h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p> 
+                        </p>
+                    </div>
+                </div>
+                
+
+                <span class="ano">
+                    <h2 class="sub">Outras Matérias que aparecem no ENEM</h2>
+                </span>
+             <div class="linha" >
+                    <div class="topico pri1" onclick="abreTopico('literatura-portuguesa')" style="height: 120px;">
+                        <span class="cabTop">
+                            <h3 >Literatura Portuguesa </h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <p></p>
+                    </div>
+                    <div class="topico pri1" onclick="abreTopico('literatura-universal')" style="height: 120px;">
+                        <span class="cabTop">
+                            <h3>Literatura Universal </h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                        </span>
+                        <p></p>
+                    </div>
+                   
+                    
+                    
+                </div>
+
+
+
+
+
+
+
+</div>
+          
+    <div class="grafico">
+    
+            <div style="width: 30%; margin: 0 auto;">
+                <canvas id="grafico" width="150" height="150"></canvas>
+            </div>
+            </div>
+        
+ </main>
+<div class="btnVolta">
+<a href="../Index.html" class="volta"> Voltar </a>
+    
+
+</div>
+        <footer id="rodape">
+           
+         <div class="areaRodape">
+                    <p style="padding-top: 10px;">Fonte: Ementário Integrado Informática</p>
+                        
+                    </div>
+            <div class="areaRodape"> 
+              
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+    <script src="../scripts/literatura-materiaApp.js">
+        
+    </script>
+
+</body>
+</html>

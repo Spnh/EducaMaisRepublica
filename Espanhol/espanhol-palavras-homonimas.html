@@ -1,0 +1,202 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materia Ingles&Espan </title>
+    <link rel="stylesheet" href="../styles/espanholStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+<body onload="passaParametro('ingles&espan')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logoingles&espan.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1> Palavras homônimas em espanhol </h1>
+            <br><br>
+
+            <section class="dentromain"> 
+                <p>Assim como no português, as palavras homônimas em espanhol são as aquelas que possuem a mesma pronúncia, mas podem ter significados diferentes. Podendo causar confusões sem estiverem foram de contexto</p> 
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                        <p style="text-align: center;">
+                            (ENEM - 2019)
+                            <strong>
+                                El maíz peruano en la historia
+                            </strong>
+                        </p>
+                        <br><br>
+                        Aunque es más conocida como cuna de la papa, la sociedad inca también fue la civilización del maíz, cultivo conocido en el Perú desde, por lo menos, 1 200 años a.C. Los antiguos agricultores peruanos lograron sofisticación en la selección y creación de nuevas variedades adaptables a los diversos espacios geográficos y climáticos. Al respecto, el cronista Bernabé Cobo cuenta que en el antiguo Perú se hallaba maíz, llamado choclo, de todos los colores: blanco, amarillo morado, negro colorado y mezclado. Hoy en día, en ese país se cultivan más de 55 variedades de la popular mazorca, más que en ningún otro lugar del mundo. En los Comentarios Reales de los Incas, Garcilaso de la Vega nos ilustra sobre los hábitos alimenticios incaicos relatando que uno de los pilares de la alimentación era el maíz y que lo comían tostado o cocinado en agua. En ocasiones solemnes molían los granos para hacer un pan llamado humita. Al maíz tostado se le denominaba como aún se le llama hoy: cancha, antecesora de las palomitas.
+                        <p style="font-size: 10px; text-align: right;">
+                            Disponível em: www.yanuq.com. Acesso em: 20 jun. 2012 (adaptado).
+                        </p>
+                        <br><br>
+                        O texto destaca a importância do milho na história do Peru. Informa que os antigos agricultores peruanos
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) desenvolveram cinquenta e cinco variedades da planta.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) introduziram o milho em substituição à cultura da batata.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) expandiram o cultivo do milho a outras partes do mundo.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) produziram espécies de milho adaptáveis a diversos solos.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) transformaram o preparo da pipoca em um evento solene.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','d')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        (ENEM - 2018)Incivismo
+                        <br><br>
+                        Pasear por el centro de Barcelona (España) de noche implica, a ciencia cierta, tropezarse con, por ejemplo, jóvenes bebiendo en portales y plazas, con alguno de ellos aliviando la vejiga en las esquinas... La orden para la policía local ha sido la de multiplicar la ofensiva contra la falta de civismo, combatiéndose también, por lo tanto, las molestias callejeras que perturban el sueño. Y, aunque no hay milagros, las cifras ya constatan el esfuerzo de este año por poner un freno. Con respecto a las molestias (ruidos, peleas, música a altas horas en la vía pública), las multas se han multiplicado por cuatro. Las multas por consumir alcohol en la calle superan ya las 5 000 este verano.
+                        <br>
+                        <p style="font-size: 10px; text-align: right;">
+                            CASTÁN, P. Disponível em: www.elperiodico.com. Acesso em: 25 ago. 2011 (adaptado).
+                        </p>
+                        <br><br>
+                        Para combater a falta de civismo, a polícia da cidade de Barcelona tem
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) aumentado a aplicação de multas.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) encarcerado os jovens baderneiros.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) isolado o centro da cidade.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) controlado a distribuição de álcool.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) proibido a música em alto volume.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'a' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="espanhol-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+         
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+        <script src="../scripts/materias-geralApp.js"></script>  
+</body>
+</html>

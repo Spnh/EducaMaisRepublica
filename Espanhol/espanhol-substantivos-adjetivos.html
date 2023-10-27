@@ -1,0 +1,211 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materia Ingles&Espan </title>
+    <link rel="stylesheet" href="../styles/espanholStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+<body onload="passaParametro('ingles&espan')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logoingles&espan.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1> Substantivos e adjetivos </h1>
+            <br><br>
+
+            <section class="dentromain"> 
+                <p>Os substantivos em espanhol servem para nomear pessoas, lugares, animas, coisas, sentimentos, ações, seres e qualidades. Podem variar em gênero, grau e número.
+                    <br><br/>
+                    Podem ser classificados em comunes (comuns): se referem a lugares, pessoas, coisas sem especificar 
+                    <br><br/>
+                    Ou podem em propios (próprios): se referem a nomes específicos de marcas, lugares, pessoas, etc. Começam sempre com letra maiúscula independente da sua posição em uma frase.
+                    <br><br/>
+                    Os adjetivos em espanhol servem para atribuir características ao que o substantivo está nomeando. Podem variar em gênero e número para concordar com o substantivo que está se referindo. No Espanhol os adjetivos podem vir antes ou depois dos substantivos em uma frase.
+                    <br><br/>
+                    Podem ser classicados em calificativos (qualificativos): é subdividido em explicativo que mostra uma qualidade inerente do substantivo, e em especificativos que diferencia o substantivo dos demais, por isso vem após ele. 
+                    <br><br/>
+                    Ou em determinativos (determinativos): seu objetivo é mostrar quem é o substantivo da oração. Eles são subdivididos em demonstrativos, possessivos, numerais, indefinidos, interrogativos e exclamativos.
+                    </p> 
+
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png"" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                        (ENEM - 2013)Convergencia tecnológica y participación popular
+                        <br><br>
+                        Se están cumpliendo 20 años del “boom” de las radios comunitarias en Argentina, que entre 1985 y 1990 sorprendió al país con la creación de casi 3 mil radios de baja potencia. Estas emisoras lograron, en poco tiempo, abrir los micrófonos a miles de radialistas populares, a la participación del vecindario y de la gente común e influir sustancialmente en la programación radial comercial, con la creación de nuevos formatos en los que tenía un papel central la opinión ciudadana, sin jerarquías ni condicionamientos. Siendo la radio en Argentina el medio más popular y con un alto grado de credibilidad por parte del público, las emisoras comunitarias jugaron un rol fundamental para el fortalecimiento del debate democrático en el país.
+                        <br>
+                        <p style="font-size: 10px; text-align: right;">
+                            PLOU, D. S. América Latina en Movimiento, n. 421, jun. 2007. Disponível em: http://alainet.org. Acesso em: 23 fev. 2012 (adaptado).
+                        </p>
+                        <br><br>
+                        O texto destaca a importância das emissoras de rádio comunitárias na Argentina. Considerando especificamente a época do denominado boom, as emissoras populares
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) criaram milhares de fontes de emprego para radialistas.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) surpreenderam o país com a oferta de rádios de baixo custo.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) convocaram a comunidade para a participação em comerciais.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) incutiram um novo paradigma centralizado na opinião pública.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) tiveram um papel preponderante no condicionamento dos ouvintes.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','d')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        (ENEM - 2011)En la Edad Media el rey Felipe IV de Francia, con el apoyo del papa Clemente V, ordenó las redadas para detener a todos los Templarios del país el viernes 13 de octubre de 1307, hecho al que se atribuye la leyenda de los malos augurios asociados a este día de la semana cuando cae en 13. El asalto a los Templarios alcanzó una gran notoriedad a causa de las escabrosas acusaciones que se les imputaron, la tortura a los que los sometieron los inquisidores.
+                        <br>
+                        Otros historiadores sugieren que el origen de la superstición es cristiano y se remonta a la Última Cena, que tuvo trece comensales (Jesús y sus doce discípulos), y tras la cual se produjo lugar la crucifixión de Jesús, precisamente en viernes.
+                        <br>
+                        <p style="font-size: 10px; text-align: right;">
+                            Disponível em: http://www.muyinteresante.es. Acesso em: 23 jun. 2011 (adaptado).
+                        </p>
+                        <br><br>
+                        Vários fatos ocorridos ao longo da história da humanidade foram reunidos sob um aspecto comum que vem a ser o tema do texto, a saber
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) a perseguição aos Templários.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) a superstição na sexta-feira 13.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) as torturas dos inquisidores.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) a crucificação de Jesus.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) a última ceia de Jesus.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'b' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png"" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="espanhol-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+              
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        <script src="../scripts/materias-geralApp.js"></script>  
+    
+</body>
+</html>

@@ -1,0 +1,200 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materia Ingles&Espan </title>
+    <link rel="stylesheet" href="../styles/espanholStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+<body  onload="passaParametro('ingles&espan')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logoingles&espan.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1> Verbos </h1>
+            <br><br>
+
+            <section class="dentromain"> 
+                     <p>Ser: Define e expressa características ou qualidade permanentes de uma pessoa ou coisa.
+                    <br><br/>
+                    Estar: Define um estado ou uma situação de uma pessoa ou coisa, ou pode também indicar posição no espaço e no tempo. 
+                    <br><br/>
+                    Haber: É usado no sentido de “existir” ou “ter” uma pessoa ou alguma coisa.                    
+                    </p> 
+
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                        (ENEM - 2014)Al ingresar a la ciudad de Trevelín a través de un gran valle cobijado por montañas elevadas y grandes superficies con áreas cultivadas, llama la atención el colorido de sus jardines y la huella que ha dejado la colonia galesa en cada rincón del pueblo y del área rural. Un ejemplo de ello es el primer molino harinero accionado a caballo que se muestra en el museo regional junto a maquinarias, herramientas y vestimenta de la vida diaria en época de la colonia. Enclavada en un típico paisaje andino patagónico, con sus vientos predominantes del sudoeste y su naturaleza pródiga en vegetación y arroyos, Trevelín sirve como punto de partida para hermosos paseos. En la serenidad de sus calles, innumerables casas de té ofrecen la clásica merienda galesa con sus tortas, panes caseros y fiambres de la región para adentrarse en esa gastronomía que no ha claudicado con el paso del tiempo. Se aconseja probar su torta negra. Disponível em: www.welcomeargentina.com. Acesso em: 25 jul. 2012 (adaptado).
+                        <br><br>
+                        Trevelín está localizada na Patagônia argentina. O destaque das características da cidade, no texto, tem a função de
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) narrar fatos do cotidiano da cidade e de seus habitantes.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) despertar no leitor o desejo de conhecer a região.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) desenvolver o interesse pela gastronomia local.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) divulgar informações acerca da geografia da região.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) compartilhar impressões colhidas em uma visita à cidade.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','b')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        (ENEM - 2015)Desde luego que para quienes continuamos escribiendo en quechua, en aymara o en las lenguas amazónicas, o recreamos en castellano el subyugante universo andino, el mayor obstáculo es, sin duda, el lenguaje: cómo hacer verosímil — mediante la palabra — lo que de por sí es increíble en ese arcano territorio donde las fronteras entre vida/muerte, mundo natural/sobrenatural, no existen y es común, más bien, toparse en un cruce de caminos con un ángel andariego o recibir, tal vez, en una siembra de papas, la visita inesperada de un familiar muerto que viene — del más allá — a prevenirnos sobre el clima o porque simplemente tiene sed y desea un poco de chicha de maíz. No obstante a ello, la poesía quechua contemporánea, la escrita por Alencastre por ejemplo, tiene autor y códigos propios y ya no más ese carácter colectivo, anónimo y oral de los inicios, cuando estaba conformada por oraciones e himnos que, de acuerdo a su naturaleza, eran wawakis (invocaciones para enterrar a un infante muerto), hayllis (poesía épica), harawis (poesía amorosa), qhaswas (cantos de regocijo), wankas, entre otros. Ni siquiera la luminosa personalidad de José María Arguedas confinó al limbo al poeta Alencastre, de quien dijo era el más grande poeta quechua del siglo XX.
+                        <br>
+                        <p style="font-size: 10px; text-align: right;">
+                            GONZÁLEZ, O. Disponível em: www.lenguandina.org. Acesso em: 30 jul. 2012.
+                        </p>
+                        <br><br>
+                        Segundo Odi González, embora seja difícil dar verossimilhança ao universo cultural andino ao escrever em línguas indígenas ou em castelhano, nos dias de hoje, a poesia quíchua
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) baseia-se na tradição oral.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) constitui-se de poemas cerimoniais.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) costuma ter um caráter anônimo.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) possui marcas autorais.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) busca uma temática própria.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'d' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="espanhol-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+             
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+    <script src="../scripts/materias-geralApp.js"></script>  
+
+
+        
+    </script>
+</body>
+</html>

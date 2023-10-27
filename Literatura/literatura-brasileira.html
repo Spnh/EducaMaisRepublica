@@ -1,0 +1,214 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materia Portu&Litera</title>
+    <link rel="stylesheet" href="../styles/portuguesStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+</div>
+<body onload="passaParametro('portu&litera')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logoportu&litera.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1> Literatura </h1>
+            <br><br>
+
+            <h3 class="dentromain">Literatura Brasileira</h3>
+
+            <section class="dentromain"> 
+                <p>- Machado de Assis: é comum que os vestibulares exijam conhecimento sobre suas principais obras e conhecimento sobre outros romances do mesmo, como "Dom Casmurro", "Memórias Póstumas de Brás Cubas", "Quincas Borba" e "Memorial de Aires". Também é relevante entender o realismo e o naturalismo presentes em suas obras.<br><br/>
+
+                - Clarice Lispector: Para Clarice Lispector, é importante ter uma compreensão profunda de sua escrita intimista e a capacidade de interpretar seus textos cheios de simbolismo e introspecção, além de conhecer algumas de suas obras, como "A Hora da Estrela" e "A Paixão Segundo G.H.".<br><br/>
+
+                - Modernismo brasileiro: No contexto do Modernismo, é fundamental conhecer a Semana de Arte Moderna de 1922 e suas principais propostas. Autores como Oswald de Andrade, que escreveu "Serafim Ponte Grande", e Mário de Andrade, autor de "Macunaíma", também são frequentemente abordados.<br><br/>
+
+                - Romantismo Brasileiro: O romantismo brasileiro é marcado por autores que exploraram temas como o amor, a natureza e o nacionalismo. José de Alencar e Álvares de Azevedo, Gonçalves Dias e Castro Alves são autores românticos notáveis.</p> 
+                
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta" style="font-size: 15px;">
+                        (ENEM - 2022) Notas
+                        <br>
+                        Soluços, lágrimas, casa armada, veludo preto nos portais, um homem que veio vestir o cadáver, outro que tomou a medida do caixão, caixão, essa, tocheiros, convites, convidados que entravam, lentamente, a passo surdo, e apertavam a mão à família, alguns tristes, todos sérios e calados, padre e sacristão, rezas, aspersões d'água benta, o fechar do caixão, a prego e martelo, seis pessoas que o tomam da essa, e o levantam, e o descem a custo pela escada, não obstante os gritos, soluços e novas lágrimas da família, e vão até o coche fúnebre, e o colocam em cima e traspassam e apertam as correias, o rodar do coche, o rodar dos carros, um a um... Isto que parece um simples inventário eram notas que eu havia tomado para um capítulo triste e vulgar que não escrevo.
+                        <br>
+                        <p style="text-align: right; font-size: 10px;">ASSIS, M Memórias póstumas de Brás Cubas. Disponivel em: <a href="www.dominiopublico.gov.br">www.dominiopublico.gov.br</a></p>
+                        
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) Ocorrência de período longo no trecho.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) Predominância de linguagem objetiva.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) Enumeração de objetos e fatos. 
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) Combinação de verbos no presente e no pretérito.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) Presença de léxico da campo semântico de funerais.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','c')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta" style="font-size: 15px;">
+                        (ENEM - 2022) Firmo, o vaqueiro
+                        <br>
+                        No dia seguinte á hora em que saía o gado, estava eu debruçado á varanda quando vi o cafuzo que preparava o animal viajeiro:
+                        <br>
+                        — Raimundinho, como vai ele?...
+                        <br>
+                        Do longe apontou a palhoça.
+                        <br>
+                        — Sim.
+                        <br>
+                        O braço caiu-lhe, olhou-me algum tempo comovido; depois, saltando para o animal, levou o polegar à boca fazendo estalar a unha nos dentes: "As quatro horas da manhã... Atirei um verso e disse, para bulir com ele: Pega, velho! Não respondeu. Tio Firmo, mesmo velho e doente, não era homem para deixar um verso no chão...Fui ver, coitadol... estava morto”. E deu de esporas para que eu não lhe visse as lágrimas.
+                        <br>
+                        <p style="text-align: right; font-size: 10px;">NETTO, C. In: MARCHEZAN.L.G (Og). O conto regionalista. São Paulo: Marina Fontes, 2009.</p>
+                        <br>
+                        <br>
+                        A passagem registra um momento em que a expressividade lírica é reforçada pela: 
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) Afetividade demonstrada ao noticiar a morte do cantador
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) Plasticidade da imagem do rebanho reunido.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) Situação de pobreza encontrada nos sertões brasileiros.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) Sugestão da firmeza do sertanejo ao arrear o cavalo.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) Preocupação do vaqueiro em demonstrar sua virilidade.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'a' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="literatura-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+            
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+    <script src="../scripts/materias-geralApp.js"></script>  
+
+  
+</body>
+</html>

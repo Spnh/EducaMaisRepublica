@@ -1,0 +1,251 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materia Ingles&Espan </title>
+    <link rel="stylesheet" href="../styles/espanholStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+       </div>
+<body onload="passaParametro('ingles&espan')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logoingles&espan.png">
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+</div>
+      
+
+        <main class="container" id="mainnormal">
+
+
+            <h1> Artigos definidos e indefinidos</h1>
+            <br><br>
+
+            <section class="dentromain"> 
+                <p>Os artigos definidos em espanhol possuem a função de especificar alguma coisa. Já os artigos indefinidos são usados para se referir a algo em geral, que não está especificado.
+                    <br><br/>
+                    Os artigos definidos são: el, los, la, las
+                    <br><br/>
+                    Os artigos indefinidos são: un, unos, una, unas
+                    </p> 
+
+            <br>
+                <p>Exercícios logo abaixo, clique no botão para aparecer </p>
+            <br>
+            <div class="divLerMais">
+                <div class="molduraimg"><span class="lerMais" > <img src="../styles/img/click.png" alt="imagem" class="imagens"> </span></div>
+            </div> 
+            
+            <br>
+            <section class="contLerMais"> <!-- conteudo para aparecer -->
+                <div class="exercicio" id="exercicios2">
+                    <div class="pergunta">
+                        (ENEM - 2021)En el suelo, apoyado en el mostrador, se acurrucaba, inmóvil como una cosa, un hombre muy viejo. Los muchos años lo habían reducido y pulido como las aguas a una piedra o las generaciones de los hombres a una sentencia. Era oscuro, chico y reseco, y estaba como fuera del tiempo, en una eternidad.
+                        <p style="font-size: 10px; text-align: right;">
+                            BORGES, J. L. Artificios. Madri: Alianza Cien, 1995.
+                        </p>
+                    <br><br>
+                    No âmbito literário, são mobilizados diferentes recursos que visam à expressividade. No texto, a analogia estabelecida pela expressão “como las aguas a una piedra” tem a função de 
+                    </div>
+                    <form id="quizForm">
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="a" class="op">
+                                a) enfatizar a ação do tempo sobre a personagem.
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="b" class="op">
+                                b) descrever a objetificação do ambiente. 
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="c" class="op">
+                                c) expor a anacronia da personagem. 
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="d" class="op">
+                                d) caracterizar o espaço do conto. 
+                            </label>
+                        </div>
+                        <div class="opcao">
+                            <label class="opcoes">
+                                <input type="radio" name="res" value="e" class="op">
+                                e) caracterizar o espaço do conto.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res','a')">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res')">Refazer</button>
+                        </div>
+                    </form>
+
+                    <p id="resultado"></p>
+                </div> <!-- fim div exercicio-->
+                <br>
+                <div class="exercicio" id="exercicios">
+                    <div class="pergunta">
+                        (ENEM - 2022)<strong> Los niños de nuestro olvido </strong>
+                        <br><br>
+                        Escribo sobre un destino
+                        <br>
+                        que apenas puedo tocar
+                        <br>
+                        en tanto un niño se inventa
+                        <br>
+                        con pegamento un hogar
+                        <br><br>
+                        Mientras busco las palabras
+                        <br>
+                        para hacer esta canción
+                        <br>
+                        un niño esquiva las balas
+                        <br>
+                        que buscan su corazón
+                        <br><br>
+                        Acurrucado en mi calle
+                        <br>
+                        duerme un niño y la piedad
+                        <br>
+                        arma lejos un pesebre
+                        <br>
+                        y juega a la navidad
+                        <br><br>
+                        Arma lejos un pesebre
+                        <br>
+                        y juega a la navidad
+                        <br>
+                        y juega a la navidad
+                        <br>
+                        y juega, y juega, y juega ...
+                        <br><br>
+                        La niñez de nuestro olvido
+                        <br>
+                        pide limosna en un bar
+                        <br>
+                        y lava tu parabrisas
+                        <br>
+                        por un peso, por un pan
+                        <br><br>
+                        Si las flores del futuro
+                        <br>
+                        crecen con tanto dolor
+                        <br>
+                        seguramente mañana
+                        <br>
+                        será un mañana sin sol
+                        <br>
+                        <p style="font-size: 10px; text-align: right;">
+                            SOSA, M. In: Corazón libre.AArgentina: e.D.G.E, 2004 (fragmentado)
+                        </p>
+                        <br><br>
+
+
+                        No texto, a expressão "un manãna sin sol" é usada para concluir uma crítica ao(à)
+                    </div>
+                    <form id="quizForm" style="font-size: 15px;">
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="a" class="op">
+                                a) descaso diante da violência característica do cotidiano das grandes metrópoles. problemática de crianças em situação de rua.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="b" class="op">
+                                b) violência característica do cotidiano das grandes metrópoles.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="c" class="op">
+                                c) estímulo à mendicânica nos centros urbanos.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="d" class="op">
+                                d) tendência de informalização do trabalho.
+                            </label>
+                        </div>
+                        <div class="opcao2">
+                            <label class="opcoes2">
+                                <input type="radio" name="res2" value="e" class="op">
+                                e) falta de serviços de saúde adequados.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="wrap">
+                            <button type="button" class="button" onclick="verificarResposta('res2' ,'a' )">Verificar</button>
+                            <button type="button" class="button2" onclick="refazer('res2')">Refazer</button>
+                        </div>
+                    </form>
+                    <p id="resultado"></p>
+                </div>
+                <br>
+                <div class="divVoltaMais">
+                <div class="molduraimg"> <span class="voltaMais"> <img src="../styles/img/click.png" alt="imagem" class="imagens"></span></div>
+                </div>
+            </section> <!-- conteudo para aparecer -->
+            </section> 
+
+         </main>
+         <div class="btnVolta">
+            <a href="espanhol-materia.html" class="volta"> Voltar </a>
+            </div>
+         <footer id="rodape">
+           
+            <div class="areaRodape"> 
+              
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+    <script src="../scripts/materias-geralApp.js"></script>  
+
+    </script>
+</body>
+</html>

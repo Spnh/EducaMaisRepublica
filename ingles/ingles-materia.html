@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteudo Programático de Inglês</title>
+    <link rel="stylesheet" href="../styles/ingles-materiaStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+ <div id="load">
+    <div class="inner"> 
+      <div id="carregar">
+      <div id="carrega"></div>
+      </div> 
+    </div>                
+</div> 
+<body onload="passaParametro('ingles&espan')">
+    <div id="cabecalho">
+        <header id="inicio">  
+            <div class="areaLogo"> 
+                <img class="logo" src="../styles/img/logoingles&espan.png" >
+            </div>
+
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+           
+            <div class="areaBarra">
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Busca" onkeypress="searchOnEnter(event)">
+            
+             </form>
+            </div>
+            <div class="areaBtn">
+                <div class="bt">
+                    <input type="checkbox" class="checkbox" id="chk"  />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"> </i>
+                        <i class="fas fa-sun"> </i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+
+        
+  <br><br><br>
+    </div>
+        <main>
+            <div class="areaTopico">
+               <div class="areaLegenda">
+                    <h1>Inglês</h1>
+                    <fieldset class="legenda">
+                       <legend>Grau de importância</legend>
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade1')">
+                            <p class="txtLegenda" id="prioridade1">Obrigatório Ser Estudado</p>
+                             <img class="imgLegenda"src="../styles/img/circulovermelho.png" alt="vermelho"> 
+                            <!-- <span class="prioridade1">
+                             s   
+                            </span> -->
+                        </span>
+                    
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade2')" >
+                            <p class="txtLegenda" id="prioridade2">Estude Se Der Tempo</p>
+                             <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                            <!-- <span class="prioridade2">
+                             s   
+                            </span> -->
+                        </span>
+                    
+                        <span class="linhaLegenda" onclick="filtraPrioridade('prioridade3')" >
+                            <p class="txtLegenda" id="prioridade3">Apenas Grade Curricular </p>
+                          <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                            <!-- <span class="prioridade3">
+                             s   
+                            </span> -->
+                        </span>
+                    </fieldset>
+                   
+               </div>
+               <h2 style="padding-left: 100px; color: #c0516b; text-shadow: 2px 2px 3px rgb(36, 36, 36); font-size: 40px;">Conteúdos importantes para o Enem</h2>
+              <span class="ano">
+                <h2 class="sub">1° Ano</h2>
+                </span>
+                <div class="linha">
+                     
+                    <div class="topico pri1" onclick="abreTopico('ingles-compreensao-de-texto')" >
+                       <span class="cabTop">
+                            <h3>Compreensão de Texto</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                        </span>
+                        <p>Questões que avaliam a capacidade dos candidatos de entender e interpretar textos em inglês, que podem incluir trechos de romances, ensaios, notícias ou artigos acadêmicos.
+
+
+                        </p>
+                    </div>
+                    <div class="topico pri2">
+                       <span class="cabTop">
+                            <h3>Elementos de coerência e coesão I</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>pronomes e suas referências
+                        </p>
+                    </div>
+                    <div class="topico pri3" >
+                        <span class="cabTop">
+                            <h3>Elementos da ação verbal I</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p> presente, imperativo e passado.
+
+                        </p>
+                    </div>
+                </div>
+               
+                <span class="ano">
+                    <h2 class="sub">2° Ano</h2>
+                </span>
+                <div class="linha">
+                    <div class="topico pri1" onclick="abreTopico('ingles-gramatica-estrutura-da-lingua')">
+                        <span class="cabTop">
+                            <h3>Gramática</h3>
+                            <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="vermelha"> 
+                        </span>
+                        <p>Questões que testam o conhecimento da gramática e da estrutura da língua inglesa, incluindo tópicos como tempos verbais, concordância, uso de preposições, pronomes e vocabulário.
+
+
+                        </p>
+                    </div>
+                    <div class="topico pri3">
+                        <span class="cabTop">
+                            <h3>Elementos de coerência e coesão II</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p>pronomes e suas referências.
+                        </p>
+                    </div>
+                    <div class="topico pri2">
+                        <span class="cabTop">
+                            <h3>Elementos de comparação</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>Comparativo e superlativo.</p>
+                    </div>
+                </div>
+                
+                <span class="ano">
+                    <h2 class="sub">3° Ano</h2>
+                </span>
+             <div class="linha">
+                    <div class="topico pri1"  onclick="abreTopico('ingles-interpretacao-de-figuras-de-linguagem')">
+                        <span class="cabTop">
+                            <h3>Figuras de Linguagem</h3>
+                           <img class="imgLegenda" src="../styles/img/circulovermelho.png" alt="azul"> 
+                        </span>
+                        <p>
+Questões que exigem a identificação e interpretação de figuras de linguagem, como metáforas, metonímias, ironia e outras expressões idiomáticas.
+                        </p>
+                    </div>
+                    <div class="topico pri3">
+                        <span class="cabTop">
+                            <h3>Elementos de coerência e coesão III</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloverde.png" alt="verde"> 
+                        </span>
+                        <p>pronomes relativos e suas referências
+                        </p>
+                    </div>
+                    <div class="topico pri2" >  
+                        <span class="cabTop">
+                            <h3>Elementos da ação verbal III</h3>
+                            <img class="imgLegenda" src="../styles/img/circuloazul.png" alt="azul"> 
+                        </span>
+                        <p>Condicional: ‘If –clauses’.</p>
+                    </div>
+                </div>
+                
+                </div>
+
+       
+</div>
+          
+<div class="grafico">
+    <h2>Resumo do que cai no enem</h2>
+     <div style="width: 30%; margin: 0 auto;">
+        <canvas id="grafico" width="150" height="150"></canvas>
+    </div>
+</div>
+        
+         </main>
+<div class="btnVolta">
+<a href="../Index.html" class="volta"> Voltar </a>
+    
+</div>
+        <footer id="rodape">
+              <div class="areaRodape">
+                    <p style="padding-top: 10px;">Fonte: Ementário Integrado Informática</p>
+                        
+                    </div>
+            <div class="areaRodape"> 
+               
+                
+            </div>
+            <div class="areaRodape"> 
+                <div class="data"></div>
+            </div>
+    
+    
+        </footer>
+        
+    <script src="../scripts/ingles-materiaApp.js">
+        
+    </script>
+
+</body>
+</html>
