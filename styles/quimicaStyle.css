@@ -1,0 +1,672 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body{
+
+
+  -moz-osx-font-smoothing:grayscale;
+  -ms-flex-direction:column;
+  -webkit-box-direction:normal;
+  -webkit-box-orient:vertical;
+  -webkit-font-smoothing:antialiased;
+  display:flex;
+  flex-direction:column;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  font-weight:300;
+  padding-top: 0px;
+  min-height:100vh;
+  background-color: #c1ffff ; /* muda cor */
+  transition: background 0.5s linear;
+
+}
+
+footer{
+  transition: background 0.5s linear;
+}
+#rodape{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 5%;
+  background-image: url('img/imgrodapefisi-quimi.png');
+  color: white;
+  border-top: 1px solid white;
+}
+
+/* Modo escuro inicio */
+
+body.darkbody {
+  background-color: #3a3a3a;
+  
+  
+}
+  
+main.darkmain {
+  background-color: #292929;
+  color: whitesmoke;
+  
+}
+
+header.darkheader{
+  background-image: url("img/imgbannerdarkroxo.png");
+}
+
+.exercicio.darkexercicio{
+  background-color: #3a3a3a;
+}
+
+#rodape.darkrodape{
+  background-image: url('img/imgbannerroxo.png');
+}
+
+.darkmain h1{
+  color: #cccccc;
+  text-shadow: 3px 3px 4px rgba(44, 44, 44, 0.705);
+}
+
+.darkmain h3{
+  text-shadow: 2px 2px 3px rgba(44, 44, 44, 0.76);
+}
+
+.darkmain p{
+  text-shadow: none;
+}
+
+/* Modo escuro fim */
+
+.cabecalho{
+  display: block;
+  margin: 0px;
+
+}
+header{
+  width: 100%;
+  max-height: 18%;
+  margin: auto;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  background-position-x: 20%;
+  background-position-y: 4% ;
+  background-image: url("img/imgbannerfisi-quimi.png");
+  
+  border: 1px solid rgb(126, 126, 126);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  transition: 1s;
+  /*Fixo no topo*/
+  position: fixed;
+
+}
+
+main{
+  font-size: 20px;
+  text-align: justify ;
+  border-radius: 25px;
+  margin-left: 150px;
+  margin-right: 150px;
+  box-shadow: 3px 2px 2px 0.5px rgba(0, 0, 0, 0.479);
+  padding: 5px;
+  transition: background 0.5s linear;
+}
+.container{
+  margin: 10%;
+  margin-bottom: 40px;
+  margin-top: 13.5%;
+  padding:15px;
+  background-color: #48d1cc;
+  color: whitesmoke;
+
+  
+}  
+main h1{
+  color: #c1ffff;
+  text-align: center;
+  padding-top: 18px;
+  font-size: 70px;
+  text-shadow: 3px 3px 4px rgba(29, 29, 29, 0.705);
+}
+main h3{
+  font-size: 50px;
+  text-shadow: 2px 2px 3px rgba(27, 27, 27, 0.76);
+
+}
+
+main p{
+  text-shadow: 2px 2px 3px rgb(36, 36, 36);
+
+}
+
+
+
+.dentromain{
+  padding-left: 14px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+}
+
+.areaLogo{
+  width: 20%;
+  padding-left: 5%;
+
+}
+.areaBtn{
+  width: 20%;
+  padding-left: 10%;
+}
+.areaBarra{
+  width: 60%;
+ /* border-left: 1px solid black;
+  border-right: 1px solid black;*/
+}
+
+.logo{
+width: 60%;
+padding-top: 7%;
+
+}
+.search-container{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+
+}
+
+input#search-bar{
+  padding-left: 40px;
+  margin: 0 auto;
+  width: 75%;
+  height: 45px;
+  border-radius: 35px;
+  padding: 0 25px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+    border: 1px solid #000000;
+    transition: 0.35s ease;
+    color: #000000;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+        opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+        opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+       opacity: 0;
+     }    
+   }
+ }
+
+.search-icon{
+  float: left;
+  width: 75px;
+  height: 85px;
+  top: -62px;
+  left: 10px;
+
+  
+}
+
+.checkbox {
+opacity: 0;
+position: absolute;
+}
+
+.label {
+background-color: #111;
+border-radius: 50px;
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+padding: 5px;
+position: relative;
+height: 27px;
+width: 50px;
+transform: scale(1.5);
+
+}
+
+
+.label .ball {
+background-color: whitesmoke;
+border-radius: 50%;
+position: absolute;
+top: 2px;
+left: 2px;
+height: 22px;
+width: 22px;
+transform: translateX(0px);
+transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+transform: translateX(24px);
+}
+
+.fa-moon {
+color: #f1c40f;
+
+}
+
+.fa-sun {
+color: #f39c12;
+
+}
+
+
+
+
+
+
+.titulo{
+text-align: justify; 
+font-weight: 200;
+font-size: 2.2rem;
+color: #000;
+}
+
+
+
+
+.areaRodape{
+margin-bottom: 1%;
+margin: 15px;
+
+}
+.areaRodape div{
+margin-top: 10px;
+text-decoration: underline;
+}
+.areaRodape a{
+margin-top: 10px;
+text-decoration: underline;
+}
+
+
+.volta:link, .volta:visited {
+  background-color: whitesmoke;
+  color: black;
+  border: 2px solid rgb(32, 32, 32);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+ 
+  border-radius: 8px;
+}
+
+.volta:hover, .volta:active {
+  background-color: rgb(32, 32, 32);
+  color: whitesmoke;
+}
+.btnVolta{
+  margin-top: 10px;
+  margin-bottom: 60px;
+  margin-left: 10%;
+}
+
+
+.btnSobre{
+  color: whitesmoke;
+
+}
+
+.btnSobre:hover{
+  color: rgb(95, 95, 95);
+}
+
+.btnSobre:active{
+  color: black;
+}
+
+
+.lerMais{
+
+  width: 5px;
+  text-decoration: underline;
+
+  border-radius: 200px;
+}
+.voltaMais{
+
+  width: 5px;
+  text-decoration: underline;
+
+  border-radius: 200px;
+}
+.contlerMais{
+  color: red; display: none;
+  
+}
+.divLerMais{
+  width: 30px;
+  color: transparent;
+}
+.divVoltaMais{
+  width: 30px;
+  color: transparent;
+}
+
+
+
+
+
+.imagens{
+  width: 75%;
+  height: 80%;
+  margin: 11%;
+ 
+}
+.molduraimg{
+
+  padding-left: 2%;
+  align-items: center;
+  width: 39px;
+  height:43px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+
+
+
+/* EXERCÍCIO */
+
+.exercicio {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 30px;
+  background-color: #82f7f7;
+  text-shadow: 1px 1px 2px rgb(36, 36, 36);
+  transition: background 0.5s linear;
+}
+
+.pergunta {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.opcao {
+  margin-bottom: 5px;
+}
+
+.resposta-correta {
+  color: green;
+}
+
+
+
+/* Questões */
+
+.opcao input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
+  outline: none;
+  vertical-align: middle;
+  
+}
+
+
+.opcao input[type="radio"]:checked {
+  background-color: #3300eb;
+  border-color: #3300eb;
+}
+
+.opcoes{
+color: whitesmoke;
+
+}
+
+.opcao2 input[type="radio"] {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+width: 17px;
+height: 17px;
+border: 2px solid whitesmoke;
+border-radius: 8px;
+outline: none;
+vertical-align: middle;
+
+}
+
+.imagens{
+  cursor: pointer;
+}
+.op{
+cursor: pointer;
+}
+.opcao2 input[type="radio"]:checked {
+background-color: #3300eb;
+border-color: #3300eb;
+}
+
+.opcoes2{
+color: whitesmoke;
+}
+
+.wrap {
+display: flex;
+
+}
+
+.button {
+color: whitesmoke;
+  
+
+text-align: center;
+border-radius: 17px;
+font-family: Verdana;
+letter-spacing: 1.3px;
+font-weight: 700;
+color: whitesmoke;
+background: #4CAF50;
+background: linear-gradient(90deg, #66cf69 0%, #66cf69 100%);
+border: none;
+border-radius: 1000px;
+box-shadow: 6px 6px 12px rgba(61, 61, 61, 0.64);
+transition: all 0.3s ease-in-out 0s;
+cursor: pointer;
+outline: none;
+position: relative;
+padding: 10px;
+
+}
+
+button::before {
+content: '';
+border-radius: 1000px;
+min-width: calc(80px + 12px);
+min-height: calc(20px + 12px);
+border: 4px solid #b6fab8;
+box-shadow: 0 0 60px rgba(0,255,203,.64);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+opacity: 0;
+transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+color: whitesmoke;
+transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+opacity: 1;
+}
+
+button::after {
+content: '';
+width: 30px; height: 30px;
+border-radius: 100%;
+border: 6px solid #b6fab8;
+position: absolute;
+z-index: -1;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+animation: ring 1.5s infinite;
+}
+
+button:hover::after, button:focus::after {
+animation: none;
+display: none;
+}
+
+@keyframes ring {
+0% {
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+}
+100% {
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+}
+}
+
+#carregar{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 90vh;
+  transform: scale(3);
+  }
+#carrega{
+  animation: rodar 3s infinite;
+  border: 4px solid rgb(0, 189, 189);
+  border-right-color: rgb(64, 250, 241) ;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+}
+@keyframes rodar {
+to{
+  transform: rotate(3turn);
+
+}
+}
+
+
+#load{
+position:fixed;
+top:0;
+left:0 ;
+right:0;
+bottom:0;
+background-color:white;
+}
+
+.button2 {
+  color: whitesmoke;
+  text-align: center;
+  border-radius: 17px;
+  font-family: Verdana;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background: #b8b8b8;
+  background: linear-gradient(90deg, #dadada 0%, #dadada 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 6px 6px 12px rgba(61, 61, 61, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  margin-left: 20px;
+
+  
+  }
+  
+  .button2::before {
+  content: '';
+  border-radius: 1000px;
+  min-width: calc(70px + 12px);
+  min-height: calc(20px + 12px);
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 60px rgba(184, 184, 184, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+  }
+  
+  .button2:hover, .button2:focus {
+  color: whitesmoke;
+  transform: translateY(-6px);
+  }
+  
+  .button2:hover::before, .button2:focus::before {
+  opacity: 1;
+  }
+  
+  .button2::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #ffffff;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+  }
+  
+  .button2:hover::after, .button2:focus::after {
+  animation: none;
+  display: none;
+  }
+  
+  @keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+  }
+  }
+  
+/*  
+    ciencias humanas: historia: marrom ✔
+    geografia: amarelo ✔
+    filosofia e sociologia: lilas
+    matematica: azul ✔
+    biologia: verde ✔
+    fisica e quimica: ciano
+    Linguagens: Portugues e literatura: laranja ✔
+    ingles e espanhol: vinho
+
+    Informatica: color: #f0bc6b; 
+                 background-color: #21233a
+*/
