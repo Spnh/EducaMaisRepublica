@@ -62,7 +62,7 @@
     background: transparent;
     border-radius: 50%;
     box-shadow: 15px 15px #81d8f8;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .menu ul li.active a::after{
@@ -75,7 +75,7 @@
     background: transparent;
     border-radius: 50%;
     box-shadow: 15px -15px #81d8f8; 
-    transition: 0.5s;
+    transition: 1s;
 
 }
 
